@@ -1,0 +1,121 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99547867"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\.IfxSmu_cfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -ID:\\infineon\\test1\\Run_Test -ID:\\infineon\\test1\\Run_Test\\CODE -ID:\\infineon\\test1\\Run_Test\\Libraries -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra\\Platform -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra\\Sfr -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Service -ID:\\infineon\\test1\\Run_Test\\Libraries\\BaseSw\\Service\\CpuGeneric -ID:\\infineon\\test1\\Run_Test\\Libraries\\seekfree_libraries -ID:\\infineon\\test1\\Run_Test\\Libraries\\seekfree_libraries\\common -ID:\\infineon\\test1\\Run_Test\\Libraries\\seekfree_peripheral -ID:\\infineon\\test1\\Run_Test\\USER -g2 --make-target=Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxSmu_cfg.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxSmu_cfg.src ..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxSmu_cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxSmu_cfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	302
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxSmu_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\infineon\\test1\\Run_Test\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	153
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	160
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	202
+	.byte	7
+	.word	202
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	218
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	223
+	.byte	9
+	.byte	'value',0
+	.word	202
+	.byte	9
+	.byte	'compare',0
+	.word	202
+	.byte	0,10,1,7
+	.word	280
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	282
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxSmu_cfg.c',0,0,0,0,0
+.L9:
+.L7:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     1  /**
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     2   * \file IfxSmu_cfg.c
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     3   * \brief SMU on-chip implementation data
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     4   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     5   * \version iLLD_1_0_1_11_0
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     6   * \copyright Copyright (c) 2018 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     7   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     8   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	     9   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    10   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    11   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    16  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    17  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    19  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    26  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    32   * language processor.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    33  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    41  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    42   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    43   */
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    44  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    45  /******************************************************************************/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    46  /*----------------------------------Includes----------------------------------*/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    47  /******************************************************************************/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    48  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxSmu_cfg.c	    49  #include "IfxSmu_cfg.h"
+
+	; Module end

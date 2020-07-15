@@ -314,3 +314,11 @@ USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Run_Test1\Libraries\BaseSw\iLLD\TC26B
 "C:\Users\1004\learngit\Run_Test1\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.h" :
 USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Run_Test1\Libraries\seekfree_libraries\zf_uart.h"
 "C:\Users\1004\learngit\Run_Test1\Libraries\seekfree_libraries\zf_uart.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Run_Test1\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h"
+"C:\Users\1004\learngit\Run_Test1\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h" :
+USER\Cpu1_Main.o :	..\USER\img.h
+..\USER\img.h :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Run_Test1\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\Users\1004\learngit\Run_Test1\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\Ifx_Types.h" :
+USER\Cpu1_Main.o :	"C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\stdlib.h"
+"C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\stdlib.h" :

@@ -22,8 +22,7 @@
 #include "SEEKFREE_18TFT.h"
 #include "SEEKFREE_ICM20602.h"
 #include "SEEKFREE_MT9V03X.h"
-uint16 num;
-unsigned char Threshold2;
+#pragma section all "cpu0_dsram"
 
 int core0_main(void)
 {
@@ -37,17 +36,18 @@ int core0_main(void)
 	//icm20602_init_spi();
     enableInterrupts();
     mt9v03x_init();
+
     while (TRUE)
     {
-    	num++;
-    	printf("printf num :%d\n", num);
+
+
     	mt9v03x_finish_flag=0;
     	//get_icm20602_accdata_spi();
     	//get_icm20602_gyro_spi();
     	//printf(" %d\n", icm_acc_x);
-    	adapt_otsuThreshold(mt9v03x_image[0],COL ,  ROW, &Threshold2);
-    	Image_Binary(mt9v03x_image, BinaryImage,Threshold2);
-    	lcd_displayimage032(mt9v03x_image[0], MT9V03X_W, MT9V03X_H);
+    	//adapt_otsuThreshold(mt9v03x_image[0],COL ,  ROW, &Threshold2);
+    	//Image_Binary(mt9v03x_image, BinaryImage,Threshold2);
+    	//lcd_displayimage032(mt9v03x_image[0], MT9V03X_W, MT9V03X_H);
     	  //oled_uint16(1,6,1004);
     	//lcd_showint16(1,1,num);
     	//systick_delay_ms(STM0, 1000);
@@ -79,4 +79,4 @@ int core0_main(void)
     	//使用printf的时候如果希望本次发送的内容能够立即在FSS窗口显示，则应该在最后加入 \n 否则单步调试会出现printf运行之后FSS窗口没有显示
     }
 }
-
+#pragma section all restore

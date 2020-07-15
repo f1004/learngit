@@ -192,6 +192,7 @@
 "Libraries\seekfree_peripheral\SEEKFREE_WIRELESS.o"
 "USER\Cpu0_Main.o"
 "USER\Cpu1_Main.o"
+"USER\img.o"
 "USER\isr.o"
 "-Ctc26x"
 "--lsl-core=vtc"

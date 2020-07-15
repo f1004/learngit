@@ -180,7 +180,7 @@ uart_set_interrupt_priority:	.type	func
 	movh.a	a15,#@his(uart_config)
 	lea	a15,[a15]@los(uart_config)
 .L466:
-	mov	d15,#0
+	mov	d15,#1
 .L467:
 	st.b	[a15]38,d15
 .L468:

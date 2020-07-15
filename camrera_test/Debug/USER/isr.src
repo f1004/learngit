@@ -6129,8 +6129,8 @@ __eru_ch3_ch7_isr_function_end:
 .L92:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.03c',code
-	.sect	'.text.inttab0.intvec.03c'
+	.sdecl	'.text.inttab1.intvec.03c',code
+	.sect	'.text.inttab1.intvec.03c'
 
 ; ..\USER\isr.c	   111  
 ; ..\USER\isr.c	   112  
@@ -6293,8 +6293,8 @@ __uart0_er_isr_function_end:
 .L112:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00d',code
-	.sect	'.text.inttab0.intvec.00d'
+	.sdecl	'.text.inttab1.intvec.00d',code
+	.sect	'.text.inttab1.intvec.00d'
 
 ; ..\USER\isr.c	   135  
 ; ..\USER\isr.c	   136  //串口1默认连接到摄像头配置串口
@@ -6330,8 +6330,8 @@ __uart1_tx_isr_function_end:
 .L117:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00e',code
-	.sect	'.text.inttab0.intvec.00e'
+	.sdecl	'.text.inttab1.intvec.00e',code
+	.sect	'.text.inttab1.intvec.00e'
 
 ; ..\USER\isr.c	   141  IFX_INTERRUPT(uart1_rx_isr, UART1_INT_SERVICE, UART1_RX_INT_PRIO)
 	movh.a	a14,#@his(uart1_rx_isr)
@@ -6369,8 +6369,8 @@ __uart1_rx_isr_function_end:
 .L122:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00f',code
-	.sect	'.text.inttab0.intvec.00f'
+	.sdecl	'.text.inttab1.intvec.00f',code
+	.sect	'.text.inttab1.intvec.00f'
 
 ; ..\USER\isr.c	   146  IFX_INTERRUPT(uart1_er_isr, UART1_INT_SERVICE, UART1_ER_INT_PRIO)
 	movh.a	a14,#@his(uart1_er_isr)
@@ -13255,9 +13255,9 @@ __uart3_er_isr_function_end:
 	.byte	'asclin',0,25,160,3,58
 	.word	42139
 	.byte	0,34
-	.byte	'mt9v03x_uart_callback',0,27,100,6,1,1,1,1,34
-	.byte	'mt9v03x_vsync',0,27,107,6,1,1,1,1,34
-	.byte	'mt9v03x_dma',0,27,108,6,1,1,1,1,34
+	.byte	'mt9v03x_uart_callback',0,27,102,6,1,1,1,1,34
+	.byte	'mt9v03x_vsync',0,27,109,6,1,1,1,1,34
+	.byte	'mt9v03x_dma',0,27,110,6,1,1,1,1,34
 	.byte	'wireless_uart_callback',0,28,44,7,1,1,1,1,34
 	.byte	'ov7725_vsync',0,29,233,1,9,1,1,1,1,34
 	.byte	'ov7725_dma',0,29,234,1,9,1,1,1,1,35

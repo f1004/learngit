@@ -7,8 +7,8 @@
 	
 $TC16X
 	
-	.sdecl	'.text.inttab0.intvec.01e',code
-	.sect	'.text.inttab0.intvec.01e'
+	.sdecl	'.text.inttab1.intvec.01e',code
+	.sect	'.text.inttab1.intvec.01e'
 
 ; ..\USER\isr.c	     1  /*********************************************************************************************************************
 ; ..\USER\isr.c	     2   * COPYRIGHT NOTICE
@@ -1499,8 +1499,8 @@ __cc60_pit_ch0_isr_function_end:
 .L62:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.01f',code
-	.sect	'.text.inttab0.intvec.01f'
+	.sdecl	'.text.inttab1.intvec.01f',code
+	.sect	'.text.inttab1.intvec.01f'
 
 ; ..\USER\isr.c	    30  	PIT_CLEAR_FLAG(CCU6_0, PIT_CH1);
 ; ..\USER\isr.c	    31  
@@ -2969,8 +2969,8 @@ __cc60_pit_ch1_isr_function_end:
 .L67:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.020',code
-	.sect	'.text.inttab0.intvec.020'
+	.sdecl	'.text.inttab1.intvec.020',code
+	.sect	'.text.inttab1.intvec.020'
 
 ; ..\USER\isr.c	    37  	PIT_CLEAR_FLAG(CCU6_0, PIT_CH1);
 ; ..\USER\isr.c	    38  
@@ -4438,8 +4438,8 @@ __cc61_pit_ch0_isr_function_end:
 .L72:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.021',code
-	.sect	'.text.inttab0.intvec.021'
+	.sdecl	'.text.inttab1.intvec.021',code
+	.sect	'.text.inttab1.intvec.021'
 
 ; ..\USER\isr.c	    43  }
 ; ..\USER\isr.c	    44  
@@ -5907,8 +5907,8 @@ __cc61_pit_ch1_isr_function_end:
 .L77:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.028',code
-	.sect	'.text.inttab0.intvec.028'
+	.sdecl	'.text.inttab1.intvec.028',code
+	.sect	'.text.inttab1.intvec.028'
 
 ; ..\USER\isr.c	    49  	PIT_CLEAR_FLAG(CCU6_0, PIT_CH0);
 ; ..\USER\isr.c	    50  
@@ -5969,8 +5969,8 @@ __eru_ch0_ch4_isr_function_end:
 .L82:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.029',code
-	.sect	'.text.inttab0.intvec.029'
+	.sdecl	'.text.inttab1.intvec.029',code
+	.sect	'.text.inttab1.intvec.029'
 
 ; ..\USER\isr.c	    65  
 ; ..\USER\isr.c	    66  IFX_INTERRUPT(cc61_pit_ch1_isr, CCU6_1_CH1_INT_SERVICE, CCU6_1_CH1_ISR_PRIORITY)
@@ -6028,8 +6028,8 @@ __eru_ch1_ch5_isr_function_end:
 .L87:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.02b',code
-	.sect	'.text.inttab0.intvec.02b'
+	.sdecl	'.text.inttab1.intvec.02b',code
+	.sect	'.text.inttab1.intvec.02b'
 
 ; ..\USER\isr.c	    78  	{
 ; ..\USER\isr.c	    79  		CLEAR_GPIO_FLAG(ERU_CH0_REQ4_P10_7);
@@ -6129,8 +6129,8 @@ __eru_ch3_ch7_isr_function_end:
 .L92:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.03c',code
-	.sect	'.text.inttab0.intvec.03c'
+	.sdecl	'.text.inttab1.intvec.03c',code
+	.sect	'.text.inttab1.intvec.03c'
 
 ; ..\USER\isr.c	   111  //		CLEAR_GPIO_FLAG(ERU_CH6_REQ9_P20_0);
 ; ..\USER\isr.c	   112  //
@@ -6185,8 +6185,8 @@ __dma_ch5_isr_function_end:
 .L97:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00a',code
-	.sect	'.text.inttab0.intvec.00a'
+	.sdecl	'.text.inttab1.intvec.00a',code
+	.sect	'.text.inttab1.intvec.00a'
 
 ; ..\USER\isr.c	   120  	if(GET_GPIO_FLAG(ERU_CH3_REQ6_P02_0))//通道3中断
 ; ..\USER\isr.c	   121  	{
@@ -6223,8 +6223,8 @@ __uart0_tx_isr_function_end:
 .L102:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00b',code
-	.sect	'.text.inttab0.intvec.00b'
+	.sdecl	'.text.inttab1.intvec.00b',code
+	.sect	'.text.inttab1.intvec.00b'
 
 ; ..\USER\isr.c	   127  	if(GET_GPIO_FLAG(ERU_CH7_REQ16_P15_1))//通道7中断
 	movh.a	a14,#@his(uart0_rx_isr)
@@ -6258,8 +6258,8 @@ __uart0_rx_isr_function_end:
 .L107:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00c',code
-	.sect	'.text.inttab0.intvec.00c'
+	.sdecl	'.text.inttab1.intvec.00c',code
+	.sect	'.text.inttab1.intvec.00c'
 
 ; ..\USER\isr.c	   131  	}
 	movh.a	a14,#@his(uart0_er_isr)
@@ -6293,8 +6293,8 @@ __uart0_er_isr_function_end:
 .L112:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00d',code
-	.sect	'.text.inttab0.intvec.00d'
+	.sdecl	'.text.inttab1.intvec.00d',code
+	.sect	'.text.inttab1.intvec.00d'
 
 ; ..\USER\isr.c	   135  
 ; ..\USER\isr.c	   136  IFX_INTERRUPT(dma_ch5_isr, ERU_DMA_INT_SERVICE, ERU_DMA_INT_PRIO)
@@ -6330,8 +6330,8 @@ __uart1_tx_isr_function_end:
 .L117:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00e',code
-	.sect	'.text.inttab0.intvec.00e'
+	.sdecl	'.text.inttab1.intvec.00e',code
+	.sect	'.text.inttab1.intvec.00e'
 
 ; ..\USER\isr.c	   141  }
 	movh.a	a14,#@his(uart1_rx_isr)
@@ -6369,8 +6369,8 @@ __uart1_rx_isr_function_end:
 .L122:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.00f',code
-	.sect	'.text.inttab0.intvec.00f'
+	.sdecl	'.text.inttab1.intvec.00f',code
+	.sect	'.text.inttab1.intvec.00f'
 
 ; ..\USER\isr.c	   146  {
 	movh.a	a14,#@his(uart1_er_isr)
@@ -6404,8 +6404,8 @@ __uart1_er_isr_function_end:
 .L127:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.010',code
-	.sect	'.text.inttab0.intvec.010'
+	.sdecl	'.text.inttab1.intvec.010',code
+	.sect	'.text.inttab1.intvec.010'
 
 ; ..\USER\isr.c	   150  {
 ; ..\USER\isr.c	   151      IfxAsclin_Asc_isrReceive(&uart0_handle);
@@ -6442,8 +6442,8 @@ __uart2_tx_isr_function_end:
 .L132:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.011',code
-	.sect	'.text.inttab0.intvec.011'
+	.sdecl	'.text.inttab1.intvec.011',code
+	.sect	'.text.inttab1.intvec.011'
 
 ; ..\USER\isr.c	   157  
 	movh.a	a14,#@his(uart2_rx_isr)
@@ -6481,8 +6481,8 @@ __uart2_rx_isr_function_end:
 .L137:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.012',code
-	.sect	'.text.inttab0.intvec.012'
+	.sdecl	'.text.inttab1.intvec.012',code
+	.sect	'.text.inttab1.intvec.012'
 
 ; ..\USER\isr.c	   162  }
 	movh.a	a14,#@his(uart2_er_isr)
@@ -6516,8 +6516,8 @@ __uart2_er_isr_function_end:
 .L142:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.013',code
-	.sect	'.text.inttab0.intvec.013'
+	.sdecl	'.text.inttab1.intvec.013',code
+	.sect	'.text.inttab1.intvec.013'
 
 ; ..\USER\isr.c	   166      mt9v03x_uart_callback();
 ; ..\USER\isr.c	   167  }
@@ -6554,8 +6554,8 @@ __uart3_tx_isr_function_end:
 .L147:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.014',code
-	.sect	'.text.inttab0.intvec.014'
+	.sdecl	'.text.inttab1.intvec.014',code
+	.sect	'.text.inttab1.intvec.014'
 
 ; ..\USER\isr.c	   173  
 	movh.a	a14,#@his(uart3_rx_isr)
@@ -6589,8 +6589,8 @@ __uart3_rx_isr_function_end:
 .L152:
 	; End of function
 	
-	.sdecl	'.text.inttab0.intvec.015',code
-	.sect	'.text.inttab0.intvec.015'
+	.sdecl	'.text.inttab1.intvec.015',code
+	.sect	'.text.inttab1.intvec.015'
 
 ; ..\USER\isr.c	   177      IfxAsclin_Asc_isrTransmit(&uart2_handle);
 	movh.a	a14,#@his(uart3_er_isr)

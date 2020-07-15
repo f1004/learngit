@@ -869,7 +869,7 @@ pit_init:	.type	func
 .L10:
 	jne	d9,#0,.L13
 .L94:
-	mov	d15,#0
+	mov	d15,#1
 .L119:
 	st.b	[a10]100,d15
 .L120:
@@ -879,7 +879,7 @@ pit_init:	.type	func
 .L122:
 	j	.L14
 .L13:
-	mov	d15,#0
+	mov	d15,#1
 .L123:
 	st.b	[a10]106,d15
 .L124:
@@ -897,7 +897,7 @@ pit_init:	.type	func
 
 ; ..\Libraries\seekfree_libraries\zf_ccu6_pit.c	    86  		{
 ; ..\Libraries\seekfree_libraries\zf_ccu6_pit.c	    87  			if(PIT_CH0 == pit_ch)
-	mov	d15,#0
+	mov	d15,#1
 .L126:
 	st.b	[a10]100,d15
 .L127:
@@ -914,7 +914,7 @@ pit_init:	.type	func
 ; ..\Libraries\seekfree_libraries\zf_ccu6_pit.c	    90  				timerConfig.interrupt1.priority       = CCU6_1_CH0_ISR_PRIORITY;
 ; ..\Libraries\seekfree_libraries\zf_ccu6_pit.c	    91  			}
 ; ..\Libraries\seekfree_libraries\zf_ccu6_pit.c	    92  			else
-	mov	d15,#0
+	mov	d15,#1
 .L130:
 	st.b	[a10]100,d15
 .L131:

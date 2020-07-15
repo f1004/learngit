@@ -2171,13 +2171,13 @@ eru_init:	.type	func
 	jeq	d15,d0,.L56
 	j	.L57
 .L53:
-	mov	d0,#0
+	mov	d0,#1
 .L242:
 	mov	d15,#40
 .L243:
 	j	.L58
 .L54:
-	mov	d0,#0
+	mov	d0,#1
 .L244:
 	mov	d15,#41
 .L245:
@@ -2192,7 +2192,7 @@ eru_init:	.type	func
 
 ; ..\Libraries\seekfree_libraries\zf_eru.c	   141  		case 3:
 ; ..\Libraries\seekfree_libraries\zf_eru.c	   142  		{
-	mov	d0,#0
+	mov	d0,#1
 .L248:
 
 ; ..\Libraries\seekfree_libraries\zf_eru.c	   143  			eru_service  = (IfxSrc_Tos)ERU_CH3_CH7_INT_SERVICE;

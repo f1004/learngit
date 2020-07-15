@@ -74,7 +74,7 @@
 
 
 //------------DMA中断参数相关定义------------
-#define	ERU_DMA_INT_SERVICE  0	//ERU触发DMA中断服务类型，即中断是由谁响应处理 0:CPU0 1:CPU1 3:DMA  不可设置为其他值
+#define	ERU_DMA_INT_SERVICE  1	//ERU触发DMA中断服务类型，即中断是由谁响应处理 0:CPU0 1:CPU1 3:DMA  不可设置为其他值
 #define ERU_DMA_INT_PRIO  	 60	//ERU触发DMA中断优先级 优先级范围1-255 越大优先级越高 与平时使用的单片机不一样
 
 
@@ -84,7 +84,7 @@
 #define UART0_RX_INT_PRIO  11	//定义串口0接收中断优先级 优先级范围1-255 越大优先级越高 与平时使用的单片机不一样
 #define UART0_ER_INT_PRIO  12	//定义串口0错误中断优先级 优先级范围1-255 越大优先级越高 与平时使用的单片机不一样
 
-#define	UART1_INT_SERVICE  0
+#define	UART1_INT_SERVICE  1
 #define UART1_TX_INT_PRIO  13
 #define UART1_RX_INT_PRIO  14
 #define UART1_ER_INT_PRIO  15

@@ -2,16 +2,13 @@
 **** Build of configuration Debug for project camrera_test ****
 
 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
-Compiling Cpu0_Main.c
+Compiling Cpu1_Main.c
+ctc W523: ["..\USER\Cpu1_Main.c" 55/25] pointers to different types at argument #1
+ctc W523: ["..\USER\Cpu1_Main.c" 55/41] pointers to different types at argument #2
+0 errors, 2 warnings
 Linking to 6-Printf_Demo.elf
-ltc E106: unresolved external: adapt_otsuThreshold - (Cpu0_Main.o)
-ltc E106: unresolved external: BinaryImage - (Cpu0_Main.o)
-ltc E106: unresolved external: Image_Binary - (Cpu0_Main.o)
-ltc F019: unrecoverable error: fatal link error
-amk E452: ["makefile" 112/0] target '6-Printf_Demo.elf' returned exit code 1
-amk E451: make stopped
 
-Time consumed: 2770 ms
+Time consumed: 4636 ms
 **** End of build ****
 
 Tool info: 

@@ -1941,7 +1941,7 @@ eru_dma_init:	.type	func
 .L233:
 
 ; ..\Libraries\seekfree_libraries\zf_eru_dma.c	   113  	cfg.channelInterruptTypeOfService 	= (IfxSrc_Tos)ERU_DMA_INT_SERVICE;
-	mov	d15,#0
+	mov	d15,#1
 .L234:
 	st.b	[a10]74,d15
 .L235:

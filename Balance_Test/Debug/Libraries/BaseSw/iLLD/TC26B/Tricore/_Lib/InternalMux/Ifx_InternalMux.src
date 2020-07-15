@@ -1,0 +1,505 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99547867"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\.Ifx_InternalMux.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -ID:\\infineon\\test1\\Balance_Test -ID:\\infineon\\test1\\Balance_Test\\CODE -ID:\\infineon\\test1\\Balance_Test\\Libraries -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra\\Platform -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra\\Sfr -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Service -ID:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\Service\\CpuGeneric -ID:\\infineon\\test1\\Balance_Test\\Libraries\\seekfree_libraries -ID:\\infineon\\test1\\Balance_Test\\Libraries\\seekfree_libraries\\common -ID:\\infineon\\test1\\Balance_Test\\Libraries\\seekfree_peripheral -ID:\\infineon\\test1\\Balance_Test\\USER -g2 --make-target=Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.src ..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_InternalMux.Ifx_InternalMux_init',code,cluster('Ifx_InternalMux_init')
+	.sect	'.text.Ifx_InternalMux.Ifx_InternalMux_init'
+	.align	2
+	
+	.global	Ifx_InternalMux_init
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     1  /**
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     2   * \file Ifx_InternalMux.c
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     3   * \brief Mux configuration functions
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     4   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     5   * \version iLLD_1_0_1_11_0
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     6   * \copyright Copyright (c) 2019 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     7   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     8   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	     9   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    10   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    11   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    16  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    17  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    19  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    26  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    32   * language processor.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    33  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    41  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    42   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    43   */
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    44  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    45  /******************************************************************************/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    46  /*----------------------------------Includes----------------------------------*/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    47  /******************************************************************************/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    48  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    49  #include "Ifx_InternalMux.h"
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    50  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    51  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    52  /******************************************************************************/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    53  /*-------------------------Function Implementations---------------------------*/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    54  /******************************************************************************/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    55  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    56  void Ifx_InternalMux_init(const Ifx_InternalMux_Config *cfg)
+; Function Ifx_InternalMux_init
+.L5:
+Ifx_InternalMux_init:	.type	func
+	sub.a	a10,#16
+.L32:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    57  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    58      uint32 i;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    59  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    60      for (i = 0; i < cfg->size; i++)
+	mov	d0,#0
+.L33:
+	j	.L2
+.L3:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    61      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    62          Ifx_InternalMux_MuxConfig muxCfg = cfg->muxConfig[i];
+	mul	d15,d0,#12
+.L42:
+	ld.a	a15,[a4]4
+.L43:
+	addsc.a	a15,a15,d15,#0
+	lea	a15,[a15]0
+.L44:
+	lea	a2,[a10]0
+	ld.d	e4,[a15+]8
+	st.d	[a2+]8,e4
+	ld.w	d15,[a15+]
+	st.w	[a2+],d15
+.L45:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    63  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    64          /*Load modify store operation done to insert the value to the register bit field*/
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    65          __ldmst((volatile void *)(muxCfg.regAddr), muxCfg.mask, muxCfg.value);
+	ld.a	a15,[a10]
+	ld.w	d15,[a10]4
+	ld.w	d1,[a10]8
+.L24:
+
+; D:\infineon\test1\Balance_Test\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h	   271      __asm("\tmov d3, %1 \n"      (inlined)
+	
+		mov d3, d15 
+	mov d2, d1 
+	ldmst [a15],e2
+	
+.L20:
+	add	d0,#1
+.L2:
+	ld.w	d15,[a4]
+.L46:
+	jlt.u	d0,d15,.L3
+.L47:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    66      }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\InternalMux\Ifx_InternalMux.c	    67  }
+	ret
+.L15:
+	
+__Ifx_InternalMux_init_function_end:
+	.size	Ifx_InternalMux_init,__Ifx_InternalMux_init_function_end-Ifx_InternalMux_init
+.L14:
+	; End of function
+	
+	.calls	'Ifx_InternalMux_init','',16
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	1191
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\infineon\\test1\\Balance_Test\\Debug\\',0,12,1
+	.word	.L9
+	.byte	2,1,1,3
+	.word	173
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	176
+	.byte	6,0,7
+	.byte	'void',0,8
+	.word	221
+	.byte	3
+	.word	227
+.L18:
+	.byte	9
+	.byte	'unsigned long int',0,4,7
+.L23:
+	.byte	4
+	.byte	'Ifx__ldmstAsm',0,3,1,141,2,17,1,1
+.L25:
+	.byte	5
+	.byte	'addr',0,1,141,2,46
+	.word	232
+.L27:
+	.byte	5
+	.byte	'mask',0,1,141,2,59
+	.word	237
+.L29:
+	.byte	5
+	.byte	'data',0,1,141,2,72
+	.word	237
+.L31:
+	.byte	6,0,9
+	.byte	'__fract',0,4,128,1,9
+	.byte	'float',0,4,4,10
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	324
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	336
+	.byte	6,0,9
+	.byte	'unsigned long long int',0,8,7,3
+	.word	221
+	.byte	10
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	390
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	416
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	416
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	390
+	.byte	6,0,9
+	.byte	'int',0,4,5,11
+	.word	502
+	.byte	12
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,13
+	.word	509
+	.byte	0,9
+	.byte	'unsigned int',0,4,7,8
+	.word	551
+	.byte	3
+	.word	551
+	.byte	14
+	.byte	'__cmpswapw',0
+	.word	567
+	.byte	1,1,1,1,15
+	.byte	'p',0
+	.word	572
+	.byte	15
+	.byte	'value',0
+	.word	551
+	.byte	15
+	.byte	'compare',0
+	.word	551
+	.byte	0
+.L21:
+	.byte	16,3,65,9,12,17
+	.byte	'regAddr',0
+	.word	232
+	.byte	4,2,35,0,17
+	.byte	'mask',0
+	.word	237
+	.byte	4,2,35,4,17
+	.byte	'value',0
+	.word	237
+	.byte	4,2,35,8,0,3
+	.word	629
+	.byte	16,3,75,9,8,17
+	.byte	'size',0
+	.word	237
+	.byte	4,2,35,0,17
+	.byte	'muxConfig',0
+	.word	681
+	.byte	4,2,35,4,0,11
+	.word	686
+.L16:
+	.byte	3
+	.word	725
+	.byte	18
+	.word	181
+	.byte	19
+	.word	207
+	.byte	6,0,18
+	.word	258
+	.byte	19
+	.word	280
+	.byte	19
+	.word	294
+	.byte	19
+	.word	308
+	.byte	6,0,18
+	.word	345
+	.byte	19
+	.word	377
+	.byte	6,0,18
+	.word	421
+	.byte	19
+	.word	440
+	.byte	6,0,18
+	.word	456
+	.byte	19
+	.word	471
+	.byte	19
+	.word	485
+	.byte	6,0,9
+	.byte	'short int',0,2,5,20
+	.byte	'__wchar_t',0,4,1,1
+	.word	810
+	.byte	20
+	.byte	'__size_t',0,4,1,1
+	.word	551
+	.byte	20
+	.byte	'__ptrdiff_t',0,4,1,1
+	.word	502
+	.byte	21,1,3
+	.word	878
+	.byte	20
+	.byte	'__codeptr',0,4,1,1
+	.word	880
+	.byte	9
+	.byte	'unsigned char',0,1,8,20
+	.byte	'uint8',0,5,105,29
+	.word	903
+	.byte	9
+	.byte	'unsigned short int',0,2,7,20
+	.byte	'uint16',0,5,109,29
+	.word	934
+	.byte	20
+	.byte	'uint32',0,5,113,29
+	.word	237
+	.byte	20
+	.byte	'uint64',0,5,118,29
+	.word	390
+	.byte	20
+	.byte	'sint16',0,5,126,29
+	.word	810
+	.byte	9
+	.byte	'long int',0,4,5,20
+	.byte	'sint32',0,5,131,1,29
+	.word	1016
+	.byte	9
+	.byte	'long long int',0,8,5,20
+	.byte	'sint64',0,5,138,1,29
+	.word	1044
+	.byte	20
+	.byte	'float32',0,5,167,1,29
+	.word	336
+	.byte	20
+	.byte	'pvoid',0,6,57,28
+	.word	416
+	.byte	20
+	.byte	'Ifx_TickTime',0,6,79,28
+	.word	1044
+	.byte	20
+	.byte	'Ifx_InternalMux_MuxConfig',0,3,70,3
+	.word	629
+	.byte	20
+	.byte	'Ifx_InternalMux_Config',0,3,79,2
+	.word	686
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,59,0,3,8,0,0,8,53
+	.byte	0,73,19,0,0,9,36,0,3,8,11,15,62,15,0,0,10,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,11,38
+	.byte	0,73,19,0,0,12,46,1,3,8,54,15,39,12,63,12,60,12,0,0,13,5,0,73,19,0,0,14,46,1,3,8,73,19,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,3,8,73,19,0,0,16,19,1,58,15,59,15,57,15,11,15,0,0,17,13,0,3,8,73,19,11,15,56,9,0,0
+	.byte	18,46,1,49,19,0,0,19,5,0,49,19,0,0,20,22,0,3,8,58,15,59,15,57,15,73,19,0,0,21,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L35-.L34
+.L34:
+	.half	3
+	.word	.L37-.L36
+.L36:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.h',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L37:
+.L35:
+	.sdecl	'.debug_info',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_info'
+.L10:
+	.word	343
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\infineon\\test1\\Balance_Test\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'Ifx_InternalMux_init',0,1,56,6,1,1,1
+	.word	.L5,.L15,.L4
+	.byte	4
+	.byte	'cfg',0,1,56,57
+	.word	.L16,.L17
+	.byte	5
+	.word	.L5,.L15
+	.byte	6
+	.byte	'i',0,1,58,12
+	.word	.L18,.L19
+	.byte	5
+	.word	.L3,.L20
+	.byte	6
+	.byte	'muxCfg',0,1,62,35
+	.word	.L21,.L22
+	.byte	7
+	.word	.L23,.L24,.L20
+	.byte	8
+	.word	.L25,.L26
+	.byte	8
+	.word	.L27,.L28
+	.byte	8
+	.word	.L29,.L30
+	.byte	9
+	.word	.L31,.L24,.L20
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.byte	1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_line'
+.L12:
+	.word	.L39-.L38
+.L38:
+	.half	3
+	.word	.L41-.L40
+.L40:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\infineon\\test1\\Balance_Test\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux\\Ifx_InternalMux.c',0,0,0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0,0
+.L41:
+	.byte	5,6,7,0,5,2
+	.word	.L5
+	.byte	3,55,1,5,12,9
+	.half	.L32-.L5
+	.byte	3,4,1,5,30,9
+	.half	.L33-.L32
+	.byte	1,5,58,9
+	.half	.L3-.L33
+	.byte	3,2,1,5,47,9
+	.half	.L42-.L3
+	.byte	1,5,58,9
+	.half	.L43-.L42
+	.byte	1,5,42,9
+	.half	.L44-.L43
+	.byte	1,5,9,9
+	.half	.L45-.L44
+	.byte	3,3,1,4,2,5,5,9
+	.half	.L24-.L45
+	.byte	3,206,1,1,4,1,5,33,9
+	.half	.L20-.L24
+	.byte	3,173,126,1,5,24,9
+	.half	.L2-.L20
+	.byte	1,5,30,9
+	.half	.L46-.L2
+	.byte	1,5,1,7,9
+	.half	.L47-.L46
+	.byte	3,7,1,7,9
+	.half	.L14-.L47
+	.byte	0,1,1
+.L39:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L5,0,.L14-.L5,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L32-.L5
+	.half	2
+	.byte	138,0
+	.word	.L32-.L5,.L15-.L5
+	.half	2
+	.byte	138,16
+	.word	.L15-.L5,.L15-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L26:
+	.word	0,0
+.L17:
+	.word	-1,.L5,0,.L15-.L5
+	.half	1
+	.byte	100
+	.word	0,0
+.L30:
+	.word	0,0
+.L19:
+	.word	-1,.L5,.L33-.L5,.L15-.L5
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L28:
+	.word	0,0
+.L22:
+	.word	-1,.L5,0,.L15-.L5
+	.half	2
+	.byte	145,112
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L48:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_frame'
+	.word	44
+	.word	.L48,.L5,.L15-.L5
+	.byte	8,19,8,21,8,22,8,23,4
+	.word	(.L32-.L5)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L15-.L32)/2
+	.byte	19,0,8,26,0,0
+
+
+	; Module end

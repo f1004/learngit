@@ -23,12 +23,13 @@
 #include "SEEKFREE_ICM20602.h"
 #include "SEEKFREE_MT9V03X.h"
 uint16 num;
+unsigned char Threshold2;
 
 int core0_main(void)
 {
 	disableInterrupts();
 	get_clk();//获取时钟频率  务必保留
-	//oled_init();
+	oled_init();
 	lcd_init();
 
     //用户在此处调用各种初始化函数等
@@ -40,10 +41,12 @@ int core0_main(void)
     {
     	num++;
     	printf("printf num :%d\n", num);
+    	mt9v03x_finish_flag=0;
     	//get_icm20602_accdata_spi();
     	//get_icm20602_gyro_spi();
     	//printf(" %d\n", icm_acc_x);
-
+    	adapt_otsuThreshold(mt9v03x_image[0],COL ,  ROW, &Threshold2);
+    	Image_Binary(mt9v03x_image, BinaryImage,Threshold2);
     	lcd_displayimage032(mt9v03x_image[0], MT9V03X_W, MT9V03X_H);
     	  //oled_uint16(1,6,1004);
     	//lcd_showint16(1,1,num);

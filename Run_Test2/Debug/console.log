@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project Run_Test ****
+
+"C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
+
+Time consumed: 1347 ms
+**** End of build ****
+
+Tool info: 
+TASKING program builder v6.3r1 Build 19041558

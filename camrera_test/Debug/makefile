@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-PROJ 	= camrera
+PROJ 	= camrera_test
 PRODDIR = C:\Program Files\TASKING\TriCore v6.3r1\ctc
 
 -include "..\makefile.init"
@@ -112,7 +112,7 @@ all : "6-Printf_Demo.elf"
 	@"${PRODDIR}\bin\cctc" -f ".6-Printf_Demo.elf.opt"
 
 ".6-Printf_Demo.elf.opt" : .refresh
-	@argfile ".6-Printf_Demo.elf.opt" -o "6-Printf_Demo.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc26x --lsl-core=vtc -t -I"D:\infineon\test1\camrera" ""D:\infineon\test1\camrera\Lcf_Tasking_Tricore_Tc.lsl"" -Wl-OtxycL --no-map-file -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 -g --fp-model=3 --c++=14 -Wl--dep-file=".6-Printf_Demo.elf.d" -Wl--make-target="6-Printf_Demo.elf"
+	@argfile ".6-Printf_Demo.elf.opt" -o "6-Printf_Demo.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc26x --lsl-core=vtc -t -I"C:\Users\1004\learngit\camrera_test" ""C:\Users\1004\learngit\camrera_test\Lcf_Tasking_Tricore_Tc.lsl"" -Wl-OtxycL --no-map-file -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 -g --fp-model=3 --c++=14 -Wl--dep-file=".6-Printf_Demo.elf.d" -Wl--make-target="6-Printf_Demo.elf"
 DEPENDENCY_FILES += ".6-Printf_Demo.elf.d"
 -include $(DEPENDENCY_FILES)
 

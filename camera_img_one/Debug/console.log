@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project Camera_img_one ****
+
+"C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
+Compiling SEEKFREE_MT9V03X.c
+ctc W560: ["..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c" 442/19] possible truncation at implicit conversion to type "unsigned char"
+0 errors, 1 warnings
+Linking to 6-Printf_Demo.elf
+
+Time consumed: 4433 ms
+**** End of build ****
+
+Tool info: 
+TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: object linker v6.3r1 Build 19041558 SN 99547867
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+TASKING program builder v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99547867

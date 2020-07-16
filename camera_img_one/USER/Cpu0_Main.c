@@ -30,7 +30,9 @@ int photo_Flag=0;
 int pht=1;
 IFX_ALIGN(4) uint8 Photo_image[MT9V03X_H][MT9V03X_W];
 unsigned char Threshold2;
+int a,b;
 #pragma section all "cpu0_dsram"
+
 int core0_main(void)
 {
 	disableInterrupts();
@@ -92,7 +94,7 @@ int core0_main(void)
 	      {
 
 
-	    	  Photo_image[i1][j1]=mt9v03x_image[i1][j1];
+	    	  Photo_image[i1][j1]=(uint8)mt9v03x_image[i1][j1];
 
 	      }
 
@@ -100,24 +102,28 @@ int core0_main(void)
 	    }
 
 
-    		for( i1 = 0; i1 < MT9V03X_H; i1++)
+    		/*for( i1 = 0; i1 < MT9V03X_H; i1++)
     		    {
     		      for( j1 = 0; j1 < MT9V03X_W; j1++)
     		      {
 
 
-    		     uart_putchar(UART_0, (uint8)Photo_image[i1][j1]);
+    		     uart_putchar(UART_0, Photo_image[i1][j1]);
 
     		      }
-    		      uart_putstr(UART_0,"\r\n");
+    		      uart_putstr(UART_0,"\n");
 
     		    }
+                 */
 
+    		uart_putbuff(UART_0,&mt9v03x_image[0],22560);
 
-
+         //printf('%d\n',a);
+         //printf('%d\n',b);
 
     	}
-
+    	a=sizeof(Photo_image)/sizeof(Photo_image[0]);
+    	b=sizeof(Photo_image)/sizeof(Photo_image[0][0]);
 
 
     	mt9v03x_finish_flag=0;

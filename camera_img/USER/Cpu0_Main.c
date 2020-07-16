@@ -26,7 +26,7 @@ unsigned char Threshold2;
 #include <stdlib.h>
 uint16 num;
 unsigned char Threshold2;
-
+#pragma section all "cpu0_dsram"
 int core0_main(void)
 {
 	disableInterrupts();
@@ -57,13 +57,13 @@ int core0_main(void)
 		histogram=NULL;
 	   	Image_Binary(*mt9v03x_image, *BinaryImage,Threshold2);
 
-    	//lcd_displayimage032(*BinaryImage, MT9V03X_W, MT9V03X_H);
+    	lcd_displayimage032(*BinaryImage, MT9V03X_W, MT9V03X_H);
     	//lcd_displayimage7725(BinaryImage[0], ROW , COL );
     	mt9v03x_finish_flag=0;
 
     	}
     	  //oled_uint16(1,6,1004);
-    	lcd_showint16(1,1,1);
+    	//lcd_showint16(1,1,1);
     	//systick_delay_ms(STM0, 1000);
 
     	//需要注意printf不是通过串口发送的
@@ -94,3 +94,4 @@ int core0_main(void)
     }
 }
 
+#pragma section all restore

@@ -18,7 +18,7 @@
  ********************************************************************************************************************/
 
 #include "headfile.h"
-
+#pragma section all "cpu1_dsram"
 
 void core1_main(void)
 {
@@ -33,3 +33,4 @@ void core1_main(void)
 
     }
 }
+#pragma section all restore

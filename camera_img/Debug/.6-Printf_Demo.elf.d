@@ -398,5 +398,5 @@
 "C:\Program Files\TASKING\TriCore v6.3r1\ctc\lib\tc16x\libfp_fpu.a" :
 6-Printf_Demo.elf : "C:\Program Files\TASKING\TriCore v6.3r1\ctc\lib\tc16x\librt.a"
 "C:\Program Files\TASKING\TriCore v6.3r1\ctc\lib\tc16x\librt.a" :
-6-Printf_Demo.elf : "D:\learngit-master\Run_Test1\Lcf_Tasking_Tricore_Tc.lsl"
-"D:\learngit-master\Run_Test1\Lcf_Tasking_Tricore_Tc.lsl" :
+6-Printf_Demo.elf : "C:\Users\1004\learngit\camera_img\Lcf_Tasking_Tricore_Tc.lsl"
+"C:\Users\1004\learngit\camera_img\Lcf_Tasking_Tricore_Tc.lsl" :

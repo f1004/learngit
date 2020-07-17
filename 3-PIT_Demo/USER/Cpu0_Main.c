@@ -1,16 +1,16 @@
 /*********************************************************************************************************************
  * COPYRIGHT NOTICE
- * Copyright (c) 2020,Öð·É¿Æ¼¼
+ * Copyright (c) 2020,é€é£žç§‘æŠ€
  * All rights reserved.
- * ¼¼ÊõÌÖÂÛQQÈº£ºÈýÈº£º824575535
+ * æŠ€æœ¯è®¨è®ºQQç¾¤ï¼šä¸‰ç¾¤ï¼š824575535
  *
- * ÒÔÏÂËùÓÐÄÚÈÝ°æÈ¨¾ùÊôÖð·É¿Æ¼¼ËùÓÐ£¬Î´¾­ÔÊÐí²»µÃÓÃÓÚÉÌÒµÓÃÍ¾£¬
- * »¶Ó­¸÷Î»Ê¹ÓÃ²¢´«²¥±¾³ÌÐò£¬ÐÞ¸ÄÄÚÈÝÊ±±ØÐë±£ÁôÖð·É¿Æ¼¼µÄ°æÈ¨ÉùÃ÷¡£
+ * ä»¥ä¸‹æ‰€æœ‰å†…å®¹ç‰ˆæƒå‡å±žé€é£žç§‘æŠ€æ‰€æœ‰ï¼Œæœªç»å…è®¸ä¸å¾—ç”¨äºŽå•†ä¸šç”¨é€”ï¼Œ
+ * æ¬¢è¿Žå„ä½ä½¿ç”¨å¹¶ä¼ æ’­æœ¬ç¨‹åºï¼Œä¿®æ”¹å†…å®¹æ—¶å¿…é¡»ä¿ç•™é€é£žç§‘æŠ€çš„ç‰ˆæƒå£°æ˜Žã€‚
  *
  * @file       		main
- * @company	   		³É¶¼Öð·É¿Æ¼¼ÓÐÏÞ¹«Ë¾
- * @author     		Öð·É¿Æ¼¼(QQ3184284598)
- * @version    		²é¿´docÄÚversionÎÄ¼þ °æ±¾ËµÃ÷
+ * @company	   		æˆéƒ½é€é£žç§‘æŠ€æœ‰é™å…¬å¸
+ * @author     		é€é£žç§‘æŠ€(QQ3184284598)
+ * @version    		æŸ¥çœ‹docå†…versionæ–‡ä»¶ ç‰ˆæœ¬è¯´æ˜Ž
  * @Software 		tasking v6.3r1
  * @Target core		TC264D
  * @Taobao   		https://seekfree.taobao.com/
@@ -20,31 +20,64 @@
 
 #include "headfile.h"
 #pragma section all "cpu0_dsram"
-
+uint32 SpeedPwm1,SpeedPwm2;
+int16 Speed1,Speed2,Set_Speed=18000,Speed_Kp=0.1;
 
 int core0_main(void)
 {
 	disableInterrupts();
-	get_clk();//»ñÈ¡Ê±ÖÓÆµÂÊ  Îñ±Ø±£Áô
+	get_clk();//èŽ·å–æ—¶é’Ÿé¢‘çŽ‡  åŠ¡å¿…ä¿ç•™
 
-    //ÓÃ»§ÔÚ´Ë´¦µ÷ÓÃ¸÷ÖÖ³õÊ¼»¯º¯ÊýµÈ
-	//Ê¹ÓÃCCU6_0Ä£¿éµÄÍ¨µÀ0 ²úÉúÒ»¸ö 100msµÄÖÜÆÚÖÐ¶Ï
+    //ç”¨æˆ·åœ¨æ­¤å¤„è°ƒç”¨å„ç§åˆå§‹åŒ–å‡½æ•°ç­‰
+	//ä½¿ç”¨CCU6_0æ¨¡å—çš„é€šé“0 äº§ç”Ÿä¸€ä¸ª 100msçš„å‘¨æœŸä¸­æ–­
 	pit_interrupt_ms(CCU6_0, PIT_CH0, 100);
+	gtm_pwm_init(ATOM0_CH6_P02_6, 10000, 0);
+	gtm_pwm_init(ATOM0_CH4_P02_4, 10000, 0);//ATOM 0æ¨¡å—çš„é€šé“4 ä½¿ç”¨P02_4å¼•è„šè¾“å‡ºPWM  PWMé¢‘çŽ‡50HZ  å ç©ºæ¯”ç™¾åˆ†ä¹‹0/GTM_ATOM0_PWM_DUTY_MAX*100  GTM_AT
+	gtm_pwm_init(ATOM0_CH7_P02_7, 10000, 0);
+	gtm_pwm_init(ATOM0_CH5_P02_5, 10000, 0);
+	pwm_duty(ATOM0_CH4_P02_4, 0);//è®¾ç½®å ç©ºæ¯”ä¸ºç™¾åˆ†ä¹‹5000/GTM_ATOM0_PWM_DUTY_MAX*100
+	pwm_duty(ATOM0_CH6_P02_6, 2000);
+	pwm_duty(ATOM0_CH3_P02_3, 0);//è®¾ç½®å ç©ºæ¯”ä¸ºç™¾åˆ†ä¹‹5000/GTM_ATOM0_PWM_DUTY_MAX*100
+	pwm_duty(ATOM0_CH7_P02_7, 2000);
+	gpt12_init(GPT12_T2, GPT12_T2INB_P33_7, GPT12_T2EUDB_P33_6);// encoder
+	gpt12_init(GPT12_T3,GPT12_T3INA_P02_6, GPT12_T3EUDA_P02_7);
+	//ä¸­æ–­å‡½æ•°åœ¨isr.cä¸­ å‡½æ•°åç§°ä¸ºcc60_pit_ch0_isr
+	//ä¸­æ–­ç›¸å…³çš„é…ç½®å‚æ•°åœ¨isr_config.hå†…
+	//å¯é…ç½®å‚æ•°æœ‰ CCU6_0_CH0_INT_SERVICE å’Œ CCU6_0_CH0_ISR_PRIORITY
+	//CCU6_0_CH0_INT_SERVICE ä¸­æ–­æœåŠ¡è€…ï¼Œè¡¨ç¤ºæ”¹ä¸­æ–­ç”±è°å¤„ç†ï¼Œ0:CPU0 1:CPU1 3:DMA  ä¸å¯è®¾ç½®ä¸ºå…¶ä»–å€¼
+	//CCU6_0_CH0_ISR_PRIORITY ä¸­æ–­ä¼˜å…ˆçº§ ä¼˜å…ˆçº§èŒƒå›´1-255 è¶Šå¤§ä¼˜å…ˆçº§è¶Šé«˜ ä¸Žå¹³æ—¶ä½¿ç”¨çš„å•ç‰‡æœºä¸ä¸€æ ·
 
-
-	//ÖÐ¶Ïº¯ÊýÔÚisr.cÖÐ º¯ÊýÃû³ÆÎªcc60_pit_ch0_isr
-	//ÖÐ¶ÏÏà¹ØµÄÅäÖÃ²ÎÊýÔÚisr_config.hÄÚ
-	//¿ÉÅäÖÃ²ÎÊýÓÐ CCU6_0_CH0_INT_SERVICE ºÍ CCU6_0_CH0_ISR_PRIORITY
-	//CCU6_0_CH0_INT_SERVICE ÖÐ¶Ï·þÎñÕß£¬±íÊ¾¸ÄÖÐ¶ÏÓÉË­´¦Àí£¬0:CPU0 1:CPU1 3:DMA  ²»¿ÉÉèÖÃÎªÆäËûÖµ
-	//CCU6_0_CH0_ISR_PRIORITY ÖÐ¶ÏÓÅÏÈ¼¶ ÓÅÏÈ¼¶·¶Î§1-255 Ô½´óÓÅÏÈ¼¶Ô½¸ß ÓëÆ½Ê±Ê¹ÓÃµÄµ¥Æ¬»ú²»Ò»Ñù
-
-	//ÐèÒªÌØ±¸×¢ÒâµÄÊÇ  ²»¿ÉÒÔÓÐÓÅÏÈ¼¶ÏàÍ¬µÄÖÐ¶Ïº¯Êý Ã¿¸öÖÐ¶ÏµÄÓÅÏÈ¼¶¶¼±ØÐëÊÇ²»Ò»ÑùµÄ
+	//éœ€è¦ç‰¹å¤‡æ³¨æ„çš„æ˜¯  ä¸å¯ä»¥æœ‰ä¼˜å…ˆçº§ç›¸åŒçš„ä¸­æ–­å‡½æ•° æ¯ä¸ªä¸­æ–­çš„ä¼˜å…ˆçº§éƒ½å¿…é¡»æ˜¯ä¸ä¸€æ ·çš„
     enableInterrupts();
 
     while (TRUE)
     {
-		//ÔÚisr.cµÄÖÐ¶Ïº¯Êý£¬º¯Êý¶¨ÒåµÄµÚ¶þ¸ö²ÎÊý¹Ì¶¨Îª0£¬Çë²»Òª¸ü¸Ä£¬¼´Ê¹ÄãÓÃCPU1´¦ÀíÖÐ¶ÏÒ²²»Òª¸ü¸Ä£¬ÐèÒªCPU1´¦ÀíÖÐ¶ÏÖ»ÐèÒªÔÚisr_config.hÄÚÐÞ¸Ä¶ÔÓ¦µÄºê¶¨Òå¼´¿É
-    	//³ÌÐòÔËÐÐÖ®ºó PITÖÐ¶ÏÃ¿Ö´ÐÐÒ»´Î¾Í»á´òÓ¡Ò»´Îµ½FSS´°¿Ú
+    	        Speed1 = gpt12_get(GPT12_T2);
+    	    	gpt12_clear(GPT12_T2);
+    	    	Speed2 = gpt12_get(GPT12_T3);
+    	    	gpt12_clear(GPT12_T3);
+    	    	SpeedPwm1=Speed_Kp*(Set_Speed);
+    	    	SpeedPwm2=Speed_Kp*(Set_Speed);
+    	    	if(SpeedPwm1>3000)
+    	    	{SpeedPwm1=3000;}
+    	    	if(SpeedPwm1<-3000)
+    	    	{SpeedPwm1=-3000;}
+    	    	if(SpeedPwm2>3000)
+    	    	{SpeedPwm2=3000;}
+    	    	if(SpeedPwm2<-3000)
+    	    	{SpeedPwm2=-3000;}
+    	    	pwm_duty(ATOM0_CH6_P02_6, SpeedPwm1);
+    	    	pwm_duty(ATOM0_CH7_P02_7, SpeedPwm2);
+    	    	printf("printf speedpwm2 :%d\n", SpeedPwm1);
+    	    	printf("printf speed2 :%d\n", Speed1);
+    	    	printf("printf speedpwm2 :%d\n", SpeedPwm2);
+    	    	printf("printf speed2 :%d\n", Speed2);
+    	    	systick_delay_ms(STM1, 1000);
+		//åœ¨isr.cçš„ä¸­æ–­å‡½æ•°ï¼Œå‡½æ•°å®šä¹‰çš„ç¬¬äºŒä¸ªå‚æ•°å›ºå®šä¸º0ï¼Œè¯·ä¸è¦æ›´æ”¹ï¼Œå³ä½¿ä½ ç”¨CPU1å¤„ç†ä¸­æ–­ä¹Ÿä¸è¦æ›´æ”¹ï¼Œéœ€è¦CPU1å¤„ç†ä¸­æ–­åªéœ€è¦åœ¨isr_config.hå†…ä¿®æ”¹å¯¹åº”çš„å®å®šä¹‰å³å¯
+    	//ç¨‹åºè¿è¡Œä¹‹åŽ PITä¸­æ–­æ¯æ‰§è¡Œä¸€æ¬¡å°±ä¼šæ‰“å°ä¸€æ¬¡åˆ°FSSçª—å£
+
+
+
     }
 }
 

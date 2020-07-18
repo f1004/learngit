@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-PROJ 	= Ks103
+PROJ 	= K103_distance1
 PRODDIR = C:\Program Files\TASKING\TriCore v6.3r1\ctc
 
 -include "..\makefile.init"
@@ -105,20 +105,20 @@ all :
 PCP_FILES :=
 EXT_LIBRARIES =
 
-all : "Sr04_isr.elf"
+all : "2-LED_Blink_Demo.elf"
 
-"Sr04_isr.elf" : $(OBJ_FILES) $(EXT_LIBRARIES) ".Sr04_isr.elf.opt"
+"2-LED_Blink_Demo.elf" : $(OBJ_FILES) $(EXT_LIBRARIES) ".2-LED_Blink_Demo.elf.opt"
 	@echo Linking to ${@F}
-	@"${PRODDIR}\bin\cctc" -f ".Sr04_isr.elf.opt"
+	@"${PRODDIR}\bin\cctc" -f ".2-LED_Blink_Demo.elf.opt"
 
-".Sr04_isr.elf.opt" : .refresh
-	@argfile ".Sr04_isr.elf.opt" -o "Sr04_isr.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc26x --lsl-core=vtc -t -I"C:\Users\1004\learngit\Ks103" ""C:\Users\1004\learngit\Ks103\Lcf_Tasking_Tricore_Tc.lsl"" -Wl-OtxycL --no-map-file -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 -g --fp-model=3 --c++=14 -Wl--dep-file=".Sr04_isr.elf.d" -Wl--make-target="Sr04_isr.elf"
-DEPENDENCY_FILES += ".Sr04_isr.elf.d"
+".2-LED_Blink_Demo.elf.opt" : .refresh
+	@argfile ".2-LED_Blink_Demo.elf.opt" -o "2-LED_Blink_Demo.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc26x --lsl-core=vtc -t -I"D:\AD\seekfree-TC264_Library-master\TC264_Library\Example\Ks103" ""D:\AD\seekfree-TC264_Library-master\TC264_Library\Example\Ks103\Lcf_Tasking_Tricore_Tc.lsl"" -Wl-OtxycL --no-map-file -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 -g --fp-model=3 --c++=14 -Wl--dep-file=".2-LED_Blink_Demo.elf.d" -Wl--make-target="2-LED_Blink_Demo.elf"
+DEPENDENCY_FILES += ".2-LED_Blink_Demo.elf.d"
 -include $(DEPENDENCY_FILES)
 
 $(EXT_LIBRARIES) : .dummy
 
-GENERATED_FILES += "Sr04_isr.elf" "Sr04_isr*.sre" "Sr04_isr*.hex" "Sr04_isr.map*" "Sr04_isr.mdf" ".Sr04_isr.elf.opt" ".Sr04_isr.elf.d"
+GENERATED_FILES += "2-LED_Blink_Demo.elf" "2-LED_Blink_Demo*.sre" "2-LED_Blink_Demo*.hex" "2-LED_Blink_Demo.map*" "2-LED_Blink_Demo.mdf" ".2-LED_Blink_Demo.elf.opt" ".2-LED_Blink_Demo.elf.d"
 -include "..\makefile.targets"
 
 

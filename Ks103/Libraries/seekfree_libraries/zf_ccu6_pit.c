@@ -180,7 +180,6 @@ void pit_disable_interrupt(CCU6N_enum ccu6n, CCU6_CHN_enum pit_ch)
 	volatile Ifx_CCU6 *module;
 	module = IfxCcu6_getAddress((IfxCcu6_Index)ccu6n);
 	IfxCcu6_disableInterrupt(module, pit_ch * 2 + 7);
-
 }
 
 //-------------------------------------------------------------------------------------------------------------------

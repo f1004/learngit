@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99547867"
-	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_RDA5807.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IC:\\Users\\1004\\learngit\\Ks103 -IC:\\Users\\1004\\learngit\\Ks103\\CODE -IC:\\Users\\1004\\learngit\\Ks103\\Libraries -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra\\Platform -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra\\Sfr -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Service -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\Service\\CpuGeneric -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\seekfree_libraries -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\seekfree_libraries\\common -IC:\\Users\\1004\\learngit\\Ks103\\Libraries\\seekfree_peripheral -IC:\\Users\\1004\\learngit\\Ks103\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_RDA5807.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\CODE -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra\\Platform -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra\\Sfr -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Service -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\Service\\CpuGeneric -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\seekfree_libraries -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\seekfree_libraries\\common -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\seekfree_peripheral -ID:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c"
 	.compiler_name		"ctc"
 	;source	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c'
 
@@ -791,7 +791,7 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L28:
-	.word	881
+	.word	916
 	.half	3
 	.word	.L29
 	.byte	4
@@ -799,38 +799,38 @@ rda5807_read_reg:	.type	object
 	.byte	1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L30
 	.byte	2
 	.byte	'int',0,4,5,3
-	.word	149
+	.word	184
 	.byte	4
 	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
-	.word	156
+	.word	191
 	.byte	0,2
 	.byte	'unsigned int',0,4,7,6
-	.word	198
+	.word	233
 	.byte	7
-	.word	198
+	.word	233
 	.byte	8
 	.byte	'__cmpswapw',0
-	.word	214
+	.word	249
 	.byte	1,1,1,1,9
 	.byte	'p',0
-	.word	219
+	.word	254
 	.byte	9
 	.byte	'value',0
-	.word	198
+	.word	233
 	.byte	9
 	.byte	'compare',0
-	.word	198
+	.word	233
 	.byte	0
 .L89:
 	.byte	2
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'simiic_delay_set',0,1,52,7,1,1,1,1,11
 	.byte	'time',0,1,52,31
-	.word	276
+	.word	311
 	.byte	0,12
 	.byte	'simiic_start',0,1,53,7,1,1,1,1,12
 	.byte	'simiic_stop',0,1,54,7,1,1,1,1
@@ -839,13 +839,13 @@ rda5807_read_reg:	.type	object
 	.byte	'unsigned char',0,1,8,10
 	.byte	'send_ch',0,1,56,7,1,1,1,1,11
 	.byte	'c',0,1,56,21
-	.word	378
+	.word	413
 	.byte	0,13
 	.byte	'read_ch',0,1,57,7
-	.word	378
+	.word	413
 	.byte	1,1,1,1,11
 	.byte	'ack',0,1,57,21
-	.word	378
+	.word	413
 	.byte	0,12
 	.byte	'simiic_init',0,1,61,7,1,1,1,1,14,2,27,9,1,15
 	.byte	'STM0',0,0,15
@@ -853,71 +853,71 @@ rda5807_read_reg:	.type	object
 	.byte	'unsigned long int',0,4,7,10
 	.byte	'systick_delay',0,2,34,6,1,1,1,1,11
 	.byte	'stmn',0,2,34,30
-	.word	475
+	.word	510
 	.byte	11
 	.byte	'time',0,2,34,43
-	.word	495
+	.word	530
 	.byte	0
 .L81:
 	.byte	2
 	.byte	'float',0,4,4
 .L83:
 	.byte	16,2
-	.word	378
+	.word	413
 	.byte	17,1,0
 .L98:
 	.byte	7
-	.word	378
+	.word	413
 	.byte	18
 	.byte	'__size_t',0,3,1,1
-	.word	198
+	.word	233
 	.byte	19,1,7
-	.word	605
+	.word	640
 	.byte	18
 	.byte	'__codeptr',0,3,1,1
-	.word	607
+	.word	642
 	.byte	18
 	.byte	'uint8',0,4,105,29
-	.word	378
+	.word	413
 	.byte	18
 	.byte	'uint16',0,4,109,29
-	.word	276
+	.word	311
 	.byte	18
 	.byte	'uint32',0,4,113,29
-	.word	495
+	.word	530
 	.byte	2
 	.byte	'unsigned long long int',0,8,7,18
 	.byte	'uint64',0,4,118,29
-	.word	674
+	.word	709
 	.byte	2
 	.byte	'char',0,1,6,18
 	.byte	'int8',0,5,33,29
-	.word	715
+	.word	750
 	.byte	2
 	.byte	'short int',0,2,5,18
 	.byte	'int16',0,5,34,29
-	.word	736
+	.word	771
 	.byte	2
 	.byte	'long int',0,4,5,18
 	.byte	'int32',0,5,35,29
-	.word	763
+	.word	798
 	.byte	2
 	.byte	'long long int',0,8,5,18
 	.byte	'int64',0,5,36,29
-	.word	789
+	.word	824
 	.byte	20
 	.byte	'simiic_delay_time',0,1,50,15
-	.word	276
+	.word	311
 	.byte	1,1,18
 	.byte	'STMN_enum',0,2,31,2
-	.word	475
+	.word	510
 .L109:
 	.byte	16,12
-	.word	378
+	.word	413
 	.byte	17,11,0
 .L110:
 	.byte	16,10
-	.word	378
+	.word	413
 	.byte	17,9,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -938,9 +938,10 @@ rda5807_read_reg:	.type	object
 	.word	.L144-.L143
 .L143:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Libraries\\seekfree_libraries',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Libraries\\seekfree_libraries\\common',0,0
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\seekfree_libraries',0
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Libraries\\seekfree_libraries\\common',0
+	.byte	0
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.h',0,0,0,0
 	.byte	'zf_stm_systick.h',0,1,0,0
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0,0,0,0
@@ -951,13 +952,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_init')
 	.sect	'.debug_info'
 .L31:
-	.word	234
+	.word	269
 	.half	3
 	.word	.L32
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L34,.L33
 	.byte	2
 	.word	.L27
@@ -1045,13 +1046,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_set_transimt')
 	.sect	'.debug_info'
 .L36:
-	.word	206
+	.word	241
 	.half	3
 	.word	.L37
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L39,.L38
 	.byte	2
 	.word	.L27
@@ -1102,13 +1103,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_set_idle')
 	.sect	'.debug_info'
 .L41:
-	.word	202
+	.word	237
 	.half	3
 	.word	.L42
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L44,.L43
 	.byte	2
 	.word	.L27
@@ -1159,13 +1160,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_set_channel')
 	.sect	'.debug_info'
 .L46:
-	.word	245
+	.word	280
 	.half	3
 	.word	.L47
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L49,.L48
 	.byte	2
 	.word	.L27
@@ -1231,13 +1232,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_channel_config')
 	.sect	'.debug_info'
 .L51:
-	.word	227
+	.word	262
 	.half	3
 	.word	.L52
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L54,.L53
 	.byte	2
 	.word	.L27
@@ -1307,13 +1308,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_read_rssi')
 	.sect	'.debug_info'
 .L56:
-	.word	226
+	.word	261
 	.half	3
 	.word	.L57
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L59,.L58
 	.byte	2
 	.word	.L27
@@ -1371,13 +1372,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rad5807m_simiic_write')
 	.sect	'.debug_info'
 .L61:
-	.word	302
+	.word	337
 	.half	3
 	.word	.L62
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L64,.L63
 	.byte	2
 	.word	.L27
@@ -1458,13 +1459,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807m_simiic_read')
 	.sect	'.debug_info'
 .L66:
-	.word	290
+	.word	325
 	.half	3
 	.word	.L67
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L69,.L68
 	.byte	2
 	.word	.L27
@@ -1548,13 +1549,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_read_id')
 	.sect	'.debug_info'
 .L71:
-	.word	201
+	.word	236
 	.half	3
 	.word	.L72
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1
 	.word	.L74,.L73
 	.byte	2
 	.word	.L27
@@ -1599,13 +1600,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_config_reg')
 	.sect	'.debug_info'
 .L76:
-	.word	181
+	.word	216
 	.half	3
 	.word	.L77
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1,2
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1,2
 	.word	.L27
 	.byte	3
 	.byte	'rda5807_config_reg',0,3,45,7
@@ -1621,13 +1622,13 @@ rda5807_read_reg:	.type	object
 	.sdecl	'.debug_info',debug,cluster('rda5807_read_reg')
 	.sect	'.debug_info'
 .L78:
-	.word	180
+	.word	215
 	.half	3
 	.word	.L79
 	.byte	4,1
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_RDA5807.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'C:\\Users\\1004\\learngit\\Ks103\\Debug\\',0,12,1,2
+	.byte	'D:\\AD\\seekfree-TC264_Library-master\\TC264_Library\\Example\\Ks103\\Debug\\',0,12,1,2
 	.word	.L27
 	.byte	3
 	.byte	'rda5807_read_reg',0,3,181,1,8

@@ -1,9 +1,9 @@
 
-**** Build of configuration Debug for project Ks103 ****
+**** Build of configuration Debug for project K103_distance1 ****
 
 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
 
-Time consumed: 1370 ms
+Time consumed: 1271 ms
 **** End of build ****
 
 Tool info: 

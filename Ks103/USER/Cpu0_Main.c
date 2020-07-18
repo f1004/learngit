@@ -19,47 +19,31 @@
 
 
 #include "headfile.h"
-
+#include "isr.h"
 #pragma section all "cpu0_dsram"
 
 
 int core0_main(void)
-{
+{   int distance;
 	disableInterrupts();
+	Ks103_init();
 	get_clk();//获取时钟频率  务必保留
-	uart_init(UART_0, 9600, UART0_TX_P14_0, UART0_RX_P14_1);//MODE connect to GND
-    //用户在此处调用各种初始化函数等
-	uart_putchar(UART_0, 0xe8);
-	systick_delay_us(STM0, 20);
-	uart_putchar(UART_0, 0x02);
-	systick_delay_us(STM0, 20);
-	uart_putchar(UART_0, 0x70);
-	systick_delay_us(STM0, 20);
-	uart_putchar(UART_0, 0xbc);
-	systick_delay_us(STM0, 20);
+
     enableInterrupts();
 
     while (TRUE)
     {
-    	uint8 data;
-    	int distance;
-    	uart_putchar(UART_0, 0xe8);
-        systick_delay_us(STM0, 20);
-    	uart_putchar(UART_0, 0x02);
-    	systick_delay_us(STM0, 20);
-    	uart_putchar(UART_0, 0xbc);
-    	systick_delay_us(STM0, 20);
-    	uart_putchar(UART_0, 0xc9);
-    	systick_delay_us(STM0, 20);
-    	uart_getchar(UART_0,&data);
-    	distance =  data << 8;
-    	uart_getchar(UART_0,&data);
-    	distance |= data;
+    	 if(Flag_10ms)
+    	 {
+    	distance=Ks103_getdistance();
+    	printf("distance is %d\n", distance);
+        //distance=Ks103_getdistance();
+    	Flag_10ms=0;
+
+    	 }
 
 
 
-    	printf("distance  %d\n", distance);
-    	systick_delay_ms(STM0, 100);
 
     }
 }

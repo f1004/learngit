@@ -22,10 +22,7 @@
 #define _isr_h
 
 #include "headfile.h"
-
-
 extern char Flag_10ms;
-extern uint32 time_us;
 
 
 

@@ -1,16 +1,16 @@
 /*********************************************************************************************************************
  * COPYRIGHT NOTICE
- * Copyright (c) 2020,Öð·É¿Æ¼¼
+ * Copyright (c) 2020,ï¿½ï¿½É¿Æ¼ï¿½
  * All rights reserved.
- * ¼¼ÊõÌÖÂÛQQÈº£ºÈýÈº£º824575535
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½QQÈºï¿½ï¿½ï¿½ï¿½Èºï¿½ï¿½824575535
  *
- * ÒÔÏÂËùÓÐÄÚÈÝ°æÈ¨¾ùÊôÖð·É¿Æ¼¼ËùÓÐ£¬Î´¾­ÔÊÐí²»µÃÓÃÓÚÉÌÒµÓÃÍ¾£¬
- * »¶Ó­¸÷Î»Ê¹ÓÃ²¢´«²¥±¾³ÌÐò£¬ÐÞ¸ÄÄÚÈÝÊ±±ØÐë±£ÁôÖð·É¿Æ¼¼µÄ°æÈ¨ÉùÃ÷¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý°ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¿Æ¼ï¿½ï¿½ï¿½ï¿½Ð£ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½Í¾ï¿½ï¿½
+ * ï¿½ï¿½Ó­ï¿½ï¿½Î»Ê¹ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ë±£ï¿½ï¿½ï¿½ï¿½É¿Æ¼ï¿½ï¿½Ä°ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *
  * @file       		main
- * @company	   		³É¶¼Öð·É¿Æ¼¼ÓÐÏÞ¹«Ë¾
- * @author     		Öð·É¿Æ¼¼(QQ3184284598)
- * @version    		²é¿´docÄÚversionÎÄ¼þ °æ±¾ËµÃ÷
+ * @company	   		ï¿½É¶ï¿½ï¿½ï¿½É¿Æ¼ï¿½ï¿½ï¿½ï¿½Þ¹ï¿½Ë¾
+ * @author     		ï¿½ï¿½É¿Æ¼ï¿½(QQ3184284598)
+ * @version    		ï¿½é¿´docï¿½ï¿½versionï¿½Ä¼ï¿½ ï¿½æ±¾Ëµï¿½ï¿½
  * @Software 		tasking v6.3r1
  * @Target core		TC264D
  * @Taobao   		https://seekfree.taobao.com/
@@ -28,11 +28,11 @@ unsigned char Threshold2;
 int core0_main(void)
 {
 	disableInterrupts();
-	get_clk();//»ñÈ¡Ê±ÖÓÆµÂÊ  Îñ±Ø±£Áô
+	get_clk();//ï¿½ï¿½È¡Ê±ï¿½ï¿½Æµï¿½ï¿½  ï¿½ï¿½Ø±ï¿½ï¿½ï¿½
 	oled_init();
 	lcd_init();
 
-    //ÓÃ»§ÔÚ´Ë´¦µ÷ÓÃ¸÷ÖÖ³õÊ¼»¯º¯ÊýµÈ
+    //ï¿½Ã»ï¿½ï¿½Ú´Ë´ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Ö³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	printf("printf demo");
 	//icm20602_init_spi();
     enableInterrupts();
@@ -52,17 +52,33 @@ int core0_main(void)
     	//lcd_showint16(1,1,num);
     	//systick_delay_ms(STM0, 1000);
 
-    	//ÐèÒª×¢Òâprintf²»ÊÇÍ¨¹ý´®¿Ú·¢ËÍµÄ
-    	//ÕâÀïµÄprintfÊÇÍ¨¹ýµ÷ÊÔÆ÷½«ÄÚÈÝ·¢ËÍµ½FSS´°¿ÚµÄ£¬Ê¹ÓÃÆðÀ´±È½Ï·½±ãÇÒ²»ÐèÒªÕ¼ÓÃ´®¿Ú
+    	//ï¿½ï¿½Òª×¢ï¿½ï¿½printfï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Íµï¿½
+    	//ï¿½ï¿½ï¿½ï¿½ï¿½printfï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½Íµï¿½FSSï¿½ï¿½ï¿½ÚµÄ£ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½Ï·ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ÒªÕ¼ï¿½Ã´ï¿½ï¿½ï¿½
 
 
 
 
-    	    //ÓÃ»§ÔÚ´Ë´¦µ÷ÓÃ¸÷ÖÖ³õÊ¼»¯º¯ÊýµÈ
-    		//Ë«ºËµÄÊ¹ÓÃÆäÊµºÜ¼òµ¥£¬¾ÍÊÇÔÚÁ½¸ömainÖÐ±àÐ´²»ÓÃµÄ³ÌÐò¼´¿É
-    		//±¾Àý³ÌÊ¹ÓÃºËÐÄ0 ÉÁË¸P20_8µÄLED	ºËÐÄ1ÉÁË¸P20_9µÄLED
+    	    //ï¿½Ã»ï¿½ï¿½Ú´Ë´ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Ö³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    		//Ë«ï¿½Ëµï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Êµï¿½Ü¼òµ¥£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mainï¿½Ð±ï¿½Ð´ï¿½ï¿½ï¿½ÃµÄ³ï¿½ï¿½ò¼´¿ï¿½
+    		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ãºï¿½ï¿½ï¿½0 ï¿½ï¿½Ë¸P20_8ï¿½ï¿½LED	ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ë¸P20_9ï¿½ï¿½LED
 
     		//gpio_init(P20_8, GPO, 0, PUSHPULL);
+#define a 1
+
+
+#ifdef a == 1
+if(1)
+{
+	
+
+
+
+}
+ 
+
+    
+    
+#endif
 
 
 
@@ -72,11 +88,7 @@ int core0_main(void)
 
 
 
-
-
-
-
-    	//Ê¹ÓÃprintfµÄÊ±ºòÈç¹ûÏ£Íû±¾´Î·¢ËÍµÄÄÚÈÝÄÜ¹»Á¢¼´ÔÚFSS´°¿ÚÏÔÊ¾£¬ÔòÓ¦¸ÃÔÚ×îºó¼ÓÈë \n ·ñÔòµ¥²½µ÷ÊÔ»á³öÏÖprintfÔËÐÐÖ®ºóFSS´°¿ÚÃ»ÓÐÏÔÊ¾
+    	//Ê¹ï¿½ï¿½printfï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½Î·ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½FSSï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ \n ï¿½ï¿½ï¿½òµ¥²ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½printfï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½FSSï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ê¾
     }
 }
 #pragma section all restore

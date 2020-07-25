@@ -22,7 +22,7 @@
 #define _isr_h
 
 #include "headfile.h"
-extern char Flag_10ms;
+extern char Flag_1s;
 
 
 

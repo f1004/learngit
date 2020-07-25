@@ -25,12 +25,12 @@
 
 //PIT中断函数  示例
 
-char Flag_10ms;
+char Flag_1s;
 IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 {
 	enableInterrupts();//开启中断嵌套
 	PIT_CLEAR_FLAG(CCU6_0, PIT_CH0);
-	Flag_10ms=1;
+	Flag_1s=1;
 
 
 }

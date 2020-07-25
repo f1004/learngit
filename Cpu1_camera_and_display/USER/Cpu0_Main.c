@@ -20,11 +20,12 @@
 
 #include "headfile.h"
 #include "isr.h"
+#include "SEEKFREE_MT9V03X.h"
 #pragma section all "cpu0_dsram"
 
 
 int core0_main(void)
-{   int distance;
+{
 	disableInterrupts();
 	//Ks103_init();
 	get_clk();//获取时钟频率  务必保留
@@ -33,13 +34,8 @@ int core0_main(void)
 
     while (TRUE)
     {
-    	 if(Flag_10ms)
-    	 {
-    	//distance=Ks103_getdistance();
-    	//printf("distance is %d\n", distance);
-    	Flag_10ms=0;
-
-    	 }
+    	//printf("time is %d\n",time);
+    	//systick_delay_ms(STM1,1000);
 
 
 

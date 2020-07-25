@@ -42,7 +42,7 @@
 
 //配置摄像头参数
 #define MT9V03X_W               188             	//图像宽度 	范围1-188
-#define MT9V03X_H               120             	//图像高度	范围1-120
+#define MT9V03X_H               80             	//图像高度	范围1-120
 
 
 
@@ -88,19 +88,19 @@ typedef enum
 }CMD;
      
      
-     
+extern int16 MT9V03X_CFG[CONFIG_FINISH][2];
 extern uint8    receive[3];         //仅用于接收配置信息时所用  禁止用户使用该变量
 extern uint8    receive_num;        //仅用于接收配置信息时所用  禁止用户使用该变量
 extern vuint8   uart_receive_flag;  //仅用于接收配置信息时所用  禁止用户使用该变量
 
-
+extern int16 time;
 extern uint8    mt9v03x_finish_flag;//一场图像采集完成标志位
 extern uint8    mt9v03x_image[MT9V03X_H][MT9V03X_W];
 
 void mt9v03x_uart_callback(void);
 void set_config(UARTN_enum uartn, int16 buff[CONFIG_FINISH-1][2]);
 void get_config(UARTN_enum uartn, int16 buff[CONFIG_FINISH-1][2]);
-uint16 get_version(UARTN_enum uartn);
+int16 get_version(UARTN_enum uartn);
 uint16 set_exposure_time(UARTN_enum uartn, uint16 light);
 
 void mt9v03x_init(void);

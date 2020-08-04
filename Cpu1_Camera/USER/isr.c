@@ -20,7 +20,32 @@
 
 #include "isr_config.h"
 #include "isr.h"
+#include "headfile.h"
+#include "isr.h"
+#include "img.h"
+#include <stdlib.h>
+#include "pid.h"
+#include "key.h"
+#include "Ks103.h"
 //在isr.c的中断函数，函数定义的第二个参数固定为0，请不要更改，即使你用CPU1处理中断也不要更改，需要CPU1处理中断只需要在isr_config.h内修改对应的宏定义即可
+extern int16 encoder1;
+extern int16 encoder2;
+#define MOTOR1_A   ATOM0_CH0_P21_2   //定义1电机正转PWM引脚      电机1后视左轮
+#define MOTOR1_B   ATOM0_CH1_P21_3   //定义1电机反转PWM引脚
+
+#define MOTOR2_A   ATOM0_CH2_P21_4   //定义2电机正转PWM引脚
+#define MOTOR2_B   ATOM0_CH3_P21_5   //定义2电机反转PWM引脚
+extern int32 speed1_power;
+extern int32 speed2_power;
+
+extern int set_speed;
+extern int limit_increase;
+extern int limit_out;
+extern int left_pwm,right_pwm;
+extern int speed_base;
+
+
+
 
 
 //PIT中断函数  示例
@@ -30,6 +55,55 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 {
 	enableInterrupts();//开启中断嵌套
 	PIT_CLEAR_FLAG(CCU6_0, PIT_CH0);
+
+	encoder1 = gpt12_get(GPT12_T2);
+	encoder2 = -gpt12_get(GPT12_T4);
+	gpt12_clear(GPT12_T2);
+	gpt12_clear(GPT12_T4);
+
+
+
+	        speed_pid(encoder1,encoder2,set_speed);
+	        if(out1>=limit_out)out1=limit_out;
+	        if(out1<=-limit_out)out1=-limit_out;
+	        if(out2>=limit_out)out2=limit_out;
+	        if(out2<=-limit_out)out2=-limit_out;
+	//    	        increase=0;
+//	        speed1_power = out1+increase;
+//	        speed2_power = out2-increase;
+//	        speed1_power = out1;
+//	        speed2_power = out2;
+
+	        if(speed1_power>=0)speed1_power=speed1_power+left_pwm;
+	        if(speed1_power<0)speed1_power=speed1_power-left_pwm;
+	        if(speed2_power>=0)speed2_power=speed2_power+right_pwm;
+	        if(speed2_power<0)speed2_power=speed2_power-right_pwm;
+
+	        if(speed1_power>=4000)speed1_power=4000;
+	        if(speed1_power<=-4000)speed1_power=-4000;
+	        if(speed2_power>=4000)speed2_power=4000;
+	        if(speed2_power<=-4000)speed2_power=-4000;
+	        if(0<=speed1_power) //电机1   正转 设置占空比为 百分之 (1000/GTM_ATOM0_PWM_DUTY_MAX*100)
+	                {
+	                    pwm_duty(MOTOR1_A, speed1_power);
+	                    pwm_duty(MOTOR1_B, 0);
+	                }
+	                else                //电机1   反转
+	                {
+	                    pwm_duty(MOTOR1_A, 0);
+	                    pwm_duty(MOTOR1_B, -speed1_power);
+	                }
+
+	                if(0<=speed2_power) //电机2   正转
+	                {
+	                    pwm_duty(MOTOR2_A, speed2_power);
+	                    pwm_duty(MOTOR2_B, 0);
+	                }
+	                else                //电机2   反转
+	                {
+	                    pwm_duty(MOTOR2_A, 0);
+	                    pwm_duty(MOTOR2_B, -speed2_power);
+	                }
 	Flag_10ms=1;
 
 

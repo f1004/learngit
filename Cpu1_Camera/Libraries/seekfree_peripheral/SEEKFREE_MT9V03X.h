@@ -108,7 +108,9 @@ void mt9v03x_vsync(void);
 void mt9v03x_dma(void);
 void seekfree_sendimg_03x(UARTN_enum uartn, uint8 *image, uint16 width, uint16 height);
 void seekfree_sendimg_03x_usb_cdc(uint8 *image, uint16 width, uint16 height);
-
+extern uint8 BinaryImage[MT9V03X_H][MT9V03X_W];
+extern uint8 threshold;
+void Image_Binary(uint8 Image[ROW][COL], uint8 Binary_Image[ROW][COL], int GateValue);
 
 
 #endif

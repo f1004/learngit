@@ -1,0 +1,32 @@
+
+**** Build of configuration Debug for project Cpu1_Camera ****
+
+"C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
+Compiling zf_ccu6_pit.c
+Compiling zf_eru.c
+Compiling zf_eru_dma.c
+Compiling zf_uart.c
+Compiling common.c
+Compiling Cpu0_Main.c
+Compiling Cpu1_Main.c
+Compiling img.c
+ctc W560: ["..\USER\img.c" 54/23] possible truncation at implicit conversion to type "unsigned char"
+0 errors, 1 warnings
+Compiling isr.c
+Compiling key.c
+Compiling Ks103.c
+ctc W523: ["..\USER\Cpu1_Main.c" 86/25] pointers to different types at argument #1
+ctc W523: ["..\USER\Cpu1_Main.c" 86/41] pointers to different types at argument #2
+0 errors, 2 warnings
+Compiling pid.c
+Linking to 2-LED_Blink_Demo.elf
+
+Time consumed: 10732 ms
+**** End of build ****
+
+Tool info: 
+TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: object linker v6.3r1 Build 19041558 SN 99547867
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+TASKING program builder v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99547867

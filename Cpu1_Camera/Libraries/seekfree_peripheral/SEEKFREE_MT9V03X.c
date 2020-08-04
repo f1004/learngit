@@ -55,7 +55,7 @@ int16 MT9V03X_CFG[CONFIG_FINISH][2]=
 {
     {AUTO_EXP,          0},   //自动曝光设置      范围1-63 0为关闭 如果自动曝光开启  EXP_TIME命令设置的数据将会变为最大曝光时间，也就是自动曝光时间的上限
                               //一般情况是不需要开启这个功能，因为比赛场地光线一般都比较均匀，如果遇到光线非常不均匀的情况可以尝试设置该值，增加图像稳定性
-    {EXP_TIME,          450}, //曝光时间          摄像头收到后会自动计算出最大曝光时间，如果设置过大则设置为计算出来的最大曝光值
+    {EXP_TIME,          30}, //曝光时间          摄像头收到后会自动计算出最大曝光时间，如果设置过大则设置为计算出来的最大曝光值
     {FPS,               50},  //图像帧率          摄像头收到后会自动计算出最大FPS，如果过大则设置为计算出来的最大FPS
     {SET_COL,           MT9V03X_W}, //图像列数量        范围1-752     K60采集不允许超过188
     {SET_ROW,           MT9V03X_H}, //图像行数量        范围1-480
@@ -376,6 +376,27 @@ void seekfree_sendimg_03x(UARTN_enum uartn, uint8 *image, uint16 width, uint16 h
 {
 	uart_putchar(uartn,0x00);uart_putchar(uartn,0xff);uart_putchar(uartn,0x01);uart_putchar(uartn,0x01);//发送命令
     uart_putbuff(uartn, image, width*height);  //发送图像
+}
+
+
+uint8 BinaryImage[MT9V03X_H][MT9V03X_W];
+uint8 threshold;
+void Image_Binary(uint8 Image[MT9V03X_H][MT9V03X_W], uint8 Binary_Image[MT9V03X_H][MT9V03X_W], int GateValue)
+{
+    for(int i = 0; i < MT9V03X_H; i++)
+    {
+      for(int j = 0; j < MT9V03X_W; j++)
+      {
+        if(Image[i][j] > GateValue)
+        {
+          Binary_Image[i][j] = 255;
+        }
+        else
+        {
+          Binary_Image[i][j] = 0;
+        }
+      }
+    }
 }
 
 

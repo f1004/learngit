@@ -18,7 +18,7 @@ void Ks103_init(void)
 		systick_delay_us(STM0, 20);
 		uart_putchar(UART_0, 0xbc);//0-11m distance feedback with temporary compensate
 		systick_delay_us(STM0, 20);
-
+		systick_delay_ms(STM0, 2000);
 
 
 

@@ -172,7 +172,10 @@
 								<inputType id="com.tasking.ctc.cc.msInputType.1535524086" name="MS" superClass="com.tasking.ctc.cc.msInputType"/>
 							</tool>
 							<tool id="com.tasking.ctc.as.abs.debug.1390239146" name="Assembler" superClass="com.tasking.ctc.as.abs.debug">
-								<option id="com.tasking.ctc.as.includePaths.1708708624" name="Include paths" superClass="com.tasking.ctc.as.includePaths"/>
+								<option id="com.tasking.ctc.as.includePaths.1708708624" name="Include paths" superClass="com.tasking.ctc.as.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Program Files\TASKING\TriCore v6.3r1\ctc&quot;"/>
+								</option>
 								<inputType id="com.tasking.ctc.asmInputType.1471959711" name="ASM" superClass="com.tasking.ctc.asmInputType"/>
 							</tool>
 							<tool id="com.tasking.ctc.lk.abs.debug.1142239087" name="Linker" superClass="com.tasking.ctc.lk.abs.debug">
@@ -187,7 +190,9 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 			<storageModule addStartupFiles="false" moduleId="com.tasking.processor"/>
 			<storageModule moduleId="com.tasking.toolInfo">
+				<toolInfo>TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558</toolInfo>
 				<toolInfo>TASKING program builder v6.3r1 Build 19041558</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558</toolInfo>
 			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.tasking.config.ctc.abs.release.2134260939">

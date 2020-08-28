@@ -150,7 +150,7 @@ uart_set_interrupt_priority:	.type	func
 	movh.a	a15,#@his(uart_config)
 	lea	a15,[a15]@los(uart_config)
 .L454:
-	mov	d15,#0
+	mov	d15,#1
 .L455:
 	st.b	[a15]38,d15
 .L456:
@@ -180,7 +180,7 @@ uart_set_interrupt_priority:	.type	func
 	movh.a	a15,#@his(uart_config)
 	lea	a15,[a15]@los(uart_config)
 .L466:
-	mov	d15,#0
+	mov	d15,#1
 .L467:
 	st.b	[a15]38,d15
 .L468:
@@ -210,7 +210,7 @@ uart_set_interrupt_priority:	.type	func
 	movh.a	a15,#@his(uart_config)
 	lea	a15,[a15]@los(uart_config)
 .L478:
-	mov	d15,#0
+	mov	d15,#1
 .L479:
 	st.b	[a15]38,d15
 .L480:
@@ -249,7 +249,7 @@ uart_set_interrupt_priority:	.type	func
 	movh.a	a15,#@his(uart_config)
 	lea	a15,[a15]@los(uart_config)
 .L490:
-	mov	d15,#0
+	mov	d15,#1
 .L491:
 	st.b	[a15]38,d15
 .L492:

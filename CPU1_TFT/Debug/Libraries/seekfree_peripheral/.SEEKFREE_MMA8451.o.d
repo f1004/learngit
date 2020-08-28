@@ -1,11 +1,11 @@
 Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	..\Libraries\seekfree_peripheral\SEEKFREE_MMA8451.c
 ..\Libraries\seekfree_peripheral\SEEKFREE_MMA8451.c :
-Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Users\1004\learngit\camrera_test\Libraries\seekfree_libraries\zf_stm_systick.h"
-"C:\Users\1004\learngit\camrera_test\Libraries\seekfree_libraries\zf_stm_systick.h" :
-Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Users\1004\learngit\camrera_test\Libraries\seekfree_libraries\common\common.h"
-"C:\Users\1004\learngit\camrera_test\Libraries\seekfree_libraries\common\common.h" :
-Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Users\1004\learngit\camrera_test\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\PLATFORM_TYPES.H"
-"C:\Users\1004\learngit\camrera_test\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\PLATFORM_TYPES.H" :
+Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Users\1004\learngit\CPU1_TFT\Libraries\seekfree_libraries\zf_stm_systick.h"
+"C:\Users\1004\learngit\CPU1_TFT\Libraries\seekfree_libraries\zf_stm_systick.h" :
+Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Users\1004\learngit\CPU1_TFT\Libraries\seekfree_libraries\common\common.h"
+"C:\Users\1004\learngit\CPU1_TFT\Libraries\seekfree_libraries\common\common.h" :
+Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Users\1004\learngit\CPU1_TFT\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\PLATFORM_TYPES.H"
+"C:\Users\1004\learngit\CPU1_TFT\Libraries\BaseSw\iLLD\TC26B\Tricore\Cpu\Std\PLATFORM_TYPES.H" :
 Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\math.h"
 "C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\math.h" :
 Libraries\seekfree_peripheral\SEEKFREE_MMA8451.o :	"C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\typeinfo.h"

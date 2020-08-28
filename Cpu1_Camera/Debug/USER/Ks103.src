@@ -97,7 +97,13 @@ Ks103_init:	.type	func
 	call	systick_delay
 .L55:
 
-; ..\USER\Ks103.c	    21  
+; ..\USER\Ks103.c	    21  		systick_delay_ms(STM0, 2000);
+	mov	d4,#0
+	mov.u	d5,#37888
+	addih	d5,d5,#30517
+	call	systick_delay
+.L56:
+
 ; ..\USER\Ks103.c	    22  
 ; ..\USER\Ks103.c	    23  
 ; ..\USER\Ks103.c	    24  
@@ -134,64 +140,64 @@ Ks103_getdistance:	.type	func
 ; ..\USER\Ks103.c	    35  
 ; ..\USER\Ks103.c	    36  	    	uart_putchar(UART_0, 0xe8);// uart address
 	mov	d4,#0
-.L60:
+.L61:
 	mov	d5,#232
 	call	uart_putchar
-.L61:
+.L62:
 
 ; ..\USER\Ks103.c	    37  	        systick_delay_us(STM0, 20);
 	mov	d4,#0
 	mov	d5,#20000
 	call	systick_delay
-.L62:
+.L63:
 
 ; ..\USER\Ks103.c	    38  	    	uart_putchar(UART_0, 0x02);//register
 	mov	d4,#0
-.L63:
+.L64:
 	mov	d5,#2
 	call	uart_putchar
-.L64:
+.L65:
 
 ; ..\USER\Ks103.c	    39  	    	systick_delay_us(STM0, 20);
 	mov	d4,#0
 	mov	d5,#20000
 	call	systick_delay
-.L65:
+.L66:
 
 ; ..\USER\Ks103.c	    40  	    	uart_putchar(UART_0, 0xbc);//0-11m distance feedback with temporary compensate
 	mov	d4,#0
-.L66:
+.L67:
 	mov	d5,#188
 	call	uart_putchar
-.L67:
+.L68:
 
 ; ..\USER\Ks103.c	    41  	    	systick_delay_us(STM0, 20);
 	mov	d4,#0
 	mov	d5,#20000
 	call	systick_delay
-.L68:
+.L69:
 
 ; ..\USER\Ks103.c	    42  //	    	uart_putchar(UART_0, 0xc9);
 ; ..\USER\Ks103.c	    43  //	    	systick_delay_us(STM0, 20);
 ; ..\USER\Ks103.c	    44  	    	uart_getchar(UART_0,&data);
 	mov	d4,#0
-.L69:
+.L70:
 	lea	a4,[a10]0
 	call	uart_getchar
-.L70:
+.L71:
 
 ; ..\USER\Ks103.c	    45  	    	distance =  data << 8;
 	ld.bu	d15,[a10]
-.L71:
+.L72:
 	sha	d15,d15,#8
 .L28:
 
 ; ..\USER\Ks103.c	    46  	    	uart_getchar(UART_0,&data);
 	mov	d4,#0
-.L72:
+.L73:
 	lea	a4,[a10]0
 	call	uart_getchar
-.L73:
+.L74:
 
 ; ..\USER\Ks103.c	    47  	    	distance |= data;
 	ld.bu	d2,[a10]
@@ -34828,10 +34834,12 @@ __Ks103_getdistance_function_end:
 	.half	.L53-.L52
 	.byte	1,5,3,9
 	.half	.L54-.L53
-	.byte	3,1,1,5,1,9
+	.byte	3,1,1,9
 	.half	.L55-.L54
-	.byte	3,5,1,7,9
-	.half	.L15-.L55
+	.byte	3,1,1,5,1,9
+	.half	.L56-.L55
+	.byte	3,4,1,7,9
+	.half	.L15-.L56
 	.byte	0,1,1
 .L36:
 	.sdecl	'.debug_ranges',debug,cluster('Ks103_init')
@@ -34873,50 +34881,50 @@ __Ks103_getdistance_function_end:
 	.sdecl	'.debug_line',debug,cluster('Ks103_getdistance')
 	.sect	'.debug_line'
 .L18:
-	.word	.L57-.L56
-.L56:
+	.word	.L58-.L57
+.L57:
 	.half	3
-	.word	.L59-.L58
-.L58:
+	.word	.L60-.L59
+.L59:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\USER\\Ks103.c',0,0,0,0,0
-.L59:
+.L60:
 	.byte	5,5,7,0,5,2
 	.word	.L6
 	.byte	3,26,1,5,20,9
 	.half	.L27-.L6
 	.byte	3,9,1,5,28,9
-	.half	.L60-.L27
+	.half	.L61-.L27
 	.byte	1,5,10,9
-	.half	.L61-.L60
-	.byte	3,1,1,5,20,9
 	.half	.L62-.L61
-	.byte	3,1,1,5,28,9
+	.byte	3,1,1,5,20,9
 	.half	.L63-.L62
-	.byte	1,5,7,9
+	.byte	3,1,1,5,28,9
 	.half	.L64-.L63
-	.byte	3,1,1,5,20,9
-	.half	.L65-.L64
-	.byte	3,1,1,5,28,9
-	.half	.L66-.L65
 	.byte	1,5,7,9
-	.half	.L67-.L66
+	.half	.L65-.L64
 	.byte	3,1,1,5,20,9
-	.half	.L68-.L67
-	.byte	3,3,1,5,28,9
-	.half	.L69-.L68
-	.byte	1,5,19,9
-	.half	.L70-.L69
-	.byte	3,1,1,5,24,9
-	.half	.L71-.L70
-	.byte	1,5,20,9
-	.half	.L28-.L71
+	.half	.L66-.L65
 	.byte	3,1,1,5,28,9
-	.half	.L72-.L28
+	.half	.L67-.L66
+	.byte	1,5,7,9
+	.half	.L68-.L67
+	.byte	3,1,1,5,20,9
+	.half	.L69-.L68
+	.byte	3,3,1,5,28,9
+	.half	.L70-.L69
 	.byte	1,5,19,9
-	.half	.L73-.L72
+	.half	.L71-.L70
+	.byte	3,1,1,5,24,9
+	.half	.L72-.L71
+	.byte	1,5,20,9
+	.half	.L28-.L72
+	.byte	3,1,1,5,28,9
+	.half	.L73-.L28
+	.byte	1,5,19,9
+	.half	.L74-.L73
 	.byte	3,1,1,5,16,9
-	.half	.L30-.L73
+	.half	.L30-.L74
 	.byte	1,5,13,9
 	.half	.L29-.L30
 	.byte	3,7,1,5,1,9
@@ -34924,7 +34932,7 @@ __Ks103_getdistance_function_end:
 	.byte	3,3,1,7,9
 	.half	.L20-.L2
 	.byte	0,1,1
-.L57:
+.L58:
 	.sdecl	'.debug_ranges',debug,cluster('Ks103_getdistance')
 	.sect	'.debug_ranges'
 .L19:
@@ -34964,7 +34972,7 @@ __Ks103_getdistance_function_end:
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L74:
+.L75:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -34972,11 +34980,11 @@ __Ks103_getdistance_function_end:
 	.sdecl	'.debug_frame',debug,cluster('Ks103_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L74,.L4,.L21-.L4
+	.word	.L75,.L4,.L21-.L4
 	.sdecl	'.debug_frame',debug,cluster('Ks103_getdistance')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L74,.L6,.L23-.L6
+	.word	.L75,.L6,.L23-.L6
 	.byte	4
 	.word	(.L27-.L6)/2
 	.byte	19,8,22,26,3,19,138,8,4

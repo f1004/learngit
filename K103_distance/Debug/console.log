@@ -1,0 +1,37 @@
+
+**** Build of configuration Debug for project K103_distance ****
+
+"C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
+Compiling img.c
+Compiling IfxAsclin_cfg.c
+Compiling IfxCcu6_cfg.c
+Compiling IfxCif_cfg.c
+ctc F100: cannot open "..\img.c"
+amk E452: ["subdir.mk" 9/0] target 'img.o' returned exit code 1
+ctc W509: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\__config" 20/1] ignored unrecognized "#pragma GCC system_header"
+ctc E281: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\__config" 329/33] unterminated character constant
+ctc W509: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\stddef.h" 43/1] ignored unrecognized "#pragma GCC system_header"
+amk E452: ["Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\subdir.mk" 9/0] target 'Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxAsclin_cfg.o' returned exit code 1
+ctc E274: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\stddef.h" 46/2] undefined preprocessing directive "#include_next"
+2 errors, 2 warnings
+ctc W509: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\__config" 20/1] ignored unrecognized "#pragma GCC system_header"
+ctc E281: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\__config" 329/33] unterminated character constant
+ctc W509: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\stddef.h" 43/1] ignored unrecognized "#pragma GCC system_header"
+ctc E274: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\stddef.h" 46/2] undefined preprocessing directive "#include_next"
+2 errors, 2 warnings
+amk E452: ["Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\subdir.mk" 19/0] target 'Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxCcu6_cfg.o' returned exit code 1
+ctc W509: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\__config" 20/1] ignored unrecognized "#pragma GCC system_header"
+ctc E281: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\__config" 329/33] unterminated character constant
+ctc W509: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\stddef.h" 43/1] ignored unrecognized "#pragma GCC system_header"
+ctc E274: ["C:\Program Files\TASKING\TriCore v6.3r1\ctc\include.cxx\stddef.h" 46/2] undefined preprocessing directive "#include_next"
+amk E452: ["Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\subdir.mk" 29/0] target 'Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxCif_cfg.o' returned exit code 1
+2 errors, 2 warnings
+amk E451: make stopped
+
+Time consumed: 1616 ms
+**** End of build ****
+
+Tool info: 
+TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558
+TASKING program builder v6.3r1 Build 19041558
+TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99547867

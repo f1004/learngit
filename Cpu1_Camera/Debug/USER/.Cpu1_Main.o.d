@@ -328,7 +328,33 @@ USER\Cpu1_Main.o :	"C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\stdlib.h
 "C:\Program Files\TASKING\TriCore v6.3r1\ctc\include\stdlib.h" :
 USER\Cpu1_Main.o :	..\USER\pid.h
 ..\USER\pid.h :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Vadc\Adc\IfxVadc_Adc.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Vadc\Adc\IfxVadc_Adc.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Vadc\Std\IfxVadc.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Vadc\Std\IfxVadc.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxVadc_cfg.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxVadc_cfg.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\_PinMap\IfxVadc_PinMap.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\_PinMap\IfxVadc_PinMap.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Infra\Sfr\TC26B\_Reg\IfxVadc_reg.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Infra\Sfr\TC26B\_Reg\IfxVadc_reg.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Infra\Sfr\TC26B\_Reg\IfxVadc_regdef.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Infra\Sfr\TC26B\_Reg\IfxVadc_regdef.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Port\Std\IfxPort.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Port\Std\IfxPort.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Infra\Sfr\TC26B\_Reg\IfxVadc_bf.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Infra\Sfr\TC26B\_Reg\IfxVadc_bf.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Scu\Std\IfxScuCcu.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\iLLD\TC26B\Tricore\Scu\Std\IfxScuWdt.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Service\CpuGeneric\_Utilities\Ifx_Assert.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\BaseSw\Service\CpuGeneric\_Utilities\Ifx_Assert.h" :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h" :
 USER\Cpu1_Main.o :	..\USER\key.h
 ..\USER\key.h :
 USER\Cpu1_Main.o :	..\USER\Ks103.h
 ..\USER\Ks103.h :
+USER\Cpu1_Main.o :	"C:\Users\1004\learngit\Cpu1_Camera\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h"
+"C:\Users\1004\learngit\Cpu1_Camera\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h" :

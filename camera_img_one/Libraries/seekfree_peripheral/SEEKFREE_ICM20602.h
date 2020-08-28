@@ -100,10 +100,10 @@
 #define     ICM20602_ZA_OFFSET_H        0x7D
 #define     ICM20602_ZA_OFFSET_L        0x7E
 
-extern float Yaw,Pitch,Roll;
+
 extern int16 icm_gyro_x,icm_gyro_y,icm_gyro_z;
 extern int16 icm_acc_x,icm_acc_y,icm_acc_z;
-
+extern float Yaw,Pitch,Roll;
 
 //--------Èí¼þIIC--------------
 void icm20602_init(void);
@@ -119,7 +119,6 @@ void get_icm20602_gyro_hardware(void);
 void icm20602_init_spi(void);
 void get_icm20602_accdata_spi(void);
 void get_icm20602_gyro_spi(void);
-
 void IMUupdate(float gx, float gy, float gz, float ax, float ay, float az);
 
 #endif

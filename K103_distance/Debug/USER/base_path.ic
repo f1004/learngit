@@ -1,0 +1,942 @@
+/* Translated by:
+ *   TASKING VX-toolset for TriCore: C++ compiler v6.3r1 Build 19041558 SN 99547867
+ */
+void *memcpy(); void *memset();
+#line 1 "..\\USER\\base_path.cpp"
+struct __C1; struct __C2; struct __C3; struct __type_info; struct __class_type_info; struct __si_class_type_info; struct __C5; struct __C6; union __C7; struct an_eh_stack_entry;
+#line 1018 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZNSt18__pointer_type_imp14__pointer_typeIN3img5PointESaIS2_ELb1EEE;
+#line 516 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt17integral_constantIbLb0EE; struct _ZSt17integral_constantIbLb1EE;
+#line 297 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\utility"
+struct _ZSt21piecewise_construct_t;
+#line 97 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\exception"
+struct _ZSt9exception;
+#line 129 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\limits"
+enum _ZSt17float_round_style {
+
+_ZSt19round_indeterminate = (-1),
+_ZSt17round_toward_zero,
+_ZSt16round_to_nearest,
+_ZSt21round_toward_infinity,
+_ZSt25round_toward_neg_infinity};
+
+
+enum _ZSt18float_denorm_style {
+
+_ZSt20denorm_indeterminate = (-1),
+_ZSt13denorm_absent,
+_ZSt14denorm_present};
+#line 58 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\stdexcept"
+struct _ZSt18__libcpp_refstring;
+#line 77
+struct _ZSt11logic_error;
+#line 131
+struct _ZSt12length_error;
+#line 589 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\atomic"
+enum _ZSt12memory_order {
+
+_ZSt20memory_order_relaxed, _ZSt20memory_order_consume, _ZSt20memory_order_acquire,
+_ZSt20memory_order_release, _ZSt20memory_order_acq_rel, _ZSt20memory_order_seq_cst};
+#line 714 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSaIvE;
+#line 2199
+struct _ZSt12__second_tag;
+#line 702 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+struct _ZSt6__lessIjjE;
+#line 744 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\string"
+enum _ZNSsUt_E { _ZNSs9__min_capE = 11};
+#line 20 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+struct _ZSt21__split_buffer_commonILb1EE;
+#line 295 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+struct _ZSt20__vector_base_commonILb1EE;
+#line 1770 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSaIN3img5PointEE;
+#line 1111 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt16remove_referenceISaIN3img5PointEEE;
+#line 1032 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSt14__pointer_typeIN3img5PointESaIS1_EE;
+#line 1045
+struct _ZSt15__const_pointerIN3img5PointEPS1_SaIS1_ELb1EE;
+#line 1505
+struct _ZSt30__alloc_traits_difference_typeISaIN3img5PointEEPS1_Lb1EE;
+#line 1166
+struct _ZSt11__size_typeISaIN3img5PointEEiLb1EE;
+#line 1517
+struct _ZSt16allocator_traitsISaIN3img5PointEEE;
+#line 2128
+struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE; struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE;
+#line 3404 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt24is_default_constructibleIPN3img5PointEE; struct _ZSt24is_default_constructibleISaIN3img5PointEEE;
+#line 2202 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE;
+#line 320 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+struct _ZSt13__vector_baseIN3img5PointESaIS1_EE;
+#line 1297 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\iterator"
+struct _ZSt11__wrap_iterIPN3img5PointEE; struct _ZSt11__wrap_iterIPKN3img5PointEE;
+#line 464 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+struct _ZSt6vectorIN3img5PointESaIS1_EE;
+#line 1855 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt13__promote_impIiivLb1EE;
+#line 1111
+struct _ZSt16remove_referenceIDnE; struct _ZSt16remove_referenceIRKN3img5PointEE; struct _ZSt16remove_referenceIRSaIN3img5PointEEE;
+#line 2128 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE;
+#line 3404 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt24is_default_constructibleIRSaIN3img5PointEEE;
+#line 2202 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE;
+#line 28 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE;
+#line 1111 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt16remove_referenceIRPN3img5PointEE;
+#line 29 "..\\USER\\base_img.h"
+struct _ZN3img5PointE; struct __C2 { unsigned dtor; unsigned short handle; unsigned short next; unsigned char flags;}; struct __C3 { struct __C2 *regions; void **obj_table; struct __C1 *array_table; unsigned short saved_region_number;}; struct __type_info { const int *__vptr; const char *__name;}; 
+#line 29
+struct __class_type_info { struct __type_info base;}; struct __si_class_type_info { struct __class_type_info base; const struct __class_type_info *base_type;}; struct __C6 { int setjmp_buffer[16]; struct __C5 *catch_entries; void *rtinfo; unsigned short region_number;}; union __C7 { struct __C6 
+#line 29
+try_block; struct __C3 function; struct __C5 *throw_spec;}; struct an_eh_stack_entry { struct an_eh_stack_entry *next; unsigned char kind; union __C7 variant;};
+#line 24 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\stddef.h"
+typedef unsigned size_t;
+#line 33
+typedef int ptrdiff_t;
+#line 46 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\math.h"
+typedef double double_t;
+#line 1880 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+typedef double _ZNSt13__promote_impIiivLb1EE4typeE;
+#line 998 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\math.h"
+typedef _ZNSt13__promote_impIiivLb1EE4typeE _ZZ3powIiiENSt16__lazy_enable_ifIXaasr3std13is_arithmeticIT_EE5valuesr3std13is_arithmeticIT0_EE5valueESt9__promoteIS1_S2_vEE4typeES1_S2_E13__result_type;
+#line 324 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+typedef struct _ZSaIN3img5PointEE _ZNSt13__vector_baseIN3img5PointESaIS1_EE14allocator_typeE;
+#line 1112 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE14allocator_typeE _ZNSt16remove_referenceIRSaIN3img5PointEEE4typeE;
+#line 1775 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+typedef struct _ZN3img5PointE *_ZNSaIN3img5PointEE7pointerE;
+#line 1020
+typedef _ZNSaIN3img5PointEE7pointerE _ZNSt18__pointer_type_imp14__pointer_typeIN3img5PointESaIS2_ELb1EE4typeE;
+#line 1034
+typedef _ZNSt18__pointer_type_imp14__pointer_typeIN3img5PointESaIS2_ELb1EE4typeE _ZNSt14__pointer_typeIN3img5PointESaIS1_EE4typeE;
+#line 1522
+typedef _ZNSt14__pointer_typeIN3img5PointESaIS1_EE4typeE _ZNSt16allocator_traitsISaIN3img5PointEEE7pointerE;
+#line 332 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+typedef _ZNSt16allocator_traitsISaIN3img5PointEEE7pointerE _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE;
+#line 1112 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE _ZNSt16remove_referenceIRPN3img5PointEE4typeE;
+#line 2297
+typedef _ZNSt16remove_referenceIRPN3img5PointEE4typeE _ZZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_E3_Up;
+#line 1018 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZNSt18__pointer_type_imp14__pointer_typeIN3img5PointESaIS2_ELb1EEE {char __dummy;};
+#line 540 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+typedef struct _ZSt17integral_constantIbLb1EE _ZSt9true_type;
+typedef struct _ZSt17integral_constantIbLb0EE _ZSt10false_type;
+#line 516
+struct _ZSt17integral_constantIbLb0EE {char __dummy;}; struct _ZSt17integral_constantIbLb1EE {char __dummy;};
+#line 297 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\utility"
+struct _ZSt21piecewise_construct_t {char __dummy;};
+#line 97 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\exception"
+struct _ZSt9exception { const int *__vptr;};
+#line 58 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\stdexcept"
+struct _ZSt18__libcpp_refstring {
+
+const char *__imp_;};
+#line 77
+struct _ZSt11logic_error { struct _ZSt9exception __b_St9exception;
+
+
+
+struct _ZSt18__libcpp_refstring __imp_;};
+#line 131
+struct _ZSt12length_error { struct _ZSt11logic_error __b_St11logic_error;};
+#line 718 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+typedef const void *_ZNSaIvE13const_pointerE;
+#line 714
+struct _ZSaIvE {char __dummy;};
+#line 2199
+struct _ZSt12__second_tag {char __dummy;};
+#line 702 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+struct _ZSt6__lessIjjE {char __dummy;};
+#line 20 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+struct _ZSt21__split_buffer_commonILb1EE {char __dummy;};
+#line 295 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+struct _ZSt20__vector_base_commonILb1EE {char __dummy;};
+#line 1773 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+typedef size_t _ZNSaIN3img5PointEE9size_typeE;
+typedef ptrdiff_t _ZNSaIN3img5PointEE15difference_typeE;
+
+typedef const struct _ZN3img5PointE *_ZNSaIN3img5PointEE13const_pointerE;
+
+
+typedef struct _ZN3img5PointE _ZNSaIN3img5PointEE10value_typeE;
+#line 1770
+struct _ZSaIN3img5PointEE {char __dummy;};
+#line 1519
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE14allocator_typeE _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE;
+#line 1111 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+typedef _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE _ZNSt16remove_referenceISaIN3img5PointEEE4typeE; struct _ZSt16remove_referenceISaIN3img5PointEEE {char __dummy;};
+#line 1032 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSt14__pointer_typeIN3img5PointESaIS1_EE {char __dummy;};
+#line 1047
+typedef _ZNSaIN3img5PointEE13const_pointerE _ZNSt15__const_pointerIN3img5PointEPS1_SaIS1_ELb1EE4typeE;
+#line 1045
+struct _ZSt15__const_pointerIN3img5PointEPS1_SaIS1_ELb1EE {char __dummy;};
+#line 1513
+typedef _ZNSaIN3img5PointEE15difference_typeE _ZNSt30__alloc_traits_difference_typeISaIN3img5PointEEPS1_Lb1EE4typeE;
+#line 1505
+struct _ZSt30__alloc_traits_difference_typeISaIN3img5PointEEPS1_Lb1EE {char __dummy;};
+#line 1174
+typedef _ZNSaIN3img5PointEE9size_typeE _ZNSt11__size_typeISaIN3img5PointEEiLb1EE4typeE;
+#line 1166
+struct _ZSt11__size_typeISaIN3img5PointEEiLb1EE {char __dummy;};
+#line 1520
+typedef _ZNSaIN3img5PointEE10value_typeE _ZNSt16allocator_traitsISaIN3img5PointEEE10value_typeE;
+
+
+typedef _ZNSt15__const_pointerIN3img5PointEPS1_SaIS1_ELb1EE4typeE _ZNSt16allocator_traitsISaIN3img5PointEEE13const_pointerE;
+
+
+
+typedef _ZNSt30__alloc_traits_difference_typeISaIN3img5PointEEPS1_Lb1EE4typeE _ZNSt16allocator_traitsISaIN3img5PointEEE15difference_typeE;
+typedef _ZNSt11__size_typeISaIN3img5PointEEiLb1EE4typeE _ZNSt16allocator_traitsISaIN3img5PointEEE9size_typeE;
+#line 1517
+struct _ZSt16allocator_traitsISaIN3img5PointEEE {char __dummy;};
+#line 2128
+struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE {
+#line 2160
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __value_;};
+#line 2128
+struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE {char __dummy;};
+#line 2202
+struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE { struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE __b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE;};
+#line 326 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+typedef _ZNSt16allocator_traitsISaIN3img5PointEEE9size_typeE _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE;
+
+typedef struct _ZN3img5PointE _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE;
+
+typedef const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *_ZNSt13__vector_baseIN3img5PointESaIS1_EE15const_referenceE;
+
+
+typedef _ZNSt16allocator_traitsISaIN3img5PointEEE13const_pointerE _ZNSt13__vector_baseIN3img5PointESaIS1_EE13const_pointerE;
+#line 320
+struct _ZSt13__vector_baseIN3img5PointESaIS1_EE {
+#line 337
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __begin_;
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __end_;
+struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE __end_cap_;};
+#line 472
+typedef struct _ZN3img5PointE _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE;
+typedef struct _ZSaIN3img5PointEE _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE;
+
+
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE15const_referenceE _ZNSt6vectorIN3img5PointESaIS1_EE15const_referenceE;
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE;
+
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE _ZNSt6vectorIN3img5PointESaIS1_EE7pointerE;
+typedef _ZNSt13__vector_baseIN3img5PointESaIS1_EE13const_pointerE _ZNSt6vectorIN3img5PointESaIS1_EE13const_pointerE;
+typedef struct _ZSt11__wrap_iterIPN3img5PointEE _ZNSt6vectorIN3img5PointESaIS1_EE8iteratorE;
+typedef struct _ZSt11__wrap_iterIPKN3img5PointEE _ZNSt6vectorIN3img5PointESaIS1_EE14const_iteratorE;
+#line 464
+struct _ZSt6vectorIN3img5PointESaIS1_EE { struct _ZSt13__vector_baseIN3img5PointESaIS1_EE __b_St13__vector_baseIN3img5PointESaIS1_EE;};
+#line 1855 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt13__promote_impIiivLb1EE {char __dummy;};
+#line 1111
+typedef void *_ZNSt16remove_referenceIDnE4typeE; struct _ZSt16remove_referenceIDnE {char __dummy;};
+typedef const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE _ZNSt16remove_referenceIRKN3img5PointEE4typeE;
+#line 1111
+struct _ZSt16remove_referenceIRKN3img5PointEE {char __dummy;}; struct _ZSt16remove_referenceIRSaIN3img5PointEEE {char __dummy;};
+#line 36 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+typedef _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *_ZNSt14__split_bufferIN3img5PointERSaIS1_EE14allocator_typeE;
+#line 2128 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE {
+#line 2160
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE14allocator_typeE __value_;};
+#line 2202
+struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE { struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE __b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE; struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE __b_St22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE;};
+#line 37 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+typedef _ZNSt16remove_referenceIRSaIN3img5PointEEE4typeE _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE;
+
+
+
+typedef _ZNSt16allocator_traitsISaIN3img5PointEEE9size_typeE _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE;
+
+typedef _ZNSt16allocator_traitsISaIN3img5PointEEE7pointerE _ZNSt14__split_bufferIN3img5PointERSaIS1_EE7pointerE;
+#line 28
+struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE {
+#line 48
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE7pointerE __first_;
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE7pointerE __begin_;
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE7pointerE __end_;
+struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE __end_cap_;};
+#line 1111 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+struct _ZSt16remove_referenceIRPN3img5PointEE {char __dummy;};
+#line 29 "..\\USER\\base_img.h"
+struct _ZN3img5PointE {
+
+int x_; int y_;};
+#line 185 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\new"
+extern void *_Znwj(size_t __sz);
+
+extern void _ZdlPv(void *__p);
+#line 53 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\string.h"
+extern void *memcpy(void *restrict, const void *restrict, size_t); extern void *__throw_setup_dtor(const void *, unsigned, int, void (*)(void *)); extern __noreturn__ void __throw(void);
+#line 180 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\math.h"
+extern double pow(double, double);
+#line 221
+extern double round(double); extern int setjmp(int [16]); extern __noreturn__ void __internal_rethrow(void);
+#line 84 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\stdexcept"
+extern void _ZNSt11logic_errorC1EPKc(struct _ZSt11logic_error *const, const char *); extern void _ZNSt11logic_errorC2EPKc(struct _ZSt11logic_error *const, const char *);
+
+
+
+
+extern void _ZNSt11logic_errorD1Ev(struct _ZSt11logic_error *const); extern void _ZNSt11logic_errorD2Ev(struct _ZSt11logic_error *const);
+#pragma weak _ZNSt12length_errorC1EPKc
+#line 136
+extern void _ZNSt12length_errorC1EPKc(struct _ZSt12length_error *const, const char *__s);
+#pragma weak _ZNSt12length_errorC2EPKc
+extern void _ZNSt12length_errorC2EPKc(struct _ZSt12length_error *const, const char *); extern void _ZNSt12length_errorD1Ev(struct _ZSt12length_error *const);
+#pragma weak _ZNKSt6__lessIjjEclERKjS2_
+#line 721 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+extern char _ZNKSt6__lessIjjEclERKjS2_(const struct _ZSt6__lessIjjE *const, const size_t *__x, const size_t *__y);
+#line 299 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+extern __noreturn__ void _ZNKSt20__vector_base_commonILb1EE20__throw_length_errorEv(const struct _ZSt20__vector_base_commonILb1EE *const);
+#pragma weak _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC1IDnvEEOT_
+#line 2141 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+extern void _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC1IDnvEEOT_(struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE *const, void **__u);
+#pragma weak _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC2IDnvEEOT_
+extern void _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC2IDnvEEOT_(struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE *const, void **);
+#pragma weak _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC1IDnLb1EEEOT_
+#line 2231
+extern void _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC1IDnLb1EEEOT_(struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE *const, void **__t);
+#pragma weak _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC2IDnLb1EEEOT_
+extern void _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC2IDnLb1EEEOT_(struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE *const, void **);
+#pragma weak _ZNSt13__vector_baseIN3img5PointESaIS1_EED1Ev
+#line 454 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+extern void _ZNSt13__vector_baseIN3img5PointESaIS1_EED1Ev(struct _ZSt13__vector_baseIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNSt13__vector_baseIN3img5PointESaIS1_EED2Ev
+extern void _ZNSt13__vector_baseIN3img5PointESaIS1_EED2Ev(struct _ZSt13__vector_baseIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EEC1Ev
+#line 490
+extern void _ZNSt6vectorIN3img5PointESaIS1_EEC1Ev(struct _ZSt6vectorIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EEC2Ev
+extern void _ZNSt6vectorIN3img5PointESaIS1_EEC2Ev(struct _ZSt6vectorIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNKSt6vectorIN3img5PointESaIS1_EE8max_sizeEv
+#line 989
+extern _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE _ZNKSt6vectorIN3img5PointESaIS1_EE8max_sizeEv(const struct _ZSt6vectorIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EE9push_backERKS1_
+#line 1621
+extern void _ZNSt6vectorIN3img5PointESaIS1_EE9push_backERKS1_(struct _ZSt6vectorIN3img5PointESaIS1_EE *const, _ZNSt6vectorIN3img5PointESaIS1_EE15const_referenceE __x);
+#pragma weak _ZNKSt6vectorIN3img5PointESaIS1_EE11__recommendEj
+#line 999
+extern _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE _ZNKSt6vectorIN3img5PointESaIS1_EE11__recommendEj(const struct _ZSt6vectorIN3img5PointESaIS1_EE *const, _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __new_size);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EE26__swap_out_circular_bufferERSt14__split_bufferIS1_RS2_E
+#line 928
+extern void _ZNSt6vectorIN3img5PointESaIS1_EE26__swap_out_circular_bufferERSt14__split_bufferIS1_RS2_E(struct _ZSt6vectorIN3img5PointESaIS1_EE *const, struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *__v);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EED1Ev
+#line 464
+extern void _ZNSt6vectorIN3img5PointESaIS1_EED1Ev(struct _ZSt6vectorIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EED2Ev
+extern void _ZNSt6vectorIN3img5PointESaIS1_EED2Ev(struct _ZSt6vectorIN3img5PointESaIS1_EE *const);
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EE21__push_back_slow_pathIRKS1_EEvOT_
+#line 832
+extern void _ZNSt6vectorIN3img5PointESaIS1_EE21__push_back_slow_pathIRKS1_EEvOT_(struct _ZSt6vectorIN3img5PointESaIS1_EE *const, const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__x);
+#pragma weak _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC1IS3_vEEOT_
+#line 2141 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+extern void _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC1IS3_vEEOT_(struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE *const, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__u);
+#pragma weak _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC2IS3_vEEOT_
+extern void _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC2IS3_vEEOT_(struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE *const, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *);
+#pragma weak _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC1IDnS4_EEOT_OT0_
+#line 2241
+extern void _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC1IDnS4_EEOT_OT0_(struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE *const, void **__t1, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__t2);
+#pragma weak _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC2IDnS4_EEOT_OT0_
+extern void _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC2IDnS4_EEOT_OT0_(struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE *const, void **, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *);
+#pragma weak _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC1EjjS3_
+#line 308 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+extern void _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC1EjjS3_(struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE __cap, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE __start, 
+#line 308
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__a);
+#pragma weak _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC2EjjS3_
+extern void _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC2EjjS3_(struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE, _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *);
+#pragma weak _ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev
+#line 343
+extern void _ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev(struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const);
+#pragma weak _ZNSt14__split_bufferIN3img5PointERSaIS1_EED2Ev
+extern void _ZNSt14__split_bufferIN3img5PointERSaIS1_EED2Ev(struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const);
+#pragma weak _ZSt3minIjERKT_S2_S2_
+#line 2577 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+extern const size_t *_ZSt3minIjERKT_S2_S2_(const size_t *__a, const size_t *__b);
+#pragma weak _ZSt3minIjSt6__lessIjjEERKT_S4_S4_T0_
+#line 2569
+extern const size_t *_ZSt3minIjSt6__lessIjjEERKT_S4_S4_T0_(const size_t *__a, const size_t *__b, struct _ZSt6__lessIjjE __comp);
+#pragma weak _ZSt7forwardIDnEOT_RNSt16remove_referenceIS0_E4typeE
+#line 2304 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+extern void **_ZSt7forwardIDnEOT_RNSt16remove_referenceIS0_E4typeE(_ZNSt16remove_referenceIDnE4typeE *__t);
+#pragma weak _ZSt16__to_raw_pointerIN3img5PointEEPT_S3_
+#line 1109 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+extern struct _ZN3img5PointE *_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(struct _ZN3img5PointE *__p);
+#pragma weak _ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE
+#line 2304 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+extern const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(_ZNSt16remove_referenceIRKN3img5PointEE4typeE *__t);
+#pragma weak _ZSt3maxIjERKT_S2_S2_
+#line 2642 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+extern const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *_ZSt3maxIjERKT_S2_S2_(const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__a, const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__b);
+#pragma weak _ZSt3maxIjSt6__lessIjjEERKT_S4_S4_T0_
+#line 2634
+extern const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *_ZSt3maxIjSt6__lessIjjEERKT_S4_S4_T0_(const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__a, const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__b, struct _ZSt6__lessIjjE __comp);
+#pragma weak _ZSt7forwardIRSaIN3img5PointEEEOT_RNSt16remove_referenceIS4_E4typeE
+#line 2304 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+extern _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *_ZSt7forwardIRSaIN3img5PointEEEOT_RNSt16remove_referenceIS4_E4typeE(_ZNSt16remove_referenceIRSaIN3img5PointEEE4typeE *__t);
+#pragma weak _ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_
+#line 2295
+extern _ZNSt16remove_referenceIRPN3img5PointEE4typeE *_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_(_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__t);
+#line 18 "..\\USER\\base_path.cpp"
+extern void _ZN4path21IntersectionCurveInitEi(struct _ZSt6vectorIN3img5PointESaIS1_EE *, int c); extern __far struct an_eh_stack_entry *__curr_eh_stack_entry; extern __far unsigned short __eh_curr_region; extern const int _ZTVSt12length_error[5]; extern __far const struct __si_class_type_info 
+#line 18
+_ZTISt12length_error;
+#pragma weak _ZZNSaIN3img5PointEE8allocateEjPKvEs
+extern char _ZZNSaIN3img5PointEE8allocateEjPKvEs[68]; char _ZZNSaIN3img5PointEE8allocateEjPKvEs[68] = "allocator<T>::allocate(size_t n) \'n\' exceeds maximum supported size";
+#line 136 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\stdexcept"
+inline void _ZNSt12length_errorC1EPKc( struct _ZSt12length_error *const this,  const char *__20053_65___s) { static struct __C2 __T1[1] = {{((unsigned)_ZNSt11logic_errorD2Ev),((unsigned short)0U),((unsigned short)65535U),((unsigned char)64U)}}; auto void *__T2[1]; auto struct an_eh_stack_entry __T3;  
+#line 136
+(__T3.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T3); (__T3.kind) = ((unsigned char)1U); (((__T3.variant).function).regions) = (__T1); (((__T3.variant).function).obj_table) = (__T2); (((__T3.variant).function).saved_region_number) = __eh_curr_region; __eh_curr_region = ((
+#line 136
+unsigned short)65535U); _ZNSt11logic_errorC2EPKc((&(this->__b_St11logic_error)), __20053_65___s); ((__T2)[0U]) = ((void *)(&(this->__b_St11logic_error))); __eh_curr_region = ((unsigned short)0U); (((this->__b_St11logic_error).__b_St9exception).__vptr) = (_ZTVSt12length_error + 2); { __eh_curr_region 
+#line 136
+= (((__T3.variant).function).saved_region_number); __curr_eh_stack_entry = (__T3.next);  } } inline void _ZNSt12length_errorC2EPKc( struct _ZSt12length_error *const this,  const char *__T4) {  _ZNSt12length_errorC1EPKc(this, __T4);  }
+#pragma weak _ZNKSt6__lessIjjEclERKjS2_
+#line 721 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+inline char _ZNKSt6__lessIjjEclERKjS2_( const struct _ZSt6__lessIjjE *const this,  const size_t *__30102_32___x,  const size_t *__30102_48___y) { return (char)((*__30102_32___x) < (*__30102_48___y)); }
+#pragma weak _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC1IDnvEEOT_
+#line 2141 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+inline void _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC1IDnvEEOT_( struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE *const this,  void **__23940_32___u)
+{ auto void **__T5; auto struct an_eh_stack_entry __T6; (this->__value_) = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)(((*(((((__T6.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T6))) , ((__T6.kind) = ((unsigned char)6U))) , ((__T5 = ((void **)__23940_32___u)) , ((
+#line 2142
+__curr_eh_stack_entry = (__T6.next)) , __T5)))) , ((void *)0)) , ((void *)0)));  } inline void _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC2IDnvEEOT_( struct _ZSt22__compressed_pair_elemIPN3img5PointELi0ELb0EE *const this,  void **__T7) { auto void **__T8; auto struct an_eh_stack_entry __T9
+#line 2142
+;  (void)((this->__value_) = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)(((((*(((((__T9.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T9))) , ((__T9.kind) = ((unsigned char)6U))) , ((__T8 = ((void **)__T7)) , ((__curr_eh_stack_entry = (__T9.next)) , __T8)))) , ((void *)0)) 
+#line 2142
+, ((void *)0)) , ((void *)0)) , ((void *)0))));  }
+#pragma weak _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC1IDnLb1EEEOT_
+#line 2231
+inline void _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC1IDnLb1EEEOT_( struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE *const this,  void **__24030_27___t)
+{ auto struct an_eh_stack_entry __T10; auto struct an_eh_stack_entry __T11; _ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC2IDnvEEOT_((&(this->__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE)), (_ZSt7forwardIDnEOT_RNSt16remove_referenceIS0_E4typeE(__24030_27___t))); { (void)((((((__T11.
+#line 2232
+next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T11))) , ((__T11.kind) = ((unsigned char)6U))) , ((void)(((((__T10.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T10))) , ((__T10.kind) = ((unsigned char)6U))) , (__curr_eh_stack_entry = (__T10.next))))) , (
+#line 2232
+__curr_eh_stack_entry = (__T11.next))); }  } inline void _ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC2IDnLb1EEEOT_( struct _ZSt17__compressed_pairIPN3img5PointESaIS1_EE *const this,  void **__T12) { auto struct an_eh_stack_entry __T13; auto struct an_eh_stack_entry __T14;  (
+#line 2232
+_ZNSt22__compressed_pair_elemIPN3img5PointELi0ELb0EEC2IDnvEEOT_((&(this->__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE)), (_ZSt7forwardIDnEOT_RNSt16remove_referenceIS0_E4typeE(__T12)))) , ((void)((((((__T14.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T14))) , ((__T14.kind) 
+#line 2232
+= ((unsigned char)6U))) , ((void)(((((__T13.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T13))) , ((__T13.kind) = ((unsigned char)6U))) , (__curr_eh_stack_entry = (__T13.next))))) , (__curr_eh_stack_entry = (__T14.next))));  }
+#pragma weak _ZNSt13__vector_baseIN3img5PointESaIS1_EED1Ev
+#line 454 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\vector"
+void _ZNSt13__vector_baseIN3img5PointESaIS1_EED1Ev( struct _ZSt13__vector_baseIN3img5PointESaIS1_EE *const this)
+{ auto struct an_eh_stack_entry __T15;  (__T15.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T15); (__T15.kind) = ((unsigned char)6U);
+if ((this->__begin_) != ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)0))
+{ auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __T16; auto struct _ZSaIN3img5PointEE *__T17; auto struct an_eh_stack_entry __T18; auto struct _ZSaIN3img5PointEE *__T19; auto struct an_eh_stack_entry __T20; auto struct _ZSaIN3img5PointEE *__T21; auto struct an_eh_stack_entry __T22; auto 
+#line 457
+_ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T23; auto struct _ZN3img5PointE *__T24; auto struct an_eh_stack_entry __T25; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __T26; auto struct an_eh_stack_entry __T27; auto struct _ZSaIN3img5PointEE *__T28; auto struct 
+#line 457
+an_eh_stack_entry __T29; auto struct _ZSaIN3img5PointEE *__T30; auto struct an_eh_stack_entry __T31; auto struct _ZSaIN3img5PointEE *__T32; auto struct an_eh_stack_entry __T33; auto struct an_eh_stack_entry __T34; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T35; auto struct 
+#line 457
+an_eh_stack_entry __T36; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T37; auto struct an_eh_stack_entry __T38; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T39; auto struct an_eh_stack_entry __T40; auto _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *
+#line 457
+__T41; auto _ZNSt16allocator_traitsISaIN3img5PointEEE7pointerE __T42; auto _ZNSt16allocator_traitsISaIN3img5PointEEE9size_typeE __T43; auto struct an_eh_stack_entry __T44; auto struct an_eh_stack_entry __T45;
+{ (__T27.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T27); (__T27.kind) = ((unsigned char)6U); { __T16 = (this->__begin_); { (__T25.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T25); (__T25.kind) = ((unsigned char)6U); __T26 = (this->__end_); while (__T16 != __T26) { { 
+#line 458
+__T23 = (((((__T22.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T22))) , ((__T22.kind) = ((unsigned char)6U))) , ((__T21 = (((((__T20.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T20))) , ((__T20.kind) = ((unsigned char)6U))) , ((__T19 = (((((__T18.next) = 
+#line 458
+__curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T18))) , ((__T18.kind) = ((unsigned char)6U))) , ((__T17 = ((struct _ZSaIN3img5PointEE *)((struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)(&(this->__end_cap_))))) , ((__curr_eh_stack_entry = (__T18.next)) , __T17)))) , ((
+#line 458
+__curr_eh_stack_entry = (__T20.next)) , __T19)))) , ((__curr_eh_stack_entry = (__T22.next)) , __T21))); __T24 = (_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_((--__T26))); { { (void)__T24; } } } } (this->__end_) = __T16; { __curr_eh_stack_entry = (__T25.next); } } } { __curr_eh_stack_entry = (__T27.
+#line 458
+next); } }
+{ __T41 = (((((__T33.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T33))) , ((__T33.kind) = ((unsigned char)6U))) , ((__T32 = (((((__T31.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T31))) , ((__T31.kind) = ((unsigned char)6U))) , ((__T30 = (((((__T29.next) = 
+#line 459
+__curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T29))) , ((__T29.kind) = ((unsigned char)6U))) , ((__T28 = ((struct _ZSaIN3img5PointEE *)((struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)(&(this->__end_cap_))))) , ((__curr_eh_stack_entry = (__T29.next)) , __T28)))) , ((
+#line 459
+__curr_eh_stack_entry = (__T31.next)) , __T30)))) , ((__curr_eh_stack_entry = (__T33.next)) , __T32))); __T42 = (this->__begin_); __T43 = (((((__T40.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T40))) , ((__T40.kind) = ((unsigned char)6U))) , ((__T39 = ((
+#line 459
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE)((*(((((__T38.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T38))) , ((__T38.kind) = ((unsigned char)6U))) , ((__T37 = (((((__T36.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T36))) , ((__T36.kind) = ((
+#line 459
+unsigned char)6U))) , ((__T35 = (((((__T34.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T34))) , ((__T34.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T34.next)) , (&(((((const struct _ZSt13__vector_baseIN3img5PointESaIS1_EE *)this)->__end_cap_).
+#line 459
+__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T36.next)) , __T35)))) , ((__curr_eh_stack_entry = (__T38.next)) , __T37)))) - (((const struct _ZSt13__vector_baseIN3img5PointESaIS1_EE *)this)->__begin_)))) , ((__curr_eh_stack_entry = (__T40.next)) 
+#line 459
+, __T39))); { (__T45.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T45); (__T45.kind) = ((unsigned char)6U); { (__T44.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T44); (__T44.kind) = ((unsigned char)6U); { 0; { _ZdlPv(((void *)__T42)); } } { __curr_eh_stack_entry = (__T44
+#line 459
+.next); } } { __curr_eh_stack_entry = (__T45.next); } } }
+} { __curr_eh_stack_entry = (__T15.next);  }
+} void _ZNSt13__vector_baseIN3img5PointESaIS1_EED2Ev( struct _ZSt13__vector_baseIN3img5PointESaIS1_EE *const this) {  _ZNSt13__vector_baseIN3img5PointESaIS1_EED1Ev(this);  }
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EEC1Ev
+#line 490
+inline void _ZNSt6vectorIN3img5PointESaIS1_EEC1Ev( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this)
+{ static struct __C2 __T46[1] = {{((unsigned)_ZNSt13__vector_baseIN3img5PointESaIS1_EED2Ev),((unsigned short)0U),((unsigned short)65535U),((unsigned char)64U)}}; auto void *__T47; auto struct an_eh_stack_entry __T48; auto void *__T49[1]; auto struct an_eh_stack_entry __T50; auto struct 
+#line 491
+an_eh_stack_entry __T51;  (__T50.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T50); (__T50.kind) = ((unsigned char)6U); (__T51.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T51); (__T51.kind) = ((unsigned char)1U); (((__T51.variant).function).regions) = (__T46); (((__T51.
+#line 491
+variant).function).obj_table) = (__T49); (((__T51.variant).function).saved_region_number) = __eh_curr_region; __eh_curr_region = ((unsigned short)65535U); { (void)((((((((__T48.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T48))) , ((__T48.kind) = ((unsigned char)6U))) , (((this->
+#line 491
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_) = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)0))) , (((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_) = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)0))) , (_ZNSt17__compressed_pairIPN3img5PointESaIS1_EEC1IDnLb1EEEOT_
+#line 491
+((&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_)), (((__T47 = ((void *)0)) , ((void *)0)) , (&__T47))))) , (__curr_eh_stack_entry = (__T48.next))); } ((__T49)[0U]) = ((void *)(&(this->__b_St13__vector_baseIN3img5PointESaIS1_EE))); __eh_curr_region = ((unsigned short)0U); { 
+#line 491
+__eh_curr_region = (((__T51.variant).function).saved_region_number); __curr_eh_stack_entry = (__T51.next); __curr_eh_stack_entry = (__T50.next);  }
+
+
+
+} inline void _ZNSt6vectorIN3img5PointESaIS1_EEC2Ev( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this) {  _ZNSt6vectorIN3img5PointESaIS1_EEC1Ev(this);  }
+#pragma weak _ZNKSt6vectorIN3img5PointESaIS1_EE8max_sizeEv
+#line 989
+_ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE _ZNKSt6vectorIN3img5PointESaIS1_EE8max_sizeEv( const struct _ZSt6vectorIN3img5PointESaIS1_EE *const this)
+{ auto size_t __T52; auto const struct _ZSaIN3img5PointEE *__T53; auto struct an_eh_stack_entry __T54; auto const struct _ZSaIN3img5PointEE *__T55; auto struct an_eh_stack_entry __T56; auto const struct _ZSaIN3img5PointEE *__T57; auto struct an_eh_stack_entry __T58; auto const 
+#line 990
+_ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T59; auto struct an_eh_stack_entry __T60; auto _ZNSaIN3img5PointEE9size_typeE __T61; auto struct an_eh_stack_entry __T62; auto _ZNSaIN3img5PointEE9size_typeE __T63; auto struct an_eh_stack_entry __T64; auto size_t __T65; auto size_t __T66
+#line 990
+; auto struct an_eh_stack_entry __T67;  (__T67.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T67); (__T67.kind) = ((unsigned char)6U); {
+__T66 = (*(_ZSt3minIjERKT_S2_S2_(((((*(size_t *)&__T52)) = ((__T59 = (((((__T58.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T58))) , ((__T58.kind) = ((unsigned char)6U))) , ((__T57 = (((((__T56.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T56))) , ((__T56.kind) = (
+#line 991
+(unsigned char)6U))) , ((__T55 = (((const struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)0) , (((((__T54.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T54))) , ((__T54.kind) = ((unsigned char)6U))) , ((__T53 = ((const struct _ZSaIN3img5PointEE *)((struct 
+#line 991
+_ZSaIN3img5PointEE *)((const struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)((struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)(&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_))))))) , ((__curr_eh_stack_entry = (__T54.next)) , __T53))))) , ((
+#line 991
+__curr_eh_stack_entry = (__T56.next)) , __T55)))) , ((__curr_eh_stack_entry = (__T58.next)) , __T57)))) , (((((__T64.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T64))) , ((__T64.kind) = ((unsigned char)6U))) , ((__T63 = (((((__T62.next) = __curr_eh_stack_entry) , (
+#line 991
+__curr_eh_stack_entry = (&__T62))) , ((__T62.kind) = ((unsigned char)6U))) , ((__T61 = (((((__T60.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T60))) , ((__T60.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T60.next)) , 536870911U))) , ((__curr_eh_stack_entry = (__T62.
+#line 991
+next)) , __T61)))) , ((__curr_eh_stack_entry = (__T64.next)) , __T63))))) , (&__T52)), ((((*(size_t *)&__T65)) = 2147483647U) , (&__T65))))); { __curr_eh_stack_entry = (__T67.next); return __T66; } }
+
+}
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EE9push_backERKS1_
+#line 1621
+inline void _ZNSt6vectorIN3img5PointESaIS1_EE9push_backERKS1_( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this,  _ZNSt6vectorIN3img5PointESaIS1_EE15const_referenceE __47343_52___x)
+{ auto struct an_eh_stack_entry __T68; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T69; auto struct an_eh_stack_entry __T70; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T71; auto struct an_eh_stack_entry __T72;
+if (((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_) != (*(((((__T72.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T72))) , ((__T72.kind) = ((unsigned char)6U))) , ((__T71 = (((((__T70.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T70))) , ((__T70.kind) = (
+#line 1623
+(unsigned char)6U))) , ((__T69 = (((((__T68.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T68))) , ((__T68.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T68.next)) , (&((((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).
+#line 1623
+__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T70.next)) , __T69)))) , ((__curr_eh_stack_entry = (__T72.next)) , __T71)))))
+{ auto struct _ZSaIN3img5PointEE *__T73; auto struct an_eh_stack_entry __T74; auto struct _ZSaIN3img5PointEE *__T75; auto struct an_eh_stack_entry __T76; auto struct _ZSaIN3img5PointEE *__T77; auto struct an_eh_stack_entry __T78; auto _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T79
+#line 1624
+; auto struct _ZN3img5PointE *__T80; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__T81; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__T82; auto unsigned __T83; auto void *__T84; auto void *__T85; auto void *__T86; auto struct an_eh_stack_entry __T87; 
+#line 1624
+auto struct _ZN3img5PointE *__T88; auto struct an_eh_stack_entry __T89; auto struct an_eh_stack_entry __T90;
+{ }
+{ __T79 = (((((__T78.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T78))) , ((__T78.kind) = ((unsigned char)6U))) , ((__T77 = (((((__T76.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T76))) , ((__T76.kind) = ((unsigned char)6U))) , ((__T75 = (((((__T74.next) = 
+#line 1626
+__curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T74))) , ((__T74.kind) = ((unsigned char)6U))) , ((__T73 = ((struct _ZSaIN3img5PointEE *)((struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)(&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_))))) , ((
+#line 1626
+__curr_eh_stack_entry = (__T74.next)) , __T73)))) , ((__curr_eh_stack_entry = (__T76.next)) , __T75)))) , ((__curr_eh_stack_entry = (__T78.next)) , __T77))); __T80 = (_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_))); { { __T81 = (
+#line 1626
+_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__47343_52___x)); { { __T82 = (_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__T81)); { (struct _ZN3img5PointE *)((__T83 = 8U) , ((__T88 = ((struct _ZN3img5PointE *)((__T85 = (__T84 = ((void *)__T80))) , (((((__T87.
+#line 1626
+next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T87))) , ((__T87.kind) = ((unsigned char)6U))) , ((__T86 = __T85) , ((__curr_eh_stack_entry = (__T87.next)) , __T86)))))) ? (((void)(((((((((__T90.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T90))) , ((__T90.kind) = ((
+#line 1626
+unsigned char)5U))) , ((((__T90.variant).try_block).catch_entries) = ((struct __C5 *)0))) , ((((__T90.variant).try_block).rtinfo) = ((void *)0))) , ((((__T90.variant).try_block).region_number) = __eh_curr_region)) , (((setjmp(((((__T90.variant).try_block).setjmp_buffer)))) == 0) ? ((void)((*__T88) = 
+#line 1626
+((*(struct _ZN3img5PointE *)(_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__T82)))))) : ((((void)(((((__T89.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T89))) , ((__T89.kind) = ((unsigned char)6U))) , (__curr_eh_stack_entry = (__T89.next)))) , (
+#line 1626
+__internal_rethrow())) , ((void)0)))) , (__curr_eh_stack_entry = (__T90.next)))) , __T88) : ((struct _ZN3img5PointE *)0))); } } } } } }
+
+{ }
+++((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_);
+} else  {
+
+_ZNSt6vectorIN3img5PointESaIS1_EE21__push_back_slow_pathIRKS1_EEvOT_(this, __47343_52___x); } 
+}
+#pragma weak _ZNKSt6vectorIN3img5PointESaIS1_EE11__recommendEj
+#line 999
+inline _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE _ZNKSt6vectorIN3img5PointESaIS1_EE11__recommendEj( const struct _ZSt6vectorIN3img5PointESaIS1_EE *const this,  _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __46721_48___new_size)
+{ auto struct an_eh_stack_entry __T91; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T92; auto struct an_eh_stack_entry __T93; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T94; auto struct an_eh_stack_entry __T95; auto 
+#line 1000
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T96; auto struct an_eh_stack_entry __T97; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T98; auto struct an_eh_stack_entry __T99; auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __T100;
+auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __46723_21___ms;
+
+
+auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __46726_21___cap;
+#line 1001
+__46723_21___ms = (_ZNKSt6vectorIN3img5PointESaIS1_EE8max_sizeEv(this));
+if (__46721_48___new_size > __46723_21___ms) {
+_ZNKSt20__vector_base_commonILb1EE20__throw_length_errorEv(((const struct _ZSt20__vector_base_commonILb1EE *)(((struct _ZSt20__vector_base_commonILb1EE *)&(this->__b_St13__vector_baseIN3img5PointESaIS1_EE))))); }
+__46726_21___cap = (((((__T99.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T99))) , ((__T99.kind) = ((unsigned char)6U))) , ((__T98 = (((((__T97.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T97))) , ((__T97.kind) = ((unsigned char)6U))) , ((__T96 = ((
+#line 1004
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE)((*(((((__T95.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T95))) , ((__T95.kind) = ((unsigned char)6U))) , ((__T94 = (((((__T93.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T93))) , ((__T93.kind) = ((
+#line 1004
+unsigned char)6U))) , ((__T92 = (((((__T91.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T91))) , ((__T91.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T91.next)) , (&((((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).
+#line 1004
+__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T93.next)) , __T92)))) , ((__curr_eh_stack_entry = (__T95.next)) , __T94)))) - ((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T97.next)) , __T96)))) , 
+#line 1004
+((__curr_eh_stack_entry = (__T99.next)) , __T98)));
+if (__46726_21___cap >= (__46723_21___ms / 2U)) {
+return __46723_21___ms; }
+return *(_ZSt3maxIjERKT_S2_S2_(((((*(_ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *)&__T100)) = (2U * __46726_21___cap)) , (&__T100)), (((const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *)&__46721_48___new_size))));
+}
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EE26__swap_out_circular_bufferERSt14__split_bufferIS1_RS2_E
+#line 928
+void _ZNSt6vectorIN3img5PointESaIS1_EE26__swap_out_circular_bufferERSt14__split_bufferIS1_RS2_E( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this,  struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *__46650_98___v)
+{ auto const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *__T101; auto struct an_eh_stack_entry __T102; auto const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *__T103; auto struct an_eh_stack_entry __T104; auto struct an_eh_stack_entry __T105; auto const 
+#line 929
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T106; auto struct an_eh_stack_entry __T107; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T108; auto struct an_eh_stack_entry __T109; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T110; auto struct 
+#line 929
+an_eh_stack_entry __T111; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T112; auto struct an_eh_stack_entry __T113; auto const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *__T114; auto struct an_eh_stack_entry __T115; auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __T116; auto 
+#line 929
+struct an_eh_stack_entry __T117; auto const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *__T118; auto struct an_eh_stack_entry __T119; auto struct an_eh_stack_entry __T120; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T121; auto struct an_eh_stack_entry __T122; auto const 
+#line 929
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T123; auto struct an_eh_stack_entry __T124; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T125; auto struct an_eh_stack_entry __T126; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE __T127; auto struct an_eh_stack_entry 
+#line 929
+__T128; auto struct _ZSaIN3img5PointEE *__T129; auto struct an_eh_stack_entry __T130; auto struct _ZSaIN3img5PointEE *__T131; auto struct an_eh_stack_entry __T132; auto struct _ZSaIN3img5PointEE *__T133; auto struct an_eh_stack_entry __T134; auto struct _ZN3img5PointE *__T135; auto struct 
+#line 929
+_ZN3img5PointE *__T136; auto ptrdiff_t __T137; auto struct an_eh_stack_entry __T138; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __T139; auto struct an_eh_stack_entry __T140; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __T141; auto struct an_eh_stack_entry __T142; auto 
+#line 929
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T143; auto struct an_eh_stack_entry __T144; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T145; auto struct an_eh_stack_entry __T146; auto struct an_eh_stack_entry __T147; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *
+#line 929
+__T148; auto struct an_eh_stack_entry __T149; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T150; auto struct an_eh_stack_entry __T151; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T152; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T153; auto struct 
+#line 929
+an_eh_stack_entry __T154; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE __T155; auto struct an_eh_stack_entry __T156; auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __T157; auto struct an_eh_stack_entry __T158; auto struct an_eh_stack_entry __T159; auto struct an_eh_stack_entry __T160; 
+#line 929
+auto struct an_eh_stack_entry __T161; auto struct an_eh_stack_entry __T162; auto struct an_eh_stack_entry __T163; auto struct an_eh_stack_entry __T164; auto struct an_eh_stack_entry __T165; auto struct an_eh_stack_entry __T166; auto struct an_eh_stack_entry __T167; auto struct an_eh_stack_entry 
+#line 929
+__T168; auto struct an_eh_stack_entry __T169; auto struct an_eh_stack_entry __T170; auto struct an_eh_stack_entry __T171;
+{ (const void *)(((((__T102.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T102))) , ((__T102.kind) = ((unsigned char)6U))) , ((__T101 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct 
+#line 930
+_ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T102.next)) , __T101))); (const void *)((((((__T104.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T104))) , ((__T104.kind) = ((unsigned char)6U))) , ((
+#line 930
+__T103 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T104.next)) , __T103))) + (((((__T113.next
+#line 930
+) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T113))) , ((__T113.kind) = ((unsigned char)6U))) , ((__T112 = (((((__T111.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T111))) , ((__T111.kind) = ((unsigned char)6U))) , ((__T110 = ((
+#line 930
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE)((*(((((__T109.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T109))) , ((__T109.kind) = ((unsigned char)6U))) , ((__T108 = (((((__T107.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T107))) , ((__T107.kind) = ((
+#line 930
+unsigned char)6U))) , ((__T106 = (((((__T105.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T105))) , ((__T105.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T105.next)) , (&((((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->
+#line 930
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T107.next)) , __T106)))) , ((__curr_eh_stack_entry = (__T109.next)) , __T108)))) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->
+#line 930
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T111.next)) , __T110)))) , ((__curr_eh_stack_entry = (__T113.next)) , __T112)))); (const void *)((((((__T115.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T115))) , ((__T115.kind) = ((
+#line 930
+unsigned char)6U))) , ((__T114 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T115.next)) , 
+#line 930
+__T114))) + (((((__T117.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T117))) , ((__T117.kind) = ((unsigned char)6U))) , ((__T116 = ((_ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE)(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).
+#line 930
+__end_) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T117.next)) , __T116)))); (const void *)((((((__T119.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T119))) , ((__T119.kind) = (
+#line 930
+(unsigned char)6U))) , ((__T118 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T119.next)) , 
+#line 930
+__T118))) + (((((__T128.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T128))) , ((__T128.kind) = ((unsigned char)6U))) , ((__T127 = (((((__T126.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T126))) , ((__T126.kind) = ((unsigned char)6U))) , ((__T125 = ((
+#line 930
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE)((*(((((__T124.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T124))) , ((__T124.kind) = ((unsigned char)6U))) , ((__T123 = (((((__T122.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T122))) , ((__T122.kind) = ((
+#line 930
+unsigned char)6U))) , ((__T121 = (((((__T120.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T120))) , ((__T120.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T120.next)) , (&((((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->
+#line 930
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T122.next)) , __T121)))) , ((__curr_eh_stack_entry = (__T124.next)) , __T123)))) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->
+#line 930
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T126.next)) , __T125)))) , ((__curr_eh_stack_entry = (__T128.next)) , __T127)))); { } }
+{ ((((__T134.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T134))) , ((__T134.kind) = ((unsigned char)6U))) , ((__T133 = (((((__T132.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T132))) , ((__T132.kind) = ((unsigned char)6U))) , ((__T131 = (((((__T130.next) = 
+#line 931
+__curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T130))) , ((__T130.kind) = ((unsigned char)6U))) , ((__T129 = ((struct _ZSaIN3img5PointEE *)((struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)(&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_))))) , ((
+#line 931
+__curr_eh_stack_entry = (__T130.next)) , __T129)))) , ((__curr_eh_stack_entry = (__T132.next)) , __T131)))) , ((__curr_eh_stack_entry = (__T134.next)) , __T133)); __T135 = ((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_); __T136 = ((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).
+#line 931
+__end_); { __T137 = (__T136 - __T135); (__46650_98___v->__begin_) -= __T137; if (__T137 > 0) { memcpy(((void *)(__46650_98___v->__begin_)), ((const void *)__T135), (((unsigned)__T137) * 8U)); } } }
+{ (__T138.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T138); (__T138.kind) = ((unsigned char)6U); __T139 = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))); ((this->
+#line 932
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_) = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&(__46650_98___v->__begin_))))); (__46650_98___v->__begin_) = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&__T139)))); { __curr_eh_stack_entry = (__T138.
+#line 932
+next); } }
+{ (__T140.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T140); (__T140.kind) = ((unsigned char)6U); __T141 = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_))))); ((this->
+#line 933
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_) = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&(__46650_98___v->__end_))))); (__46650_98___v->__end_) = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&__T141)))); { __curr_eh_stack_entry = (__T140.next); } 
+#line 933
+}
+{ __T152 = (((((__T146.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T146))) , ((__T146.kind) = ((unsigned char)6U))) , ((__T145 = (((((__T144.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T144))) , ((__T144.kind) = ((unsigned char)6U))) , ((__T143 = (((((__T142.next) 
+#line 934
+= __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T142))) , ((__T142.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T142.next)) , (&((((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((
+#line 934
+__curr_eh_stack_entry = (__T144.next)) , __T143)))) , ((__curr_eh_stack_entry = (__T146.next)) , __T145))); __T153 = (((((__T151.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T151))) , ((__T151.kind) = ((unsigned char)6U))) , ((__T150 = (((((__T149.next) = __curr_eh_stack_entry) , (
+#line 934
+__curr_eh_stack_entry = (&__T149))) , ((__T149.kind) = ((unsigned char)6U))) , ((__T148 = (((((__T147.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T147))) , ((__T147.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T147.next)) , (&(((__46650_98___v->__end_cap_).
+#line 934
+__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T149.next)) , __T148)))) , ((__curr_eh_stack_entry = (__T151.next)) , __T150))); { (__T154.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T154); (__T154.kind) = ((unsigned char)6U); __T155 
+#line 934
+= (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_(__T152))); (*__T152) = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_(__T153))); (*__T153) = (*(_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_((&__T155)))); { __curr_eh_stack_entry = (__T154.next); } 
+#line 934
+} }
+(__46650_98___v->__first_) = (__46650_98___v->__begin_);
+{ __T157 = (((((__T156.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T156))) , ((__T156.kind) = ((unsigned char)6U))) , ((__T116 = ((_ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE)(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).
+#line 936
+__end_) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T156.next)) , __T116))); { { (const void *)(((((__T158.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T158))) , ((__T158.kind) = 
+#line 936
+((unsigned char)6U))) , ((__T118 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T158.next)) , 
+#line 936
+__T118))); (const void *)((((((__T159.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T159))) , ((__T159.kind) = ((unsigned char)6U))) , ((__T114 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct 
+#line 936
+_ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T159.next)) , __T114))) + (((((__T164.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T164))) , ((__T164.kind) = ((unsigned char)6U))) , ((__T125 = (((((
+#line 936
+__T163.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T163))) , ((__T163.kind) = ((unsigned char)6U))) , ((__T127 = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE)((*(((((__T162.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T162))) , ((__T162.kind) = ((
+#line 936
+unsigned char)6U))) , ((__T121 = (((((__T161.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T161))) , ((__T161.kind) = ((unsigned char)6U))) , ((__T123 = (((((__T160.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T160))) , ((__T160.kind) = ((unsigned char)6U))) , ((
+#line 936
+__curr_eh_stack_entry = (__T160.next)) , (&((((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T161.next)) , __T123)))) , ((
+#line 936
+__curr_eh_stack_entry = (__T162.next)) , __T121)))) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T163.next)) , __T127)))) , ((__curr_eh_stack_entry = (__T164.next)) , __T125)))); (const void *)(((
+#line 936
+(((__T165.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T165))) , ((__T165.kind) = ((unsigned char)6U))) , ((__T103 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->
+#line 936
+__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_))))) , ((__curr_eh_stack_entry = (__T165.next)) , __T103))) + (((((__T170.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T170))) , ((__T170.kind) = ((unsigned char)6U))) , ((__T110 = (((((__T169.next) = __curr_eh_stack_entry) , (
+#line 936
+__curr_eh_stack_entry = (&__T169))) , ((__T169.kind) = ((unsigned char)6U))) , ((__T112 = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE9size_typeE)((*(((((__T168.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T168))) , ((__T168.kind) = ((unsigned char)6U))) , ((__T106 = (((((__T167.next
+#line 936
+) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T167))) , ((__T167.kind) = ((unsigned char)6U))) , ((__T108 = (((((__T166.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T166))) , ((__T166.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T166.next)) , (&((((((
+#line 936
+const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T167.next)) , __T108)))) , ((__curr_eh_stack_entry = (__T168.next)) , __T106)))) - ((((
+#line 936
+const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T169.next)) , __T112)))) , ((__curr_eh_stack_entry = (__T170.next)) , __T110)))); (const void *)((((((__T171.next) = __curr_eh_stack_entry) , (
+#line 936
+__curr_eh_stack_entry = (&__T171))) , ((__T171.kind) = ((unsigned char)6U))) , ((__T101 = ((const _ZNSt6vectorIN3img5PointESaIS1_EE10value_typeE *)(_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).
+#line 936
+__begin_))))) , ((__curr_eh_stack_entry = (__T171.next)) , __T101))) + __T157); { } } } }
+{ } 
+}
+#line 464
+inline void _ZNSt6vectorIN3img5PointESaIS1_EED1Ev( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this) { static struct __C2 __T172[1] = {{((unsigned)_ZNSt13__vector_baseIN3img5PointESaIS1_EED2Ev),((unsigned short)0U),((unsigned short)65535U),((unsigned char)64U)}}; auto void *__T173[1]; auto struct 
+#line 464
+an_eh_stack_entry __T174; auto struct an_eh_stack_entry __T175;  (__T174.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T174); (__T174.kind) = ((unsigned char)6U); (__T175.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T175); (__T175.kind) = ((unsigned char)1U); (((__T175.
+#line 464
+variant).function).regions) = (__T172); (((__T175.variant).function).obj_table) = (__T173); (((__T175.variant).function).saved_region_number) = __eh_curr_region; __eh_curr_region = ((unsigned short)65535U); ((__T173)[0U]) = ((void *)(&(this->__b_St13__vector_baseIN3img5PointESaIS1_EE))); 
+#line 464
+__eh_curr_region = ((unsigned short)0U); { __eh_curr_region = ((unsigned short)65535U); _ZNSt13__vector_baseIN3img5PointESaIS1_EED2Ev((&(this->__b_St13__vector_baseIN3img5PointESaIS1_EE))); } { __eh_curr_region = (((__T175.variant).function).saved_region_number); __curr_eh_stack_entry = (__T175.next
+#line 464
+); __curr_eh_stack_entry = (__T174.next);  } } inline void _ZNSt6vectorIN3img5PointESaIS1_EED2Ev( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this) {  _ZNSt6vectorIN3img5PointESaIS1_EED1Ev(this);  }
+#pragma weak _ZNSt6vectorIN3img5PointESaIS1_EE21__push_back_slow_pathIRKS1_EEvOT_
+#line 832
+void _ZNSt6vectorIN3img5PointESaIS1_EE21__push_back_slow_pathIRKS1_EEvOT_( struct _ZSt6vectorIN3img5PointESaIS1_EE *const this, 
+#line 1605
+const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__47327_54___x)
+
+
+
+{ static struct __C2 __T176[1] = {{((unsigned)_ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev),((unsigned short)0U),((unsigned short)65535U),((unsigned char)0U)}}; auto struct _ZSaIN3img5PointEE *__T177; auto struct an_eh_stack_entry __T178; auto struct _ZSaIN3img5PointEE *__T179; auto struct 
+#line 1609
+an_eh_stack_entry __T180; auto struct _ZSaIN3img5PointEE *__T181; auto struct an_eh_stack_entry __T182; auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __T183; auto struct an_eh_stack_entry __T184; auto _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE __T185; auto struct an_eh_stack_entry __T186; auto 
+#line 1609
+void *__T187[1]; auto _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T188; auto struct _ZN3img5PointE *__T189; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__T190; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__T191; auto const 
+#line 1609
+_ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__T192; auto unsigned __T193; auto void *__T194; auto void *__T195; auto void *__T196; auto struct an_eh_stack_entry __T197; auto struct _ZN3img5PointE *__T198; auto struct an_eh_stack_entry __T199; auto struct an_eh_stack_entry __T200; auto 
+#line 1609
+struct an_eh_stack_entry __T201;
+auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__47332_21___a;
+auto struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE __47333_49___v;
+#line 1609
+(__T201.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T201); (__T201.kind) = ((unsigned char)1U); (((__T201.variant).function).regions) = (__T176); (((__T201.variant).function).obj_table) = (__T187); (((__T201.variant).function).saved_region_number) = __eh_curr_region; __eh_curr_region 
+#line 1609
+= ((unsigned short)65535U);
+__47332_21___a = (((((__T182.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T182))) , ((__T182.kind) = ((unsigned char)6U))) , ((__T181 = (((((__T180.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T180))) , ((__T180.kind) = ((unsigned char)6U))) , ((__T179 = (((((__T178
+#line 1610
+.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T178))) , ((__T178.kind) = ((unsigned char)6U))) , ((__T177 = ((struct _ZSaIN3img5PointEE *)((struct _ZSt22__compressed_pair_elemISaIN3img5PointEELi1ELb1EE *)(&((this->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_cap_))))) , ((
+#line 1610
+__curr_eh_stack_entry = (__T178.next)) , __T177)))) , ((__curr_eh_stack_entry = (__T180.next)) , __T179)))) , ((__curr_eh_stack_entry = (__T182.next)) , __T181)));
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EEC1EjjS3_((&__47333_49___v), (_ZNKSt6vectorIN3img5PointESaIS1_EE11__recommendEj(((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this), ((((((__T184.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T184))) , ((__T184.kind) = ((unsigned char)6U)
+#line 1611
+)) , ((__T183 = ((_ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE)(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((
+#line 1611
+__curr_eh_stack_entry = (__T184.next)) , __T183))) + 1U))), (((((__T186.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T186))) , ((__T186.kind) = ((unsigned char)6U))) , ((__T185 = ((_ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE)(((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this
+#line 1611
+)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__end_) - ((((const struct _ZSt6vectorIN3img5PointESaIS1_EE *)this)->__b_St13__vector_baseIN3img5PointESaIS1_EE).__begin_)))) , ((__curr_eh_stack_entry = (__T186.next)) , __T185))), __47332_21___a); ((__T187)[0U]) = ((void *)(&__47333_49___v)); 
+#line 1611
+__eh_curr_region = ((unsigned short)0U);
+
+{ __T188 = __47332_21___a; __T189 = (_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_((__47333_49___v.__end_))); __T190 = (_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__47327_54___x)); { { __T191 = (_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__T190)); { { __T192 
+#line 1613
+= (_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__T191)); { (struct _ZN3img5PointE *)((__T193 = 8U) , ((__T198 = ((struct _ZN3img5PointE *)((__T195 = (__T194 = ((void *)__T189))) , (((((__T197.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T197))) , ((__T197.kind) 
+#line 1613
+= ((unsigned char)6U))) , ((__T196 = __T195) , ((__curr_eh_stack_entry = (__T197.next)) , __T196)))))) ? (((void)(((((((((__T200.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T200))) , ((__T200.kind) = ((unsigned char)5U))) , ((((__T200.variant).try_block).catch_entries) = ((struct 
+#line 1613
+__C5 *)0))) , ((((__T200.variant).try_block).rtinfo) = ((void *)0))) , ((((__T200.variant).try_block).region_number) = __eh_curr_region)) , (((setjmp(((((__T200.variant).try_block).setjmp_buffer)))) == 0) ? ((void)((*__T198) = ((*(struct _ZN3img5PointE *)(
+#line 1613
+_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE(__T192)))))) : ((((void)(((((__T199.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T199))) , ((__T199.kind) = ((unsigned char)6U))) , (__curr_eh_stack_entry = (__T199.next)))) , (__internal_rethrow())) , ((void)0)))) , (
+#line 1613
+__curr_eh_stack_entry = (__T200.next)))) , __T198) : ((struct _ZN3img5PointE *)0))); } } } } } }
+(__47333_49___v.__end_)++;
+_ZNSt6vectorIN3img5PointESaIS1_EE26__swap_out_circular_bufferERSt14__split_bufferIS1_RS2_E(this, (&__47333_49___v)); { __eh_curr_region = ((unsigned short)65535U); _ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev((&__47333_49___v)); { __eh_curr_region = (((__T201.variant).function).
+#line 1615
+saved_region_number); __curr_eh_stack_entry = (__T201.next);  } }
+}
+#pragma weak _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC1IS3_vEEOT_
+#line 2141 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+inline void _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC1IS3_vEEOT_( struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE *const this,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__23940_32___u)
+{ auto _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__T202; auto struct an_eh_stack_entry __T203; (this->__value_) = (((((__T203.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T203))) , ((__T203.kind) = ((unsigned char)6U))) , ((__T202 = ((
+#line 2142
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *)__23940_32___u)) , ((__curr_eh_stack_entry = (__T203.next)) , __T202)));  } inline void _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC2IS3_vEEOT_( struct _ZSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE *const this,  
+#line 2142
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__T204) { auto _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__T205; auto struct an_eh_stack_entry __T206;  (void)((this->__value_) = (((((__T206.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T206))) , ((__T206.
+#line 2142
+kind) = ((unsigned char)6U))) , ((__T205 = ((_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *)__T204)) , ((__curr_eh_stack_entry = (__T206.next)) , __T205))));  }
+#pragma weak _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC1IDnS4_EEOT_OT0_
+#line 2241
+inline void _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC1IDnS4_EEOT_OT0_( struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE *const this,  void **__24040_27___t1,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__24040_39___t2)
+{ auto void **__T207; auto struct an_eh_stack_entry __T208; auto void **__T209; auto void **__T210; auto struct an_eh_stack_entry __T211; { __T209 = (((((__T208.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T208))) , ((__T208.kind) = ((unsigned char)6U))) , ((__T207 = ((void **)
+#line 2242
+__24040_27___t1)) , ((__curr_eh_stack_entry = (__T208.next)) , __T207))); { (void)(((this->__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_) = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)((((((*(((((__T211.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T211))) 
+#line 2242
+, ((__T211.kind) = ((unsigned char)6U))) , ((__T210 = ((void **)__T209)) , ((__curr_eh_stack_entry = (__T211.next)) , __T210)))) , ((void *)0)) , ((void *)0)) , ((void *)0)) , ((void *)0)) , ((void *)0)))); } } _ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC2IS3_vEEOT_((&(this->
+#line 2242
+__b_St22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE)), (_ZSt7forwardIRSaIN3img5PointEEEOT_RNSt16remove_referenceIS4_E4typeE(__24040_39___t2)));  } inline void _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC2IDnS4_EEOT_OT0_( struct _ZSt17__compressed_pairIPN3img5PointERSaIS1_EE *const this,  
+#line 2242
+void **__T212,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__T213) { auto void **__T214; auto struct an_eh_stack_entry __T215; auto void **__T216; auto void **__T217; auto struct an_eh_stack_entry __T218;  ((__T216 = (((((__T215.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry 
+#line 2242
+= (&__T215))) , ((__T215.kind) = ((unsigned char)6U))) , ((__T214 = ((void **)__T212)) , ((__curr_eh_stack_entry = (__T215.next)) , __T214)))) , ((void)(((this->__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_) = ((_ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE)((((((((*(((((
+#line 2242
+__T218.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T218))) , ((__T218.kind) = ((unsigned char)6U))) , ((__T217 = ((void **)__T216)) , ((__curr_eh_stack_entry = (__T218.next)) , __T217)))) , ((void *)0)) , ((void *)0)) , ((void *)0)) , ((void *)0)) , ((void *)0)) , ((void *)0)) , ((
+#line 2242
+void *)0)))))) , (_ZNSt22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EEC2IS3_vEEOT_((&(this->__b_St22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE)), (_ZSt7forwardIRSaIN3img5PointEEEOT_RNSt16remove_referenceIS4_E4typeE(__T213))));  }
+#pragma weak _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC1EjjS3_
+#line 308 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\__split_buffer"
+void _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC1EjjS3_( struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const this,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE __45633_59___cap,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE __45633_76___start,  
+#line 308
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__45633_97___a)
+
+{ auto void *__T219; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T220; auto struct an_eh_stack_entry __T221; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T222; auto struct an_eh_stack_entry __T223; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T224; auto 
+#line 310
+struct an_eh_stack_entry __T225; auto _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T226; auto struct an_eh_stack_entry __T227; auto struct _ZSt12length_error *__T228; auto size_t __T229; auto struct an_eh_stack_entry __T230; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *
+#line 310
+__T231; auto struct an_eh_stack_entry __T232; auto _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T233; auto struct an_eh_stack_entry __T234; _ZNSt17__compressed_pairIPN3img5PointERSaIS1_EEC1IDnS4_EEOT_OT0_((&(this->__end_cap_)), (((__T219 = ((void *)0)) , ((void *)0)) , (&__T219)), 
+#line 310
+__45633_97___a);
+(this->__first_) = ((__45633_59___cap != 0U) ? ((__T226 = (((((__T225.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T225))) , ((__T225.kind) = ((unsigned char)6U))) , ((__T224 = (((((__T223.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T223))) , ((__T223.kind) = ((
+#line 311
+unsigned char)6U))) , ((__T222 = (((((__T221.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T221))) , ((__T221.kind) = ((unsigned char)6U))) , ((__T220 = (((this->__end_cap_).__b_St22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE).__value_)) , ((__curr_eh_stack_entry = (__T221.next
+#line 311
+)) , __T220)))) , ((__curr_eh_stack_entry = (__T223.next)) , __T222)))) , ((__curr_eh_stack_entry = (__T225.next)) , __T224)))) , (((__45633_59___cap > (((((__T227.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T227))) , ((__T227.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry 
+#line 311
+= (__T227.next)) , 536870911U))) ? ((__T228 = ((struct _ZSt12length_error *)(__throw_setup_dtor((&_ZTISt12length_error), 8U, 0U, ((void (*)(void *))_ZNSt12length_errorD1Ev))))) , ((_ZNSt12length_errorC1EPKc(__T228, ((const char *)_ZZNSaIN3img5PointEE8allocateEjPKvEs))) , (__throw()))) : ((void)0)) , 
+#line 311
+((_ZNSaIN3img5PointEE7pointerE)((__T229 = (__45633_59___cap * 8U)) , (0 , (_Znwj(__T229))))))) : ((_ZNSt16allocator_traitsISaIN3img5PointEEE7pointerE)0));
+(this->__begin_) = ((this->__end_) = ((this->__first_) + __45633_76___start));
+(*(((((__T234.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T234))) , ((__T234.kind) = ((unsigned char)6U))) , ((__T233 = (((((__T232.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T232))) , ((__T232.kind) = ((unsigned char)6U))) , ((__T231 = (((((__T230.next) = 
+#line 313
+__curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T230))) , ((__T230.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (__T230.next)) , (&(((this->__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T232.next)) , __T231)))) , ((
+#line 313
+__curr_eh_stack_entry = (__T234.next)) , __T233)))) = ((this->__first_) + __45633_59___cap); 
+} void _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC2EjjS3_( struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const this,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE __T235,  _ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE __T236,  
+#line 314
+_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__T237) {  _ZNSt14__split_bufferIN3img5PointERSaIS1_EEC1EjjS3_(this, __T235, __T236, __T237);  }
+#pragma weak _ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev
+#line 343
+void _ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev( struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const this)
+{ auto _ZNSt14__split_bufferIN3img5PointERSaIS1_EE7pointerE __T238; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T239; auto struct an_eh_stack_entry __T240; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T241; auto struct an_eh_stack_entry __T242; auto 
+#line 344
+_ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T243; auto struct an_eh_stack_entry __T244; auto _ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T245; auto struct _ZN3img5PointE *__T246; auto struct an_eh_stack_entry __T247; auto struct an_eh_stack_entry __T248; auto struct 
+#line 344
+an_eh_stack_entry __T249; auto struct an_eh_stack_entry __T250;  (__T250.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T250); (__T250.kind) = ((unsigned char)6U);
+{ (__T249.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T249); (__T249.kind) = ((unsigned char)6U); { __T238 = (this->__begin_); { (__T248.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T248); (__T248.kind) = ((unsigned char)6U); { (__T247.next) = __curr_eh_stack_entry; 
+#line 345
+__curr_eh_stack_entry = (&__T247); (__T247.kind) = ((unsigned char)6U); while (__T238 != (this->__end_)) { { __T245 = (((((__T244.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T244))) , ((__T244.kind) = ((unsigned char)6U))) , ((__T243 = (((((__T242.next) = __curr_eh_stack_entry) , (
+#line 345
+__curr_eh_stack_entry = (&__T242))) , ((__T242.kind) = ((unsigned char)6U))) , ((__T241 = (((((__T240.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T240))) , ((__T240.kind) = ((unsigned char)6U))) , ((__T239 = (((this->__end_cap_).
+#line 345
+__b_St22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE).__value_)) , ((__curr_eh_stack_entry = (__T240.next)) , __T239)))) , ((__curr_eh_stack_entry = (__T242.next)) , __T241)))) , ((__curr_eh_stack_entry = (__T244.next)) , __T243))); __T246 = (_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_((--(this
+#line 345
+->__end_)))); { { (void)__T246; } } } } { __curr_eh_stack_entry = (__T247.next); } } { __curr_eh_stack_entry = (__T248.next); } } } { __curr_eh_stack_entry = (__T249.next); } }
+if (this->__first_) { auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T251; auto struct an_eh_stack_entry __T252; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T253; auto struct an_eh_stack_entry __T254; auto _ZNSt6vectorIN3img5PointESaIS1_EE14allocator_typeE *__T255; auto 
+#line 346
+struct an_eh_stack_entry __T256; auto struct an_eh_stack_entry __T257; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T258; auto struct an_eh_stack_entry __T259; auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__T260; auto struct an_eh_stack_entry __T261; auto 
+#line 346
+_ZNSt16allocator_traitsISaIN3img5PointEEE14allocator_typeE *__T262; auto _ZNSt16allocator_traitsISaIN3img5PointEEE7pointerE __T263; auto _ZNSt16allocator_traitsISaIN3img5PointEEE9size_typeE __T264; auto struct an_eh_stack_entry __T265; auto struct an_eh_stack_entry __T266;
+{ __T262 = (((((__T256.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T256))) , ((__T256.kind) = ((unsigned char)6U))) , ((__T255 = (((((__T254.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T254))) , ((__T254.kind) = ((unsigned char)6U))) , ((__T253 = (((((__T252.next) 
+#line 347
+= __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T252))) , ((__T252.kind) = ((unsigned char)6U))) , ((__T251 = (((this->__end_cap_).__b_St22__compressed_pair_elemIRSaIN3img5PointEELi1ELb0EE).__value_)) , ((__curr_eh_stack_entry = (__T252.next)) , __T251)))) , ((__curr_eh_stack_entry = (__T254
+#line 347
+.next)) , __T253)))) , ((__curr_eh_stack_entry = (__T256.next)) , __T255))); __T263 = (this->__first_); __T264 = ((_ZNSt14__split_bufferIN3img5PointERSaIS1_EE9size_typeE)((*(((((__T261.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T261))) , ((__T261.kind) = ((unsigned char)6U))) , ((
+#line 347
+__T260 = (((((__T259.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T259))) , ((__T259.kind) = ((unsigned char)6U))) , ((__T258 = (((((__T257.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T257))) , ((__T257.kind) = ((unsigned char)6U))) , ((__curr_eh_stack_entry = (
+#line 347
+__T257.next)) , (&(((((const struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *)this)->__end_cap_).__b_St22__compressed_pair_elemIPN3img5PointELi0ELb0EE).__value_))))) , ((__curr_eh_stack_entry = (__T259.next)) , __T258)))) , ((__curr_eh_stack_entry = (__T261.next)) , __T260)))) - (((const struct 
+#line 347
+_ZSt14__split_bufferIN3img5PointERSaIS1_EE *)this)->__first_))); { (__T266.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T266); (__T266.kind) = ((unsigned char)6U); { (__T265.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T265); (__T265.kind) = ((unsigned char)6U); { 0; { 
+#line 347
+_ZdlPv(((void *)__T263)); } } { __curr_eh_stack_entry = (__T265.next); } } { __curr_eh_stack_entry = (__T266.next); } } } } { __curr_eh_stack_entry = (__T250.next);  }
+} void _ZNSt14__split_bufferIN3img5PointERSaIS1_EED2Ev( struct _ZSt14__split_bufferIN3img5PointERSaIS1_EE *const this) {  _ZNSt14__split_bufferIN3img5PointERSaIS1_EED1Ev(this);  }
+#pragma weak _ZSt3minIjERKT_S2_S2_
+#line 2577 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+inline const size_t *_ZSt3minIjERKT_S2_S2_( const size_t *__31958_16___a,  const size_t *__31958_32___b)
+{ auto struct _ZSt6__lessIjjE __T267;
+return _ZSt3minIjSt6__lessIjjEERKT_S4_S4_T0_(__31958_16___a, __31958_32___b, __T267);
+}
+#pragma weak _ZSt3minIjSt6__lessIjjEERKT_S4_S4_T0_
+#line 2569
+inline const size_t *_ZSt3minIjSt6__lessIjjEERKT_S4_S4_T0_( const size_t *__31950_16___a,  const size_t *__31950_32___b,  struct _ZSt6__lessIjjE __31950_46___comp)
+{
+return (_ZNKSt6__lessIjjEclERKjS2_((((const struct _ZSt6__lessIjjE *)&__31950_46___comp)), __31950_32___b, __31950_16___a)) ? __31950_32___b : __31950_16___a;
+}
+#pragma weak _ZSt7forwardIDnEOT_RNSt16remove_referenceIS0_E4typeE
+#line 2304 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+inline void **_ZSt7forwardIDnEOT_RNSt16remove_referenceIS0_E4typeE( _ZNSt16remove_referenceIDnE4typeE *__6165_47___t)
+{ auto void **__T268; auto struct an_eh_stack_entry __T269;  (__T269.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T269); (__T269.kind) = ((unsigned char)6U); {
+__T268 = ((void **)__6165_47___t); { __curr_eh_stack_entry = (__T269.next); return __T268; } }
+}
+#pragma weak _ZSt16__to_raw_pointerIN3img5PointEEPT_S3_
+#line 1109 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\memory"
+inline struct _ZN3img5PointE *_ZSt16__to_raw_pointerIN3img5PointEEPT_S3_( struct _ZN3img5PointE *__22908_23___p)
+{ auto struct _ZN3img5PointE *__T270; auto struct an_eh_stack_entry __T271;  (__T271.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T271); (__T271.kind) = ((unsigned char)6U); {
+__T270 = __22908_23___p; { __curr_eh_stack_entry = (__T271.next); return __T270; } }
+}
+#pragma weak _ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE
+#line 2304 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+inline const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *_ZSt7forwardIRKN3img5PointEEOT_RNSt16remove_referenceIS4_E4typeE( _ZNSt16remove_referenceIRKN3img5PointEE4typeE *__6165_47___t)
+{ auto const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *__T272; auto struct an_eh_stack_entry __T273;  (__T273.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T273); (__T273.kind) = ((unsigned char)6U); {
+__T272 = ((const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *)__6165_47___t); { __curr_eh_stack_entry = (__T273.next); return __T272; } }
+}
+#pragma weak _ZSt3maxIjERKT_S2_S2_
+#line 2642 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\algorithm"
+inline const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *_ZSt3maxIjERKT_S2_S2_( const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__32023_16___a,  const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__32023_32___b)
+{ auto struct _ZSt6__lessIjjE __T274;
+return _ZSt3maxIjSt6__lessIjjEERKT_S4_S4_T0_(__32023_16___a, __32023_32___b, __T274);
+}
+#pragma weak _ZSt3maxIjSt6__lessIjjEERKT_S4_S4_T0_
+#line 2634
+inline const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *_ZSt3maxIjSt6__lessIjjEERKT_S4_S4_T0_( const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__32015_16___a,  const _ZNSt6vectorIN3img5PointESaIS1_EE9size_typeE *__32015_32___b,  struct _ZSt6__lessIjjE __32015_46___comp)
+{
+return ((char)((*__32015_16___a) < (*__32015_32___b))) ? __32015_32___b : __32015_16___a;
+}
+#pragma weak _ZSt7forwardIRSaIN3img5PointEEEOT_RNSt16remove_referenceIS4_E4typeE
+#line 2304 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include.cxx\\type_traits"
+inline _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *_ZSt7forwardIRSaIN3img5PointEEEOT_RNSt16remove_referenceIS4_E4typeE( _ZNSt16remove_referenceIRSaIN3img5PointEEE4typeE *__6165_47___t)
+{ auto _ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *__T275; auto struct an_eh_stack_entry __T276;  (__T276.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T276); (__T276.kind) = ((unsigned char)6U); {
+__T275 = ((_ZNSt14__split_bufferIN3img5PointERSaIS1_EE10__alloc_rrE *)__6165_47___t); { __curr_eh_stack_entry = (__T276.next); return __T275; } }
+}
+#pragma weak _ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_
+#line 2295
+inline _ZNSt16remove_referenceIRPN3img5PointEE4typeE *_ZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_( _ZNSt13__vector_baseIN3img5PointESaIS1_EE7pointerE *__6156_12___t)
+{ auto _ZZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_E3_Up *__T277; auto struct an_eh_stack_entry __T278;  (__T278.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T278); (__T278.kind) = ((unsigned char)6U); {
+
+__T277 = ((_ZZSt4moveIRPN3img5PointEEONSt16remove_referenceIT_E4typeEOS5_E3_Up *)__6156_12___t); { __curr_eh_stack_entry = (__T278.next); return __T277; } }
+}
+#line 18 "..\\USER\\base_path.cpp"
+void _ZN4path21IntersectionCurveInitEi( struct _ZSt6vectorIN3img5PointESaIS1_EE *__T279,  int __51691_55_c) { static struct __C2 __T280[1] = {{((unsigned)_ZNSt6vectorIN3img5PointESaIS1_EED1Ev),((unsigned short)0U),((unsigned short)65535U),((unsigned char)0U)}}; auto double __T281; auto struct 
+#line 18
+an_eh_stack_entry __T282; auto void *__T283[1]; auto struct an_eh_stack_entry __T284;
+auto int __51692_13_curve_width;
+auto double_t __51693_18_aDouble;
+
+auto struct _ZN3img5PointE __51695_20_cache;
+#line 18
+(__T284.next) = __curr_eh_stack_entry; __curr_eh_stack_entry = (&__T284); (__T284.kind) = ((unsigned char)1U); (((__T284.variant).function).regions) = (__T280); (((__T284.variant).function).obj_table) = (__T283); (((__T284.variant).function).saved_region_number) = __eh_curr_region; __eh_curr_region 
+#line 18
+= ((unsigned short)65535U);
+__51692_13_curve_width = ((int)((((double)(120 - __51691_55_c)) / (120.0)) * (188.0)));
+__51693_18_aDouble = (((double)(4 * __51691_55_c)) / (((((__T282.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T282))) , ((__T282.kind) = ((unsigned char)6U))) , ((__T281 = (pow(((
+#line 20
+_ZZ3powIiiENSt16__lazy_enable_ifIXaasr3std13is_arithmeticIT_EE5valuesr3std13is_arithmeticIT0_EE5valueESt9__promoteIS1_S2_vEE4typeES1_S2_E13__result_type)__51692_13_curve_width), ((
+#line 20
+_ZZ3powIiiENSt16__lazy_enable_ifIXaasr3std13is_arithmeticIT_EE5valuesr3std13is_arithmeticIT0_EE5valueESt9__promoteIS1_S2_vEE4typeES1_S2_E13__result_type)2)))) , ((__curr_eh_stack_entry = (__T282.next)) , __T281))));
+_ZNSt6vectorIN3img5PointESaIS1_EEC1Ev(__T279); ((__T283)[0U]) = ((void *)__T279); __eh_curr_region = ((unsigned short)0U); {
+
+auto int __51696_18_i; __51696_18_i = ((189 - __51692_13_curve_width) / 2); for (; (__51696_18_i < (((188 + __51692_13_curve_width) - 1) / 2)); ++__51696_18_i) { auto int __T285; auto double __T286; auto struct an_eh_stack_entry __T287;
+(__51695_20_cache.x_) = __51696_18_i;
+(__51695_20_cache.y_) = ((int)(round(((((-1.0) * __51693_18_aDouble) * ((__T285 = (__51696_18_i - 94)) , (((((__T287.next) = __curr_eh_stack_entry) , (__curr_eh_stack_entry = (&__T287))) , ((__T287.kind) = ((unsigned char)6U))) , ((__T286 = (pow(((
+#line 25
+_ZZ3powIiiENSt16__lazy_enable_ifIXaasr3std13is_arithmeticIT_EE5valuesr3std13is_arithmeticIT0_EE5valueESt9__promoteIS1_S2_vEE4typeES1_S2_E13__result_type)__T285), ((
+#line 25
+_ZZ3powIiiENSt16__lazy_enable_ifIXaasr3std13is_arithmeticIT_EE5valuesr3std13is_arithmeticIT0_EE5valueESt9__promoteIS1_S2_vEE4typeES1_S2_E13__result_type)2)))) , ((__curr_eh_stack_entry = (__T287.next)) , __T286))))) + ((double)__51691_55_c)))));
+_ZNSt6vectorIN3img5PointESaIS1_EE9push_backERKS1_(__T279, (((const _ZNSt13__vector_baseIN3img5PointESaIS1_EE10value_typeE *)&__51695_20_cache)));
+} } { __eh_curr_region = (((__T284.variant).function).saved_region_number); __curr_eh_stack_entry = (__T284.next);
+return; }
+}

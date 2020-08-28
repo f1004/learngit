@@ -90,5 +90,5 @@ void uart_putbuff(UARTN_enum uartn, uint8 *buff, uint32 len);
 void uart_putstr(UARTN_enum uartn, const int8 *str);
 void uart_getchar(UARTN_enum uartn, uint8 *dat);
 uint8 uart_query(UARTN_enum uartn, uint8 *dat);
-
+void uart_set_interrupt_priority(UARTN_enum uartn);
 #endif

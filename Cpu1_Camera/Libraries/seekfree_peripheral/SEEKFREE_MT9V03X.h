@@ -41,10 +41,11 @@
 #include "zf_uart.h"
 
 //配置摄像头参数
-#define MT9V03X_W               188             	//图像宽度 	范围1-188
+#define MT9V03X_W               160             	//图像宽度 	范围1-188
 #define MT9V03X_H               120             	//图像高度	范围1-120
 
-
+#define COL     160//图像宽度   范围1-752     K60采集不允许超过188
+#define ROW     120//图像高度	范围1-480
 
 //--------------------------------------------------------------------------------------------------
 //引脚配置
@@ -108,7 +109,7 @@ void mt9v03x_vsync(void);
 void mt9v03x_dma(void);
 void seekfree_sendimg_03x(UARTN_enum uartn, uint8 *image, uint16 width, uint16 height);
 void seekfree_sendimg_03x_usb_cdc(uint8 *image, uint16 width, uint16 height);
-extern uint8 BinaryImage[MT9V03X_H][MT9V03X_W];
+
 extern uint8 threshold;
 void Image_Binary(uint8 Image[ROW][COL], uint8 Binary_Image[ROW][COL], int GateValue);
 

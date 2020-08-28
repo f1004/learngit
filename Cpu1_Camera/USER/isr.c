@@ -56,55 +56,7 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	enableInterrupts();//开启中断嵌套
 	PIT_CLEAR_FLAG(CCU6_0, PIT_CH0);
 
-	encoder1 = gpt12_get(GPT12_T2);
-	encoder2 = -gpt12_get(GPT12_T4);
-	gpt12_clear(GPT12_T2);
-	gpt12_clear(GPT12_T4);
 
-
-
-	        speed_pid(encoder1,encoder2,set_speed);
-	        if(out1>=limit_out)out1=limit_out;
-	        if(out1<=-limit_out)out1=-limit_out;
-	        if(out2>=limit_out)out2=limit_out;
-	        if(out2<=-limit_out)out2=-limit_out;
-	//    	        increase=0;
-//	        speed1_power = out1+increase;
-//	        speed2_power = out2-increase;
-//	        speed1_power = out1;
-//	        speed2_power = out2;
-
-	        if(speed1_power>=0)speed1_power=speed1_power+left_pwm;
-	        if(speed1_power<0)speed1_power=speed1_power-left_pwm;
-	        if(speed2_power>=0)speed2_power=speed2_power+right_pwm;
-	        if(speed2_power<0)speed2_power=speed2_power-right_pwm;
-
-	        if(speed1_power>=4000)speed1_power=4000;
-	        if(speed1_power<=-4000)speed1_power=-4000;
-	        if(speed2_power>=4000)speed2_power=4000;
-	        if(speed2_power<=-4000)speed2_power=-4000;
-	        if(0<=speed1_power) //电机1   正转 设置占空比为 百分之 (1000/GTM_ATOM0_PWM_DUTY_MAX*100)
-	                {
-	                    pwm_duty(MOTOR1_A, speed1_power);
-	                    pwm_duty(MOTOR1_B, 0);
-	                }
-	                else                //电机1   反转
-	                {
-	                    pwm_duty(MOTOR1_A, 0);
-	                    pwm_duty(MOTOR1_B, -speed1_power);
-	                }
-
-	                if(0<=speed2_power) //电机2   正转
-	                {
-	                    pwm_duty(MOTOR2_A, speed2_power);
-	                    pwm_duty(MOTOR2_B, 0);
-	                }
-	                else                //电机2   反转
-	                {
-	                    pwm_duty(MOTOR2_A, 0);
-	                    pwm_duty(MOTOR2_B, -speed2_power);
-	                }
-	Flag_10ms=1;
 
 
 }

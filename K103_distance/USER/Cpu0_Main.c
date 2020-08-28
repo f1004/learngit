@@ -37,7 +37,6 @@ int core0_main(void)
     	 {
     	distance=Ks103_getdistance();
     	printf("distance is %d\n", distance);
-        //distance=Ks103_getdistance();
     	Flag_10ms=0;
 
     	 }

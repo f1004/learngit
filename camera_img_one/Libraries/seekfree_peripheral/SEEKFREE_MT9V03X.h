@@ -98,7 +98,7 @@ extern uint8 image_buff[ROW][COL];      //内部使用
 extern uint8 image_half[ROW/2][COL/2];
 extern uint8    mt9v03x_finish_flag;//一场图像采集完成标志位
 extern uint8    mt9v03x_image[MT9V03X_H][MT9V03X_W];
-extern uint8 BinaryImage[ROW][COL];
+extern uint8 img[ROW][COL];
 void mt9v03x_uart_callback(void);
 void set_config(UARTN_enum uartn, int16 buff[CONFIG_FINISH-1][2]);
 void get_config(UARTN_enum uartn, int16 buff[CONFIG_FINISH-1][2]);

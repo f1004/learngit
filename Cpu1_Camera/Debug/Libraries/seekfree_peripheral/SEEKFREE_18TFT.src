@@ -74,16 +74,16 @@ lcd_writeIndex:	.type	func
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    52  {	
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    53      DC(0);
-	mov	d4,#480
+	mov	d4,#649
 .L406:
 	mov	d5,#0
 	call	gpio_set
 .L1066:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    54      spi_mosi(TFT_SPIN,TFT_CS,&dat,&dat,1,1);		
-	mov	d4,#2
+	mov	d4,#1
 .L1067:
-	mov	d5,#222
+	mov	d5,#120
 .L1068:
 	lea	a4,[a10]0
 .L1069:
@@ -123,16 +123,16 @@ lcd_writeData:	.type	func
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    59  {
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    60      DC(1);
-	mov	d4,#480
+	mov	d4,#649
 .L408:
 	mov	d5,#1
 	call	gpio_set
 .L1078:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    61      spi_mosi(TFT_SPIN,TFT_CS,&dat,&dat,1,1);
-	mov	d4,#2
+	mov	d4,#1
 .L1079:
-	mov	d5,#222
+	mov	d5,#120
 .L1080:
 	lea	a4,[a10]0
 .L1081:
@@ -181,16 +181,16 @@ lcd_writedata_16bit:	.type	func
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    69      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    70      DC(1);
-	mov	d4,#480
+	mov	d4,#649
 .L410:
 	mov	d5,#1
 	call	gpio_set
 .L1092:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	    71      spi_mosi(TFT_SPIN,TFT_CS,dat1,dat1,2,1); 	//写入数据  高位在前  低位在后
-	mov	d4,#2
+	mov	d4,#1
 .L1093:
-	mov	d5,#222
+	mov	d5,#120
 .L1094:
 	lea	a4,[a10]0
 .L1095:
@@ -482,7 +482,7 @@ lcd_init:	.type	func
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   147  {	
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   148      spi_init(TFT_SPIN, TFT_SCL, TFT_SDA, TFT_SDA_IN, TFT_CS, 0, 30*1000*1000);//硬件SPI初始化
-	mov	d15,#222
+	mov	d15,#120
 	st.h	[a10],d15
 .L645:
 	mov	d15,#0
@@ -492,19 +492,19 @@ lcd_init:	.type	func
 	addih	d15,d15,#457
 	st.w	[a10]8,d15
 .L647:
-	mov	d4,#2
+	mov	d4,#1
 .L648:
-	mov	d5,#206
+	mov	d5,#103
 .L649:
-	mov	d6,#212
+	mov	d6,#111
 .L650:
-	mov	d7,#217
+	mov	d7,#115
 	call	spi_init
 .L651:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   149      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   150      gpio_init(BL_PIN,GPO,1,PUSHPULL);
-	mov	d4,#484
+	mov	d4,#646
 .L652:
 	mov	d5,#1
 .L653:
@@ -515,7 +515,7 @@ lcd_init:	.type	func
 .L655:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   151      gpio_init(DC_PIN,GPO,0,PUSHPULL);
-	mov	d4,#480
+	mov	d4,#649
 .L656:
 	mov	d5,#1
 .L657:
@@ -526,7 +526,7 @@ lcd_init:	.type	func
 .L659:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   152      gpio_init(REST_PIN,GPO,0,PUSHPULL);
-	mov	d4,#481
+	mov	d4,#647
 .L660:
 	mov	d5,#1
 .L661:
@@ -538,7 +538,7 @@ lcd_init:	.type	func
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   153      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   154      REST(0);
-	mov	d4,#481
+	mov	d4,#647
 	mov	d5,#0
 	call	gpio_set
 .L664:
@@ -551,7 +551,7 @@ lcd_init:	.type	func
 .L665:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_18TFT.c	   156      REST(1);
-	mov	d4,#481
+	mov	d4,#647
 	mov	d5,#1
 	call	gpio_set
 .L666:

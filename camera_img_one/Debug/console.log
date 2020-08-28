@@ -2,12 +2,26 @@
 **** Build of configuration Debug for project Camera_img_one ****
 
 "C:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\bin\\amk" -j4 all 
-Compiling SEEKFREE_MT9V03X.c
-ctc W560: ["..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c" 442/19] possible truncation at implicit conversion to type "unsigned char"
-0 errors, 1 warnings
+Compiling Cpu1_Main.c
+ctc W523: ["..\USER\Cpu1_Main.c" 284/25] pointers to different types at argument #1
+ctc W523: ["..\USER\Cpu1_Main.c" 284/41] pointers to different types at argument #2
+0 errors, 2 warnings
 Linking to 6-Printf_Demo.elf
+ltc E106: unresolved external: adc_p3 - (isr.o)
+ltc E106: unresolved external: adc_pwm - (isr.o)
+ltc E106: unresolved external: adc_p1 - (isr.o)
+ltc E106: unresolved external: adc_p2 - (isr.o)
+ltc E106: unresolved external: adc_p - (isr.o)
+ltc E106: unresolved external: adc_error - (isr.o)
+ltc E106: unresolved external: adc_limit - (isr.o)
+ltc E106: unresolved external: adc_d - (isr.o)
+ltc E106: unresolved external: adc_lasterror - (isr.o)
+ltc E106: unresolved external: speed_flag - (isr.o)
+ltc F019: unrecoverable error: fatal link error
+amk E452: ["makefile" 112/0] target '6-Printf_Demo.elf' returned exit code 1
+amk E451: make stopped
 
-Time consumed: 4433 ms
+Time consumed: 3635 ms
 **** End of build ****
 
 Tool info: 

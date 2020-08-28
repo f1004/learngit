@@ -70,7 +70,7 @@ $TC16X
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    55  {
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    56      {AUTO_EXP,          0},   //自动曝光设置      范围1-63 0为关闭 如果自动曝光开启  EXP_TIME命令设置的数据将会变为最大曝光时间，也就是自动曝光时间的上限
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    57                                //一般情况是不需要开启这个功能，因为比赛场地光线一般都比较均匀，如果遇到光线非常不均匀的情况可以尝试设置该值，增加图像稳定性
-; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    58      {EXP_TIME,          100}, //曝光时间          摄像头收到后会自动计算出最大曝光时间，如果设置过大则设置为计算出来的最大曝光值.Warning 经过实践发现每次曝光时间都会到达最大值
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    58      {EXP_TIME,          120}, //曝光时间          摄像头收到后会自动计算出最大曝光时间，如果设置过大则设置为计算出来的最大曝光值.Warning 经过实践发现每次曝光时间都会到达最大值
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    59      {FPS,               50},  //图像帧率          摄像头收到后会自动计算出最大FPS，如果过大则设置为计算出来的最大FPS
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    60      {SET_COL,           MT9V03X_W}, //图像列数量        范围1-752     K60采集不允许超过188
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	    61      {SET_ROW,           MT9V03X_H}, //图像行数量        范围1-480
@@ -743,7 +743,7 @@ set_mt9v03x_reg:	.type	func
 	sub.a	a10,#8
 .L335:
 	mov	e8,d6,d4
-.L678:
+.L682:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   243  {
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   244  	uint16 temp;
@@ -751,31 +751,31 @@ set_mt9v03x_reg:	.type	func
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   246      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   247      send_buffer[0] = 0xA5;
 	mov	d15,#165
-.L679:
+.L683:
 	st.b	[a10],d15
-.L680:
+.L684:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   248      send_buffer[1] = SET_ADDR;
 	mov	d15,#254
-.L681:
+.L685:
 	st.b	[a10]1,d15
-.L682:
+.L686:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   249      temp = addr;
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   250      send_buffer[2] = temp>>8;
 	sha	d15,d5,#-8
-.L683:
+.L687:
 	st.b	[a10]2,d15
-.L684:
+.L688:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   251      send_buffer[3] = (uint8)temp;
 	st.b	[a10]3,d5
-.L685:
+.L689:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   252      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   253      uart_putbuff(uartn,send_buffer,4);
 	lea	a4,[a10]0
-.L686:
+.L690:
 	mov	d5,#4
 .L336:
 	mov	d4,d8
@@ -788,18 +788,18 @@ set_mt9v03x_reg:	.type	func
 	mov.u	d5,#38528
 	addih	d5,d5,#152
 	call	systick_delay
-.L687:
+.L691:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   255      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   256      send_buffer[0] = 0xA5;
 	mov	d15,#165
-.L688:
+.L692:
 	st.b	[a10],d15
-.L689:
+.L693:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   257      send_buffer[1] = SET_DATA;
 	mov	d15,#255
-.L690:
+.L694:
 	st.b	[a10]1,d15
 .L339:
 
@@ -817,7 +817,7 @@ set_mt9v03x_reg:	.type	func
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   261      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   262      uart_putbuff(uartn,send_buffer,4);
 	lea	a4,[a10]0
-.L691:
+.L695:
 	mov	d5,#4
 .L343:
 	mov	d4,d8
@@ -835,33 +835,33 @@ set_mt9v03x_reg:	.type	func
 	lea	a15,[a15]@los(uart_receive_flag)
 	ld.bu	d15,[a15]
 	jeq	d15,#0,.L25
-.L692:
+.L696:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   266      uart_receive_flag = 0;
 	movh.a	a15,#@his(uart_receive_flag)
 	lea	a15,[a15]@los(uart_receive_flag)
-.L693:
+.L697:
 	mov	d15,#0
-.L694:
+.L698:
 	st.b	[a15],d15
-.L695:
+.L699:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   267      
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   268      temp = receive[1]<<8 | receive[2];
 	movh.a	a15,#@his(receive)
 	lea	a15,[a15]@los(receive)
-.L696:
+.L700:
 	ld.bu	d15,[a15]1
-.L697:
+.L701:
 	sha	d2,d15,#8
-.L698:
+.L702:
 	movh.a	a15,#@his(receive)
 	lea	a15,[a15]@los(receive)
-.L699:
+.L703:
 	ld.bu	d15,[a15]2
 .L346:
 	or	d2,d15
-.L700:
+.L704:
 
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   269      return temp;
 	j	.L26
@@ -5929,7 +5929,7 @@ halve_image:	.type	func
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   470  /********************************
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   471               全局二值化
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   472  ********************************/
-; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   473  uint8 BinaryImage[ROW][COL];
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   473  uint8 img[ROW][COL];
 	ret
 .L286:
 	
@@ -5962,7 +5962,7 @@ Image_Binary:	.type	func
 	j	.L56
 .L57:
 
-; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   483            Binary_Image[i][j] = 255;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   483          	img[i][j] = 255;
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   484          }
 	mov	d1,#0
 .L396:
@@ -5980,17 +5980,21 @@ Image_Binary:	.type	func
 	jge	d4,d15,.L60
 .L664:
 
-; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   487            Binary_Image[i][j] = 0;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   487          	img[i][j] = 0;
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   488          }
 	mul	d15,d0,#188
-	addsc.a	a15,a5,d15,#0
 .L665:
-	addsc.a	a15,a15,d1,#0
+	movh.a	a15,#@his(img)
+	lea	a15,[a15]@los(img)
 .L666:
-	mov	d15,#255
+	addsc.a	a15,a15,d15,#0
 .L667:
-	st.b	[a15],d15
+	addsc.a	a15,a15,d1,#0
 .L668:
+	mov	d15,#255
+.L669:
+	st.b	[a15],d15
+.L670:
 	j	.L61
 .L60:
 
@@ -5999,24 +6003,28 @@ Image_Binary:	.type	func
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   491  }
 ; ..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.c	   492  
 	mul	d15,d0,#188
-	addsc.a	a15,a5,d15,#0
-.L669:
-	addsc.a	a15,a15,d1,#0
-.L670:
-	mov	d15,#0
 .L671:
+	movh.a	a15,#@his(img)
+	lea	a15,[a15]@los(img)
+.L672:
+	addsc.a	a15,a15,d15,#0
+.L673:
+	addsc.a	a15,a15,d1,#0
+.L674:
+	mov	d15,#0
+.L675:
 	st.b	[a15],d15
 .L61:
 	add	d1,#1
 .L58:
 	mov	d15,#188
-.L672:
+.L676:
 	jlt	d1,d15,.L59
 .L300:
 	add	d0,#1
 .L56:
 	mov	d15,#120
-.L673:
+.L677:
 	jlt	d0,d15,.L57
 .L298:
 
@@ -6077,7 +6085,7 @@ MT9V03X_CFG:	.type	object
 	.size	MT9V03X_CFG,36
 	.half	1
 	.space	2
-	.half	2,100,3,50
+	.half	2,120,3,50
 	.half	4,188,5,120
 	.half	6
 	.space	2
@@ -6119,11 +6127,11 @@ mt9v03x_finish_flag:	.type	object
 mt9v03x_dma_int_num:	.type	object
 	.size	mt9v03x_dma_int_num,1
 	.space	1
-	.sdecl	'.bss.SEEKFREE_MT9V03X.BinaryImage',data,cluster('BinaryImage')
-	.sect	'.bss.SEEKFREE_MT9V03X.BinaryImage'
-	.global	BinaryImage
-BinaryImage:	.type	object
-	.size	BinaryImage,22560
+	.sdecl	'.bss.SEEKFREE_MT9V03X.img',data,cluster('img')
+	.sect	'.bss.SEEKFREE_MT9V03X.img'
+	.global	img
+img:	.type	object
+	.size	img,22560
 	.space	22560
 	.sdecl	'.bss.SEEKFREE_MT9V03X.threshold',data,cluster('threshold')
 	.sect	'.bss.SEEKFREE_MT9V03X.threshold'
@@ -24740,38 +24748,46 @@ threshold:	.type	object
 	.half	.L662-.L59
 	.byte	1,5,9,9
 	.half	.L663-.L662
-	.byte	1,5,23,7,9
+	.byte	1,5,13,7,9
 	.half	.L664-.L663
-	.byte	3,2,1,5,26,9
+	.byte	3,2,1,5,10,9
 	.half	.L665-.L664
-	.byte	1,5,32,9
+	.byte	1,5,13,9
 	.half	.L666-.L665
-	.byte	1,5,30,9
+	.byte	1,5,16,9
 	.half	.L667-.L666
-	.byte	1,5,35,9
+	.byte	1,5,22,9
 	.half	.L668-.L667
-	.byte	1,5,23,9
-	.half	.L60-.L668
-	.byte	3,4,1,5,26,9
-	.half	.L669-.L60
-	.byte	1,5,32,9
+	.byte	1,5,20,9
+	.half	.L669-.L668
+	.byte	1,5,25,9
 	.half	.L670-.L669
-	.byte	1,5,30,9
-	.half	.L671-.L670
+	.byte	1,5,13,9
+	.half	.L60-.L670
+	.byte	3,4,1,5,10,9
+	.half	.L671-.L60
+	.byte	1,5,13,9
+	.half	.L672-.L671
+	.byte	1,5,16,9
+	.half	.L673-.L672
+	.byte	1,5,22,9
+	.half	.L674-.L673
+	.byte	1,5,20,9
+	.half	.L675-.L674
 	.byte	1,5,32,9
-	.half	.L61-.L671
+	.half	.L61-.L675
 	.byte	3,120,1,5,26,9
 	.half	.L58-.L61
 	.byte	1,5,29,9
-	.half	.L672-.L58
+	.half	.L676-.L58
 	.byte	1,5,30,7,9
-	.half	.L300-.L672
+	.half	.L300-.L676
 	.byte	3,126,1,5,24,9
 	.half	.L56-.L300
 	.byte	1,5,27,9
-	.half	.L673-.L56
+	.half	.L677-.L56
 	.byte	1,5,1,7,9
-	.half	.L298-.L673
+	.half	.L298-.L677
 	.byte	3,14,1,7,9
 	.half	.L151-.L298
 	.byte	0,1,1
@@ -24825,46 +24841,46 @@ threshold:	.type	object
 	.sdecl	'.debug_line',debug,cluster('set_mt9v03x_reg')
 	.sect	'.debug_line'
 .L154:
-	.word	.L675-.L674
-.L674:
+	.word	.L679-.L678
+.L678:
 	.half	3
-	.word	.L677-.L676
-.L676:
+	.word	.L681-.L680
+.L680:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MT9V03X.c',0,0,0,0,0
-.L677:
+.L681:
 	.byte	5,8,7,0,5,2
 	.word	.L73
 	.byte	3,241,1,1,5,22,9
-	.half	.L678-.L73
+	.half	.L682-.L73
 	.byte	3,5,1,5,20,9
-	.half	.L679-.L678
-	.byte	1,5,22,9
-	.half	.L680-.L679
-	.byte	3,1,1,5,20,9
-	.half	.L681-.L680
-	.byte	1,5,26,9
-	.half	.L682-.L681
-	.byte	3,2,1,5,20,9
 	.half	.L683-.L682
-	.byte	1,9
-	.half	.L684-.L683
-	.byte	3,1,1,5,24,9
-	.half	.L685-.L684
-	.byte	3,2,1,5,36,9
-	.half	.L686-.L685
-	.byte	1,5,5,9
-	.half	.L337-.L686
-	.byte	3,1,1,5,22,9
-	.half	.L687-.L337
-	.byte	3,2,1,5,20,9
-	.half	.L688-.L687
 	.byte	1,5,22,9
-	.half	.L689-.L688
+	.half	.L684-.L683
 	.byte	3,1,1,5,20,9
-	.half	.L690-.L689
+	.half	.L685-.L684
 	.byte	1,5,26,9
-	.half	.L339-.L690
+	.half	.L686-.L685
+	.byte	3,2,1,5,20,9
+	.half	.L687-.L686
+	.byte	1,9
+	.half	.L688-.L687
+	.byte	3,1,1,5,24,9
+	.half	.L689-.L688
+	.byte	3,2,1,5,36,9
+	.half	.L690-.L689
+	.byte	1,5,5,9
+	.half	.L337-.L690
+	.byte	3,1,1,5,22,9
+	.half	.L691-.L337
+	.byte	3,2,1,5,20,9
+	.half	.L692-.L691
+	.byte	1,5,22,9
+	.half	.L693-.L692
+	.byte	3,1,1,5,20,9
+	.half	.L694-.L693
+	.byte	1,5,26,9
+	.half	.L339-.L694
 	.byte	3,2,1,5,20,9
 	.half	.L340-.L339
 	.byte	1,9
@@ -24872,37 +24888,37 @@ threshold:	.type	object
 	.byte	3,1,1,5,24,9
 	.half	.L342-.L341
 	.byte	3,2,1,5,36,9
-	.half	.L691-.L342
+	.half	.L695-.L342
 	.byte	1,5,29,9
-	.half	.L345-.L691
+	.half	.L345-.L695
 	.byte	3,3,1,5,12,9
 	.half	.L24-.L345
 	.byte	1,5,5,9
-	.half	.L692-.L24
+	.half	.L696-.L24
 	.byte	3,1,1,5,25,9
-	.half	.L693-.L692
-	.byte	1,5,23,9
-	.half	.L694-.L693
-	.byte	1,5,12,9
-	.half	.L695-.L694
-	.byte	3,2,1,5,19,9
-	.half	.L696-.L695
-	.byte	1,5,22,9
 	.half	.L697-.L696
-	.byte	1,5,28,9
+	.byte	1,5,23,9
 	.half	.L698-.L697
-	.byte	1,5,35,9
+	.byte	1,5,12,9
 	.half	.L699-.L698
+	.byte	3,2,1,5,19,9
+	.half	.L700-.L699
+	.byte	1,5,22,9
+	.half	.L701-.L700
+	.byte	1,5,28,9
+	.half	.L702-.L701
+	.byte	1,5,35,9
+	.half	.L703-.L702
 	.byte	1,5,26,9
-	.half	.L346-.L699
+	.half	.L346-.L703
 	.byte	1,5,5,9
-	.half	.L700-.L346
+	.half	.L704-.L346
 	.byte	3,1,1,5,1,9
-	.half	.L26-.L700
+	.half	.L26-.L704
 	.byte	3,2,1,7,9
 	.half	.L156-.L26
 	.byte	0,1,1
-.L675:
+.L679:
 	.sdecl	'.debug_ranges',debug,cluster('set_mt9v03x_reg')
 	.sect	'.debug_ranges'
 .L155:
@@ -25039,10 +25055,10 @@ threshold:	.type	object
 .L168:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('BinaryImage')
+	.sdecl	'.debug_info',debug,cluster('img')
 	.sect	'.debug_info'
 .L169:
-	.word	184
+	.word	176
 	.half	3
 	.word	.L170
 	.byte	4,1
@@ -25051,12 +25067,12 @@ threshold:	.type	object
 	.byte	'C:\\Users\\1004\\learngit\\camera_img_one\\Debug\\',0,12,1,2
 	.word	.L88
 	.byte	3
-	.byte	'BinaryImage',0,31,222,3,7
+	.byte	'img',0,31,222,3,7
 	.word	.L311
 	.byte	1,5,3
-	.word	BinaryImage
+	.word	img
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('BinaryImage')
+	.sdecl	'.debug_abbrev',debug,cluster('img')
 	.sect	'.debug_abbrev'
 .L170:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
@@ -25699,7 +25715,7 @@ threshold:	.type	object
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L701:
+.L705:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -25707,11 +25723,11 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('mt9v03x_uart_callback')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L701,.L63,.L181-.L63
+	.word	.L705,.L63,.L181-.L63
 	.sdecl	'.debug_frame',debug,cluster('set_config')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L701,.L65,.L182-.L65
+	.word	.L705,.L65,.L182-.L65
 	.byte	4
 	.word	(.L314-.L65)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -25720,7 +25736,7 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('get_config')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L701,.L67,.L192-.L67
+	.word	.L705,.L67,.L192-.L67
 	.byte	4
 	.word	(.L321-.L67)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -25729,7 +25745,7 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('get_version')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L701,.L69,.L198-.L69
+	.word	.L705,.L69,.L198-.L69
 	.byte	4
 	.word	(.L328-.L69)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -25738,7 +25754,7 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('set_exposure_time')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L701,.L71,.L202-.L71
+	.word	.L705,.L71,.L202-.L71
 	.byte	4
 	.word	(.L331-.L71)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -25747,7 +25763,7 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('set_mt9v03x_reg')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L701,.L73,.L302-.L73
+	.word	.L705,.L73,.L302-.L73
 	.byte	4
 	.word	(.L335-.L73)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -25756,23 +25772,23 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('mt9v03x_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L701,.L75,.L207-.L75
+	.word	.L705,.L75,.L207-.L75
 	.sdecl	'.debug_frame',debug,cluster('mt9v03x_vsync')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L701,.L77,.L239-.L77
+	.word	.L705,.L77,.L239-.L77
 	.sdecl	'.debug_frame',debug,cluster('mt9v03x_dma')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L701,.L79,.L240-.L79
+	.word	.L705,.L79,.L240-.L79
 	.sdecl	'.debug_frame',debug,cluster('seekfree_sendimg_03x')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L701,.L81,.L249-.L81
+	.word	.L705,.L81,.L249-.L81
 	.sdecl	'.debug_frame',debug,cluster('adapt_otsuThreshold')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L701,.L83,.L255-.L83
+	.word	.L705,.L83,.L255-.L83
 	.byte	4
 	.word	(.L368-.L83)/2
 	.byte	19,136,16,22,26,4,19,138,136,16,4
@@ -25781,13 +25797,13 @@ threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('halve_image')
 	.sect	'.debug_frame'
 	.word	20
-	.word	.L701,.L85,.L286-.L85
+	.word	.L705,.L85,.L286-.L85
 	.byte	8,19,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('Image_Binary')
 	.sect	'.debug_frame'
-	.word	20
-	.word	.L701,.L87,.L293-.L87
-	.byte	8,18,8,19,8,22,8,23
+	.word	24
+	.word	.L705,.L87,.L293-.L87
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 
 
 	; Module end

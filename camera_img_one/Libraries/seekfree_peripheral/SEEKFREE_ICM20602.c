@@ -68,7 +68,6 @@ void icm20602_self1_check(void)
 //-------------------------------------------------------------------------------------------------------------------
 void icm20602_init(void)
 {
-	simiic_init();
     systick_delay_ms(STM0, 10);  //上电延时
     
     //检测
@@ -400,6 +399,7 @@ void get_icm20602_gyro_spi(void)
     icm_gyro_y = (int16)(((uint16)buf.dat[2]<<8 | buf.dat[3]));
     icm_gyro_z = (int16)(((uint16)buf.dat[4]<<8 | buf.dat[5]));
 }
+
 #define Kp 100.0f                        // 比例增益支配率收敛到加速度计/磁强计
 
 #define Ki 0.002f                // 积分增益支配率的陀螺仪偏见的衔接
@@ -516,9 +516,6 @@ void IMUupdate(float gx, float gy, float gz, float ax, float ay, float az)
         Yaw = atan2(2*(q1*q2 + q0*q3),q0*q0+q1*q1-q2*q2-q3*q3) * 57.3;                //此处没有价值，注掉
 
 }
-
-
-
 
 
 

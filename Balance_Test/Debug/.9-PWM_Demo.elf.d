@@ -394,5 +394,5 @@
 "C:\Program Files\TASKING\TriCore v6.3r1\ctc\lib\tc16x\libfp_fpu.a" :
 9-PWM_Demo.elf : "C:\Program Files\TASKING\TriCore v6.3r1\ctc\lib\tc16x\librt.a"
 "C:\Program Files\TASKING\TriCore v6.3r1\ctc\lib\tc16x\librt.a" :
-9-PWM_Demo.elf : "D:\infineon\test1\Balance_Test\Lcf_Tasking_Tricore_Tc.lsl"
-"D:\infineon\test1\Balance_Test\Lcf_Tasking_Tricore_Tc.lsl" :
+9-PWM_Demo.elf : "C:\Users\1004\learngit\Balance_Test\Lcf_Tasking_Tricore_Tc.lsl"
+"C:\Users\1004\learngit\Balance_Test\Lcf_Tasking_Tricore_Tc.lsl" :

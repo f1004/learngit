@@ -267,7 +267,10 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 			<storageModule addStartupFiles="false" moduleId="com.tasking.processor"/>
 			<storageModule moduleId="com.tasking.toolInfo">
+				<toolInfo>TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558</toolInfo>
 				<toolInfo>TASKING program builder v6.3r1 Build 19041558</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558</toolInfo>
 			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.tasking.config.ctc.abs.release.2134260939">
@@ -289,7 +292,7 @@
 							<option id="com.tasking.ctc.cpu.1449455478" name="Processor:" superClass="com.tasking.ctc.cpu" value="tc26x" valueType="string"/>
 							<option id="com.tasking.ctc.coreSelection.1874448791" name="Use core:" superClass="com.tasking.ctc.coreSelection" value="vtc" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="com.tasking.managedbuilder.TASKING_ELF;com.tasking.managedbuilder.TASKING_SRECORD;com.tasking.managedbuilder.TASKING_IHEX" id="com.tasking.ctc.platform.abs.release.869125735" name="Release" osList="" superClass="com.tasking.ctc.platform.abs.release"/>
-							<builder buildPath="${workspace_loc:/BaseFramework_TC264_CCU6}/Release" id="com.tasking.ctc.builder.abs.debug.1954338977" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="TASKING TriCore Makefile generator" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.tasking.ctc.builder.abs.debug"/>
+							<builder buildPath="${workspace_loc:/Cpu1_Tft}/Release" id="com.tasking.ctc.builder.abs.debug.1954338977" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="TASKING TriCore Makefile generator" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.tasking.ctc.builder.abs.debug"/>
 							<tool id="com.tasking.ctc.cc.abs.release.537444925" name="C/C++ Compiler" superClass="com.tasking.ctc.cc.abs.release">
 								<option id="com.tasking.ctc.cc.pr36858.868498681" name="workaround for PR36858" superClass="com.tasking.ctc.cc.pr36858" value="true" valueType="string"/>
 								<inputType id="com.tasking.ctc.cppInputType.408088544" name="C++" superClass="com.tasking.ctc.cppInputType"/>
